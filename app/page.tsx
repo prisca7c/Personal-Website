@@ -83,7 +83,7 @@ export default function Component() {
         images: [
           {
             src: "/images/robotics-workshop.jpeg",
-            caption: "Lead Mechanical Designer & Builder trying to figure out how stuff works 2024",
+            caption: "I'm trying to figure out how stuff works 2024",
           },
           { src: "/images/vex-robot-competition.jpeg", caption: "V3 robot in action! 2025" },
         ],
@@ -150,9 +150,9 @@ export default function Component() {
           { src: "/images/acrobatics-progression.png", caption: "Firebird Jump Skill Development 2021-2024" },
           { src: "/images/flexibility-progression.png", caption: "Scorpion Flexibility Skill Progression 2018-2020" },
           { src: "/images/dance-competition-progression.png", caption: "Chinese Dance Competition Awards 2018-2024" },
-          { src: "/images/international-stage-performance.jpeg", caption: "CNE International stage Performance 2022" },
+          { src: "/images/international-stage-performance.jpeg", caption: "CNE International Stage Performance 2022" },
           { src: "/images/martial-arts-group.jpeg", caption: "3rd Place Ottawa Wushu Provincial Championships 2023" },
-          { src: "/images/dance-stage-performance.png", caption: "Chinese Traditional Dance Stage Performance 2024" },
+          { src: "/images/dance-stage-performance.png", caption: "Chinese Traditional Dance Stage Performance 2022" },
         ],
         videos: [
           { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/recorded-1151425030597%20%282%29-xhLZxaNQwIRzXrVatLK9yQZX0fYrbm.mp4", caption: "Front Aerial 2023" },
@@ -170,13 +170,13 @@ export default function Component() {
       content: {
         text: "Passionate about visual arts including traditional and digital artwork, religious themes, and personal creative expression. Experience in detailed illustration and mixed media art.",
         images: [
-          { src: "/images/prisca-personal-artwork.jpeg", caption: "About Me Name Art 2021" },
+          { src: "/images/prisca-personal-artwork.jpeg", caption: "What it Means to be Prisca 2021" },
           { src: "/images/skittles-artwork.jpeg", caption: "Skittles Acrylic Painting 2021" },
           {
             src: "/images/kaleidoscopic-sculpture.jpeg",
             caption: "Kaleidoscopic Epipelagic 2021 - 1st Place Mixed Media Toronto Kiwanis Festival 2024",
           },
-          { src: "/images/mystical-artwork.jpeg", caption: "Mystical Eyes Pencil Drawing 2024" },
+          { src: "/images/mystical-artwork.jpeg", caption: "Pencil Drawing 2022" },
         ],
         specialImages: [
           {
@@ -232,6 +232,11 @@ export default function Component() {
       caption: "Fun Times Cutting Metal & Polycarb 2024",
     },
     {
+      src: "/images/gallery-7.jpeg",
+      alt: "York Mills CI Toronto Science Fair Medalists 2025",
+      caption: "York Mills CI Toronto Science Fair Medalists 2025",
+    },
+    {
       src: "/images/formal-event-friends.jpeg",
       alt: "Formal event with friends",
       caption: "York Mills CI Prom 2025",
@@ -243,14 +248,10 @@ export default function Component() {
       caption: "San Francisco Group Selfie 2025",
     },
     {
-      src: "/images/gallery-7.jpeg",
-      alt: "York Mills CI Toronto Science Fair Medalists 2025",
-      caption: "York Mills CI Toronto Science Fair Medalists 2025",
-    },
-    {
       src: "/images/gallery-3.jpeg",
       alt: "World Platinum Grand Finalist & Origincal Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
-      caption: "World Platinum Grand Finalist & Origincal Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
+      caption:
+        "World Platinum Grand Finalist & Origincal Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
     },
   ]
 
@@ -329,7 +330,7 @@ export default function Component() {
             {/* About Section */}
             <section className="mb-12">
               <div className="text-lg leading-relaxed text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                <p className="mb-4"> 
+                <p className="mb-4">
                   <span
                     className="relative inline-block"
                     style={{
@@ -340,7 +341,7 @@ export default function Component() {
                       backgroundPosition: "0 60%",
                     }}
                   >
-                   Uwaterloo Nanotechnology Engineering student
+                    Uwaterloo Nanotechnology Engineering student
                   </span>{" "}
                   passionate in materials science, quantum, mechatronics, hackathons, and Chinese dance.
                 </p>
@@ -415,7 +416,11 @@ export default function Component() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Qiskit Global Summer School - NASA Space Apps Challenger</span>
+                    <span>Qiskit Global Summer School</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>NASA Space Apps Waterloo Challenger</span>
                   </li>
                 </ul>
               </div>
@@ -478,7 +483,7 @@ export default function Component() {
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Co-Captain, Lead Mechanical Designer, Lead Scouter, Builder, and Backup Programmer of my{" "}
+                      Co-Captain, Lead Mechanical Designer, Lead Scouter, Builder, and Backup Programmer of{" "}
                       <span
                         className="relative inline-block"
                         style={{
@@ -489,7 +494,7 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        VEX V5 Robotics Competition Team (839)
+                        839 VEX V5 Robotics Competition Team
                       </span>{" "}
                       2023-2025
                     </span>
@@ -806,77 +811,6 @@ export default function Component() {
         </div>
 
         {/* Three Boxes with Background Images */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <div
-            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
-            style={{
-              backgroundImage: `url('/images/plant-windowsill.jpeg')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
-            <div className="relative z-10">
-              <h3
-                className="text-2xl font-bold text-slate-800 mb-4"
-                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-              >
-                Creative Projects
-              </h3>
-              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                Exploring innovative solutions through hands-on experimentation and creative problem-solving. From
-                electronics design to artistic expression, every project teaches valuable lessons about persistence and
-                innovation.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
-            style={{
-              backgroundImage: `url('/images/gala-2023-poster.png')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
-            <div className="relative z-10">
-              <h3
-                className="text-2xl font-bold text-slate-800 mb-4"
-                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-              >
-                Cultural Heritage
-              </h3>
-              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                Celebrating and preserving cultural traditions through dance, art, and community engagement. These
-                experiences have shaped my understanding of identity and the importance of cultural exchange.
-              </p>
-            </div>
-          </div>
-
-          <div
-            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
-            style={{
-              backgroundImage: `url('/images/highway-sunset.jpeg')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
-            <div className="relative z-10">
-              <h3
-                className="text-2xl font-bold text-slate-800 mb-4"
-                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-              >
-                Future Horizons
-              </h3>
-              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                Looking ahead to new opportunities and challenges in nanotechnology engineering. Every journey begins
-                with a single step, and I'm excited to see where this path leads.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* Footer */}
