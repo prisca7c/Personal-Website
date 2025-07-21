@@ -242,6 +242,16 @@ export default function Component() {
       alt: "Student group selfie",
       caption: "University Student Group Selfie 2025",
     },
+    {
+      src: "/images/plant-windowsill.jpeg",
+      alt: "Plant windowsill decoration",
+      caption: "Cute Plant Setup with Owl Decorations 2025",
+    },
+    {
+      src: "/images/highway-sunset.jpeg",
+      alt: "Highway sunset view",
+      caption: "Beautiful Highway Sunset Drive 2025",
+    },
   ]
 
   return (
@@ -289,28 +299,28 @@ export default function Component() {
                       <div className="w-32 h-0.5 bg-gradient-to-r from-pink-300 to-blue-300 rounded-full mt-1 opacity-60"></div>
                     </h2>
                     {/* Location */}
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 mb-6">
                       <MapPin className="w-5 h-5 text-blue-500" />
                       <span className="text-lg text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                         Toronto, Ontario, Canada
                       </span>
                     </div>
-                  </div>
 
-                  {/* Social Links beside headline */}
-                  <div className="flex gap-3 ml-8">
-                    {socialLinks.map((social, index) => (
-                      <a
-                        key={index}
-                        href={social.href}
-                        target={social.href.startsWith("http") ? "_blank" : "_self"}
-                        rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                        className="p-3 rounded-xl border-2 border-blue-200/60 bg-white/60 hover:bg-white/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                        aria-label={social.label}
-                      >
-                        <social.icon className="w-5 h-5" />
-                      </a>
-                    ))}
+                    {/* Social Links below location */}
+                    <div className="flex gap-4">
+                      {socialLinks.map((social, index) => (
+                        <a
+                          key={index}
+                          href={social.href}
+                          target={social.href.startsWith("http") ? "_blank" : "_self"}
+                          rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                          className="p-3 rounded-xl border-2 border-blue-200/60 bg-white/60 hover:bg-white/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                          aria-label={social.label}
+                        >
+                          <social.icon className="w-5 h-5" />
+                        </a>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -599,7 +609,7 @@ export default function Component() {
                                       src={image.src || "/placeholder.svg"}
                                       alt={`${section.title} ${imgIndex + 1}`}
                                       className={`w-full object-cover rounded-lg ${
-                                        tallArt ? "h-80" : tallSports || tallSpecial ? "h-72" : "h-56"
+                                        tallArt ? "h-96" : tallSports || tallSpecial ? "h-72" : "h-56"
                                       }`}
                                     />
                                     <p className="text-sm italic">{image.caption}</p>
@@ -751,7 +761,7 @@ export default function Component() {
               <p className="text-sm mb-4 text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                 Download my complete resume with detailed experience and projects.
               </p>
-              <a href="/resume.pdf" download="Prisca_Chien_Resume.pdf">
+              <a href="/resume-prisca-chien.pdf" download="Prisca_Chien_Resume.pdf">
                 <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-500 hover:to-cyan-500 text-white shadow-lg transition-all duration-300 hover:scale-105">
                   <Download className="w-4 h-4 mr-2" />
                   Download PDF
@@ -790,6 +800,79 @@ export default function Component() {
                 "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving,
                 present your requests to God. And the peace of God, which transcends all understanding, will guard your
                 hearts and your minds in Christ Jesus." - Philippians 4:6-7
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Three Boxes with Background Images */}
+        <div className="mt-16 grid md:grid-cols-3 gap-8">
+          <div
+            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
+            style={{
+              backgroundImage: `url('/images/plant-windowsill.jpeg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
+            <div className="relative z-10">
+              <h3
+                className="text-2xl font-bold text-slate-800 mb-4"
+                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
+              >
+                Creative Projects
+              </h3>
+              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                Exploring innovative solutions through hands-on experimentation and creative problem-solving. From
+                electronics design to artistic expression, every project teaches valuable lessons about persistence and
+                innovation.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
+            style={{
+              backgroundImage: `url('/images/gala-2023-poster.png')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
+            <div className="relative z-10">
+              <h3
+                className="text-2xl font-bold text-slate-800 mb-4"
+                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
+              >
+                Cultural Heritage
+              </h3>
+              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                Celebrating and preserving cultural traditions through dance, art, and community engagement. These
+                experiences have shaped my understanding of identity and the importance of cultural exchange.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="p-8 rounded-2xl border-2 border-blue-200/60 backdrop-blur-sm shadow-lg min-h-[300px] relative overflow-hidden"
+            style={{
+              backgroundImage: `url('/images/highway-sunset.jpeg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-white/80 rounded-2xl"></div>
+            <div className="relative z-10">
+              <h3
+                className="text-2xl font-bold text-slate-800 mb-4"
+                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
+              >
+                Future Horizons
+              </h3>
+              <p className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                Looking ahead to new opportunities and challenges in nanotechnology engineering. Every journey begins
+                with a single step, and I'm excited to see where this path leads.
               </p>
             </div>
           </div>

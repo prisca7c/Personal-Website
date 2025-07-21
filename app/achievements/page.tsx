@@ -362,10 +362,10 @@ export default function AchievementsPage() {
       className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-blue-50"
       style={{ fontFamily: "'Noto Sans', 'M PLUS 1p', sans-serif" }}
     >
-      <div className="container mx-auto px-6 py-12 max-w-7xl">
+      <div className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
-          <div className="flex items-center gap-6">
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center gap-4">
             <Link href="/">
               <Button
                 variant="ghost"
@@ -377,7 +377,7 @@ export default function AchievementsPage() {
               </Button>
             </Link>
             <h1
-              className="text-5xl font-bold text-slate-800"
+              className="text-4xl font-bold text-slate-800"
               style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
             >
               Achievements
@@ -386,21 +386,21 @@ export default function AchievementsPage() {
         </div>
 
         {/* Achievements Grid */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6">
           {achievements.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border-2 border-blue-200/60 shadow-lg"
+              className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-200/60 shadow-lg"
             >
               {/* Category Header */}
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex items-center gap-3 mb-4">
                 <div
-                  className={`w-12 h-12 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center shadow-lg`}
+                  className={`w-10 h-10 bg-gradient-to-br ${category.color} rounded-full flex items-center justify-center shadow-lg`}
                 >
-                  <category.icon className="w-6 h-6 text-white" />
+                  <category.icon className="w-5 h-5 text-white" />
                 </div>
                 <h2
-                  className="text-2xl font-bold text-slate-800"
+                  className="text-xl font-bold text-slate-800"
                   style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
                 >
                   {category.category}
@@ -408,29 +408,29 @@ export default function AchievementsPage() {
               </div>
 
               {/* Achievement Items */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 {category.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border-l-4 border-blue-300 pl-6 py-2">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-lg font-semibold text-slate-800 leading-tight">{item.title}</h3>
-                      <div className="flex items-center gap-2 text-slate-500 text-sm ml-4">
-                        <Calendar className="w-4 h-4" />
+                  <div key={itemIndex} className="border-l-4 border-blue-300 pl-4 py-1">
+                    <div className="flex items-start justify-between mb-1">
+                      <h3 className="text-base font-semibold text-slate-800 leading-tight">{item.title}</h3>
+                      <div className="flex items-center gap-1 text-slate-500 text-xs ml-2">
+                        <Calendar className="w-3 h-3" />
                         {item.date}
                       </div>
                     </div>
 
-                    <p className="text-slate-700 mb-3 leading-relaxed">{item.description}</p>
+                    <p className="text-slate-700 mb-2 leading-relaxed text-sm">{item.description}</p>
 
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-2">
                       <span
-                        className={`px-3 py-1 rounded-full text-sm font-medium border ${
+                        className={`px-2 py-1 rounded-full text-xs font-medium border ${
                           levelColors[item.level as keyof typeof levelColors]
                         }`}
                       >
                         {item.level}
                       </span>
                       {item.value && (
-                        <span className="px-3 py-1 bg-green-50 text-green-700 border border-green-200 rounded-full text-sm font-medium">
+                        <span className="px-2 py-1 bg-green-50 text-green-700 border border-green-200 rounded-full text-xs font-medium">
                           {item.value}
                         </span>
                       )}

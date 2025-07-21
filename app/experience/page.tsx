@@ -10,7 +10,6 @@ const workExperience = [
     title: "Logistics Coordinator",
     company: "Waterloo Nanotechnology Conference",
     period: "Jun 2025 - Present · 2 mos",
-    location: "Waterloo, Ontario, Canada",
     description:
       "Responsible for coordination of event location (ensuring rooms are available and booked), conference schedule, food/refreshments, photography/videography, presentation set up, custodial services, and any other additional needs such as tables/chairs, speaker gift baskets, conference applications and reviews, etc.",
     skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
@@ -25,8 +24,6 @@ const workExperience = [
     title: "Assistant Robotics Coach",
     company: "Caution Tape Robotics Club",
     period: "Oct 2023 - Jun 2025 · 1 yr 9 mos",
-    location: "Markham, Ontario, Canada · On-site",
-    type: "Permanent Part-time",
     description:
       "Led small groups (ages 6-12) through the mechanical engineering design process. Collaborated with robotics coaches weekly to develop and refine lesson plans for pre-competitive classes. Evaluated student progress in partnership with senior coaches and parents.",
     skills: ["Leadership", "Teaching", "Robotics", "Mentoring", "Curriculum Development"],
@@ -41,7 +38,6 @@ const workExperience = [
     title: "Student Researcher",
     company: "The New York Academy of Sciences",
     period: "Sep 2024 - Nov 2024 · 3 mos",
-    location: "Remote",
     description:
       "Conducted independent research project under the mentorship of academy scientists. Focused on materials science and nanotechnology applications in sustainable energy systems.",
     skills: ["Research", "Data Analysis", "Scientific Writing", "Materials Science"],
@@ -56,8 +52,6 @@ const workExperience = [
     title: "Hostess and Artisan",
     company: "Demetres",
     period: "Jul 2023 - Sep 2023 · 3 mos",
-    location: "Canada · On-site",
-    type: "Seasonal",
     description:
       "Provided customer service in restaurant environment while also creating artistic dessert presentations. Balanced hospitality duties with creative food artistry.",
     skills: ["Customer Service", "Food Artistry", "Time Management", "Teamwork"],
@@ -72,8 +66,6 @@ const workExperience = [
     title: "Academic Tutor",
     company: "North Toronto Christian School",
     period: "Dec 2021 - May 2023 · 1 yr 6 mos",
-    location: "North York, Ontario, Canada · Hybrid",
-    type: "Contract Part-time",
     description:
       "Tutored elementary and middle school students. Subjects include: English, Science, Math, and Bible Studies. Provided one-on-one tutoring helping students improve their academic performance around 7% higher.",
     skills: ["Tutoring", "Mathematics", "Science", "English", "Curriculum Planning"],
@@ -88,7 +80,6 @@ const workExperience = [
     title: "Teaching Assistant",
     company: "Chinese Collective Arts Association",
     period: "Nov 2020 - Feb 2023 · 2 yrs 4 mos",
-    location: "Markham, Ontario, Canada · On-site",
     description:
       "Assisted in leading dancers and acrobats from ages three to ten through dance routines and intensive training. Supported lead instructors in managing classes and individual student development.",
     skills: ["Dance Instruction", "Child Development", "Performance Arts", "Team Leadership"],
@@ -103,7 +94,6 @@ const workExperience = [
     title: "Student Outreach, Event Assistant, and Call Agent",
     company: "Politics",
     period: "Apr 2022 - Sep 2022 · 6 mos",
-    location: "Hybrid",
     description:
       "Engaged in political outreach activities, assisted with campaign events, and conducted phone campaigns. Gained experience in civic engagement and political processes.",
     skills: ["Public Speaking", "Event Coordination", "Communication", "Civic Engagement"],
@@ -121,10 +111,10 @@ export default function ExperiencePage() {
       className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-blue-50"
       style={{ fontFamily: "'Noto Sans', 'M PLUS 1p', sans-serif" }}
     >
-      <div className="container mx-auto px-6 py-12 max-w-6xl">
+      <div className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
-          <div className="flex items-center gap-6">
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center gap-4">
             <Link href="/">
               <Button
                 variant="ghost"
@@ -136,7 +126,7 @@ export default function ExperiencePage() {
               </Button>
             </Link>
             <h1
-              className="text-5xl font-bold text-slate-800"
+              className="text-4xl font-bold text-slate-800"
               style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
             >
               Experience
@@ -147,45 +137,43 @@ export default function ExperiencePage() {
         {/* Experience Timeline */}
         <div className="relative max-w-5xl mx-auto">
           {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 to-pink-300"></div>
+          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-300 to-pink-300"></div>
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {workExperience.map((job, index) => (
-              <div key={index} className="relative flex items-start gap-8">
+              <div key={index} className="relative flex items-start gap-6">
                 {/* Timeline dot */}
                 <div className="relative z-10 flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-pink-400 rounded-full flex items-center justify-center shadow-lg">
-                    <job.icon className="w-8 h-8 text-white" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-pink-400 rounded-full flex items-center justify-center shadow-lg">
+                    <job.icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-white/70 backdrop-blur-sm rounded-2xl p-8 border-2 border-blue-200/60 shadow-lg">
-                  <div className="flex items-start justify-between mb-4">
+                <div className="flex-1 bg-white/70 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-200/60 shadow-lg">
+                  <div className="flex items-start justify-between mb-3">
                     <div>
-                      <h3 className="text-2xl font-bold text-slate-800 mb-2">{job.title}</h3>
-                      <p className="text-blue-600 font-semibold text-lg">{job.company}</p>
-                      {job.type && <p className="text-slate-500 text-sm">{job.type}</p>}
+                      <h3 className="text-xl font-bold text-slate-800 mb-1">{job.title}</h3>
+                      <p className="text-blue-600 font-semibold">{job.company}</p>
                     </div>
                     <div className="text-right">
-                      <div className="flex items-center gap-2 text-slate-500 mb-1">
+                      <div className="flex items-center gap-2 text-slate-500">
                         <Calendar className="w-4 h-4" />
                         <span className="font-medium text-sm">{job.period}</span>
                       </div>
-                      {job.location && <p className="text-slate-500 text-sm">{job.location}</p>}
                     </div>
                   </div>
 
-                  <p className="text-slate-700 mb-6 leading-relaxed text-lg">{job.description}</p>
+                  <p className="text-slate-700 mb-4 leading-relaxed">{job.description}</p>
 
                   {/* Key Achievements */}
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold text-slate-800 mb-3">Key Achievements</h4>
-                    <ul className="space-y-2">
+                  <div className="mb-4">
+                    <h4 className="font-semibold text-slate-800 mb-2">Key Achievements</h4>
+                    <ul className="space-y-1">
                       {job.achievements.map((achievement, achievementIndex) => (
-                        <li key={achievementIndex} className="flex items-start gap-3">
-                          <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="text-slate-700">{achievement}</span>
+                        <li key={achievementIndex} className="flex items-start gap-2">
+                          <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
+                          <span className="text-slate-700 text-sm">{achievement}</span>
                         </li>
                       ))}
                     </ul>
@@ -193,10 +181,13 @@ export default function ExperiencePage() {
 
                   {/* Skills */}
                   <div>
-                    <h4 className="text-lg font-semibold text-slate-800 mb-3">Skills Developed</h4>
-                    <div className="flex flex-wrap gap-2">
+                    <h4 className="font-semibold text-slate-800 mb-2">Skills Developed</h4>
+                    <div className="flex flex-wrap gap-1">
                       {job.skills.map((skill, skillIndex) => (
-                        <span key={skillIndex} className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full font-medium">
+                        <span
+                          key={skillIndex}
+                          className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+                        >
                           {skill}
                         </span>
                       ))}
