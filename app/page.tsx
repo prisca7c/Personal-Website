@@ -513,7 +513,7 @@ export default function Component() {
               {/* Three Navigation Buttons - Fixed Styling */}
               <div className="flex gap-4 flex-wrap">
                 <Link href="/experience">
-                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <Briefcase className="w-5 h-5 mr-2" />
                     View Experience
                   </Button>
