@@ -270,8 +270,8 @@ export default function Component() {
           {/* Left Column - Content */}
           <div className="lg:col-span-8 space-y-8">
             {/* Title Section with Social Links */}
-            <section className="mb-12">
-              <div className="mb-8">
+            <section className="mb-8">
+              <div className="mb-4">
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex-1">
                     <h1
@@ -300,7 +300,7 @@ export default function Component() {
                       <div className="w-32 h-0.5 bg-gradient-to-r from-pink-300 to-blue-300 rounded-full mt-1 opacity-60"></div>
                     </h2>
                     {/* Location */}
-                    <div className="flex items-center gap-2 mb-6">
+                    <div className="flex items-center gap-2 mb-4">
                       <MapPin className="w-5 h-5 text-blue-500" />
                       <span className="text-lg text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                         Toronto, Ontario, Canada
@@ -328,7 +328,7 @@ export default function Component() {
             </section>
 
             {/* About Section */}
-            <section className="mb-12">
+            <section className="mb-8">
               <div className="text-lg leading-relaxed text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                 <p className="mb-4">
                   <span
@@ -349,7 +349,7 @@ export default function Component() {
             </section>
 
             {/* Current Events Section */}
-            <section className="mb-12">
+            <section className="mb-8">
               <div className="flex items-center gap-4 mb-6">
                 <FolderOpen className="w-8 h-8 text-blue-500" />
                 <h2
@@ -427,7 +427,7 @@ export default function Component() {
             </section>
 
             {/* Past Events Section */}
-            <section className="mb-12">
+            <section className="mb-8">
               <div className="flex items-center gap-4 mb-6">
                 <Archive className="w-8 h-8 text-blue-500" />
                 <h2
@@ -513,21 +513,21 @@ export default function Component() {
               {/* Three Navigation Buttons - Fixed Styling */}
               <div className="flex gap-4 flex-wrap">
                 <Link href="/experience">
-                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <Briefcase className="w-5 h-5 mr-2" />
                     View Experience
                   </Button>
                 </Link>
 
                 <Link href="/projects">
-                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     View Projects
                   </Button>
                 </Link>
 
                 <Link href="/achievements">
-                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <Award className="w-5 h-5 mr-2" />
                     View Achievements
                   </Button>
@@ -684,7 +684,7 @@ export default function Component() {
         </div>
 
         {/* Horizontal Line Above Three Columns */}
-        <div className="mt-16 mb-8 w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60"></div>
+        <div className="mt-12 mb-6 w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60"></div>
 
         {/* Three Column Section - Current Courses, Skills, Resume & Contact */}
         <div className="grid md:grid-cols-3 gap-8">
