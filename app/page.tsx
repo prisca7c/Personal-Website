@@ -243,14 +243,14 @@ export default function Component() {
       caption: "University Student Group Selfie 2025",
     },
     {
-      src: "/images/plant-windowsill.jpeg",
-      alt: "Plant windowsill decoration",
-      caption: "Cute Plant Setup with Owl Decorations 2025",
+      src: "/images/gallery-7.jpeg",
+      alt: "York Mills CI Toronto Science Fair Medalists 2025",
+      caption: "York Mills CI Toronto Science Fair Medalists 2025",
     },
     {
-      src: "/images/highway-sunset.jpeg",
-      alt: "Highway sunset view",
-      caption: "Beautiful Highway Sunset Drive 2025",
+      src: "/images/gallery-3.jpeg",
+      alt: "World Platinum Grand Finalist & Origincal Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
+      caption: "World Platinum Grand Finalist & Origincal Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
     },
   ]
 
@@ -522,7 +522,7 @@ export default function Component() {
                 </Link>
 
                 <Link href="/achievements">
-                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 group-hover:from-white/80 group-hover:to-blue-50/80 backdrop-blur-sm shadow-lg">
                     <Award className="w-5 h-5 mr-2" />
                     View Achievements
                   </Button>
