@@ -581,57 +581,33 @@ export default function Component() {
                             </div>
                           )}
 
-                          {/* Special side-by-side layout for Enrichment Programs */}
-                          {section.content.specialImages && (
-                            <div className="mb-6">
-                              <div className="grid md:grid-cols-2 gap-4 mb-4">
-                                {section.content.specialImages.map((image, imgIndex) => (
-                                  <div key={imgIndex} className="space-y-2">
-                                    <img
-                                      src={image.src || "/placeholder.svg"}
-                                      alt={`${section.title} special ${imgIndex + 1}`}
-                                      className="w-full h-72 object-cover rounded-lg"
-                                    />
-                                    <p className="text-sm italic">{image.caption}</p>
-                                  </div>
-                                ))}
-                              </div>
-                              <div className="grid md:grid-cols-2 gap-4">
-                                {section.content.images.map((image, imgIndex) => (
+                          {/* Image grid – handles normal, special, and tall images */}
+                          <div className="grid md:grid-cols-2 gap-4 mb-6">
+                            {[...(section.content.specialImages ?? []), ...section.content.images].map(
+                              (image: { src: string; caption: string }, imgIndex: number) => {
+                                const tallArt =
+                                  image.src === "/images/religious-artwork.jpeg" ||
+                                  image.src === "/images/feather-artwork.jpeg"
+                                const tallSports = section.title === "Sports"
+                                const tallSpecial =
+                                  section.title === "Enrichment Programs" &&
+                                  (section.content.specialImages ?? []).length > 0
+
+                                return (
                                   <div key={imgIndex} className="space-y-2">
                                     <img
                                       src={image.src || "/placeholder.svg"}
                                       alt={`${section.title} ${imgIndex + 1}`}
-                                      className="w-full h-56 object-cover rounded-lg"
+                                      className={`w-full object-cover rounded-lg ${
+                                        tallArt ? "h-80" : tallSports || tallSpecial ? "h-72" : "h-56"
+                                      }`}
                                     />
                                     <p className="text-sm italic">{image.caption}</p>
                                   </div>
-                                ))}
-                              </div>
-                            </div>
-                          )}
-
-                          {/* Special layout for Visual Arts with taller religious and feather artwork */}
-                          {section.title === "Visual Arts" && section.content.specialImages && (
-                            <div className="mb-6">
-                              <div className="grid md:grid-cols-2 gap-4 mb-4">
-                                {section.content.specialImages.map((image, imgIndex) => (
-                                                           {!section.content.specialImages && (
-                            <div className="grid md:grid-cols-2 gap-4 mb-6">
-                              {section.content.images.map((image, imgIndex) => (
-                                <div key={imgIndex} className="space-y-2">
-                                  <img
-                                    src={image.src || "/placeholder.svg"}
-                                    alt={`${section.title} ${imgIndex + 1}`}
-                                    className={`w-full object-cover rounded-lg ${
-                                      section.title === "Sports" ? "h-72" : "h-56"
-                                    }`}
-                                  />
-                                  <p className="text-sm italic">{image.caption}</p>
-                                </div>
-                              ))}
-                            </div>
-                          )}
+                                )
+                              },
+                            )}
+                          </div>
 
                           <p className="text-lg leading-relaxed">
                             Add more detailed text about your {section.title.toLowerCase()} experience here. You can
