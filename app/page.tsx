@@ -79,7 +79,7 @@ export default function Component() {
       title: "Robotics",
       description: "Intelligent systems",
       content: {
-        text: "Assistant coach at Caution Tape Robotics Club. Experience with VEX robotics, autonomous systems, and mentoring students in competitive robotics.",
+        text: "Assistant coach at Caution Tape Robotics Club. Experience with VEX robotics, autonomous systems, and mentoring students in competitive robotics. Lead Mechanical Designer, Lead Scouter, Builder, and Backup Programmer of 839 VEX V5 Team.",
         images: [
           {
             src: "/images/robotics-workshop.jpeg",
@@ -94,7 +94,7 @@ export default function Component() {
       title: "School Clubs",
       description: "Community engagement",
       content: {
-        text: "Active participant in science fairs, community outreach events, and student organizations. Engaged in environmental initiatives and technology education programs.",
+        text: "Active leadership in student organizations, competitions, and outreach events. Engaged in creative arts, environmental initiatives, and technology education programs.",
         images: [
           {
             src: "/images/science-fair-project.jpeg",
@@ -122,7 +122,7 @@ export default function Component() {
       title: "Volunteering",
       description: "Community service",
       content: {
-        text: "Active volunteer in political campaigns, robotics competitions, and community events. Dedicated to giving back through various service opportunities including field resetting at robotics competitions and campaign support.",
+        text: "Volunteered in political campaigns, robotics competitions, and community events.",
         images: [
           { src: "/images/political-campaign-volunteer.jpeg", caption: "Political Campaign Volunteer Work 2022" },
           {
@@ -145,7 +145,7 @@ export default function Component() {
       title: "Sports",
       description: "Athletic pursuits",
       content: {
-        text: "Acrobatics enthusiast with focus on flexibility, strength training, and performance arts. Regular training in gymnastics and aerial arts. Competitive Chinese dance performer with multiple awards and international recognition.",
+        text: "9 years Chinese dance and 3 years Wushu experience. Acrobatics enthusiast with focus on flexibility, tumbling, and performance arts. Competitive Chinese dance performer with multiple awards and international recognition.",
         images: [
           { src: "/images/acrobatics-progression.png", caption: "Firebird Jump Skill Development 2021-2024" },
           { src: "/images/flexibility-progression.png", caption: "Scorpion Flexibility Skill Progression 2018-2020" },
@@ -168,7 +168,7 @@ export default function Component() {
       title: "Visual Arts",
       description: "Creative expression",
       content: {
-        text: "Passionate about visual arts including traditional and digital artwork, religious themes, and personal creative expression. Experience in detailed illustration and mixed media art.",
+        text: "Majority of these traditional visual arts were made in Gr. 9. Expereinced in illustration, painting, and mixed media. ",
         images: [
           { src: "/images/prisca-personal-artwork.jpeg", caption: "What it Means to be Prisca 2021" },
           { src: "/images/skittles-artwork.jpeg", caption: "Skittles Acrylic Painting 2021" },
@@ -540,7 +540,7 @@ export default function Component() {
 
             {/* Dropdown Sections */}
             <section>
-              <div className="space-y-6">
+              <div className="space-y-8">
                 {dropdownSections.map((section, index) => {
                   const isOpen = openDropdowns.includes(index)
 
@@ -573,9 +573,10 @@ export default function Component() {
                           />
                         </div>
                       </CollapsibleTrigger>
-                      <CollapsibleContent className="mb-8">
-                        <div className="px-8 pb-8 mb-8 text-slate-700">
-                          <p className="text-lg leading-relaxed mb-6">{section.content.text}</p>
+                      <CollapsibleContent className="mb-4">
+                        <div className="px-8 pb-6 mb-4 text-slate-700">
+
+                          <p className="text-lg leading-relaxed mb-8">{section.content.text}</p>
 
                           {/* Videos for Sports section - Side by side */}
                           {section.content.videos && (
