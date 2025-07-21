@@ -213,15 +213,14 @@ export default function Component() {
     {
       src: "/images/dance-performance.jpeg",
       alt: "Traditional dance performance",
-      caption: "Grand Finalist Interview - Taoli World Dance Competition @Irvine, CA 2025",
+      caption: "World Grand Finalists Interview - Taoli World Dance Competition @Irvine, CA 2025",
     },
-    { src: "/images/vex-robotics.jpeg", alt: "VEX robotics work", caption: "VEX V5 Competition Preparation 2023" },
-    { src: "/images/gallery-1.jpeg", alt: "University friends group photo", caption: "Church Besties 2025" },
     {
       src: "/images/gallery-9.png",
       alt: "Robotics competition",
       caption: "VEX V5 Robotics Competition @Newark, NJ 2024",
     },
+    { src: "/images/gallery-1.jpeg", alt: "University friends group photo", caption: "Church Besties 2025" },
     {
       src: "/images/lab-research.jpeg",
       alt: "Laboratory research work",
@@ -235,12 +234,13 @@ export default function Component() {
     {
       src: "/images/formal-event-friends.jpeg",
       alt: "Formal event with friends",
-      caption: "Formal Dance Event with Friends 2025",
+      caption: "York Mills CI Prom 2025",
     },
+    { src: "/images/vex-robotics.jpeg", alt: "VEX robotics work", caption: "VEX V5 Competition Preparation 2023" },
     {
       src: "/images/student-group-selfie.jpeg",
       alt: "Student group selfie",
-      caption: "University Student Group Selfie 2025",
+      caption: "San Francisco Group Selfie 2025",
     },
     {
       src: "/images/gallery-7.jpeg",
@@ -294,7 +294,7 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        Aspiring Nanoelectronics Engineer
+                        Intending Nanoelectronics Engineer
                       </span>
                       <div className="w-32 h-0.5 bg-gradient-to-r from-pink-300 to-blue-300 rounded-full mt-1 opacity-60"></div>
                     </h2>
@@ -329,7 +329,7 @@ export default function Component() {
             {/* About Section */}
             <section className="mb-12">
               <div className="text-lg leading-relaxed text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                <p className="mb-4">
+                <p className="mb-4"> 
                   <span
                     className="relative inline-block"
                     style={{
@@ -340,9 +340,9 @@ export default function Component() {
                       backgroundPosition: "0 60%",
                     }}
                   >
-                    UWaterloo Nanotechnology Engineering student
+                   Uwaterloo Nanotechnology Engineering student
                   </span>{" "}
-                  passionate in materials science, quantum, mechatronics, hackathons, acrobatics, and Chinese dance.
+                  passionate in materials science, quantum, mechatronics, hackathons, and Chinese dance.
                 </p>
               </div>
             </section>
@@ -508,21 +508,21 @@ export default function Component() {
               {/* Three Navigation Buttons - Fixed Styling */}
               <div className="flex gap-4 flex-wrap">
                 <Link href="/experience">
-                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <Briefcase className="w-5 h-5 mr-2" />
                     View Experience
                   </Button>
                 </Link>
 
                 <Link href="/projects">
-                  <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
+                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     View Projects
                   </Button>
                 </Link>
 
                 <Link href="/achievements">
-                  <Button className="border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 group-hover:from-white/80 group-hover:to-blue-50/80 backdrop-blur-sm shadow-lg">
+                  <Button className="px-6 py-4 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-black hover:text-black backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
                     <Award className="w-5 h-5 mr-2" />
                     View Achievements
                   </Button>
