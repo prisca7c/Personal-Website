@@ -1,8 +1,9 @@
 "use client"
 
+import React from "react"
+
 import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible"
 import Link from "next/link"
 import {
   ChevronDown,
@@ -318,7 +319,7 @@ export default function Component() {
                           className="p-3 rounded-xl border-2 border-blue-200/60 bg-white/60 hover:bg-white/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg"
                           aria-label={social.label}
                         >
-                          <social.icon className="w-5 h-5" />
+                          {React.createElement(social.icon, { className: "w-5 h-5" })}
                         </a>
                       ))}
                     </div>
@@ -540,13 +541,13 @@ export default function Component() {
 
             {/* Dropdown Sections */}
             <section className="mt-8">
-              <div className="space-y-6">
+              <div className="space-y-6 my-0">
                 {dropdownSections.map((section, index) => {
                   const isOpen = openDropdowns.includes(index)
 
                   return (
-                    <Collapsible key={index} open={isOpen} onOpenChange={() => toggleDropdown(index)}>
-                      <CollapsibleTrigger className="w-full text-left group">
+                    <div key={index}>
+                      <div className="w-full text-left group">
                         <div
                           className={`flex items-center justify-between py-6 px-8 rounded-2xl border-2 transition-all duration-500 ${
                             isOpen
@@ -572,67 +573,66 @@ export default function Component() {
                             } text-slate-600`}
                           />
                         </div>
-                      </CollapsibleTrigger>
-                      <CollapsibleContent className="mb-4">
-                        <div className="px-8 pb-6 mb-0 text-slate-700">
+                        {isOpen && (
+                          <div className="mb-4">
+                            <p className="text-lg leading-relaxed mb-7 mt-7">{section.content.text}</p>
 
-                          <p className="text-lg leading-relaxed mb-8">{section.content.text}</p>
-
-                          {/* Videos for Sports section - Side by side */}
-                          {section.content.videos && (
-                            <div className="mb-6 flex justify-center gap-4">
-                              {section.content.videos.map((video, videoIndex) => (
-                                <div key={videoIndex} className="w-64">
-                                  <video
-                                    controls
-                                    className="w-full h-96 object-cover rounded-lg"
-                                    poster="/placeholder.svg?height=384&width=256"
-                                  >
-                                    <source src={video.src} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                  </video>
-                                  <p className="text-sm italic text-center mt-2">{video.caption}</p>
-                                </div>
-                              ))}
-                            </div>
-                          )}
-
-                          {/* Image grid – handles normal, special, and tall images */}
-                          <div className="grid md:grid-cols-2 gap-4 mb-6">
-                            {[...(section.content.specialImages ?? []), ...section.content.images].map(
-                              (image: { src: string; caption: string }, imgIndex: number) => {
-                                const tallArt =
-                                  image.src === "/images/religious-artwork.jpeg" ||
-                                  image.src === "/images/feather-artwork.jpeg"
-                                const tallSports = section.title === "Sports"
-                                const tallSpecial =
-                                  section.title === "Enrichment Programs" &&
-                                  (section.content.specialImages ?? []).length > 0
-
-                                return (
-                                  <div key={imgIndex} className="space-y-2">
-                                    <img
-                                      src={image.src || "/placeholder.svg"}
-                                      alt={`${section.title} ${imgIndex + 1}`}
-                                      className={`w-full object-cover rounded-lg ${
-                                        tallArt ? "h-96" : tallSports || tallSpecial ? "h-72" : "h-56"
-                                      }`}
-                                    />
-                                    <p className="text-sm italic">{image.caption}</p>
+                            {/* Videos for Sports section - Side by side */}
+                            {section.content.videos && (
+                              <div className="mb-6 flex justify-center gap-4">
+                                {section.content.videos.map((video, videoIndex) => (
+                                  <div key={videoIndex} className="w-64">
+                                    <video
+                                      controls
+                                      className="w-full h-96 object-cover rounded-lg"
+                                      poster="/placeholder.svg?height=384&width=256"
+                                    >
+                                      <source src={video.src} type="video/mp4" />
+                                      Your browser does not support the video tag.
+                                    </video>
+                                    <p className="text-sm italic text-center mt-2">{video.caption}</p>
                                   </div>
-                                )
-                              },
+                                ))}
+                              </div>
                             )}
-                          </div>
 
-                          <p className="text-lg leading-relaxed">
-                            Add more detailed text about your {section.title.toLowerCase()} experience here. You can
-                            include specific achievements, memorable moments, skills learned, or future goals in this
-                            area.
-                          </p>
-                        </div>
-                      </CollapsibleContent>
-                    </Collapsible>
+                            {/* Image grid – handles normal, special, and tall images */}
+                            <div className="grid md:grid-cols-2 gap-4 mb-6">
+                              {[...(section.content.specialImages ?? []), ...section.content.images].map(
+                                (image: { src: string; caption: string }, imgIndex: number) => {
+                                  const tallArt =
+                                    image.src === "/images/religious-artwork.jpeg" ||
+                                    image.src === "/images/feather-artwork.jpeg"
+                                  const tallSports = section.title === "Sports"
+                                  const tallSpecial =
+                                    section.title === "Enrichment Programs" &&
+                                    (section.content.specialImages ?? []).length > 0
+
+                                  return (
+                                    <div key={imgIndex} className="space-y-2">
+                                      <img
+                                        src={image.src || "/placeholder.svg"}
+                                        alt={`${section.title} ${imgIndex + 1}`}
+                                        className={`w-full object-cover rounded-lg ${
+                                          tallArt ? "h-96" : tallSports || tallSpecial ? "h-72" : "h-56"
+                                        }`}
+                                      />
+                                      <p className="text-sm italic">{image.caption}</p>
+                                    </div>
+                                  )
+                                },
+                              )}
+                            </div>
+
+                            <p className="text-lg leading-relaxed">
+                              Add more detailed text about your {section.title.toLowerCase()} experience here. You can
+                              include specific achievements, memorable moments, skills learned, or future goals in this
+                              area.
+                            </p>
+                          </div>
+                        )}
+                      </div>
+                    </div>
                   )
                 })}
               </div>
