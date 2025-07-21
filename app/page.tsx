@@ -539,8 +539,8 @@ export default function Component() {
             <div className="w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full mb-8 opacity-60"></div>
 
             {/* Dropdown Sections */}
-            <section>
-              <div className="space-y-8">
+            <section className="mt-8">
+              <div className="space-y-6">
                 {dropdownSections.map((section, index) => {
                   const isOpen = openDropdowns.includes(index)
 
@@ -574,7 +574,7 @@ export default function Component() {
                         </div>
                       </CollapsibleTrigger>
                       <CollapsibleContent className="mb-4">
-                        <div className="px-8 pb-6 mb-4 text-slate-700">
+                        <div className="px-8 pb-6 mb-0 text-slate-700">
 
                           <p className="text-lg leading-relaxed mb-8">{section.content.text}</p>
 
