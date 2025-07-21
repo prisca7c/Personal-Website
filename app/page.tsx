@@ -51,16 +51,27 @@ export default function Component() {
       title: "Enrichment Programs",
       description: "Academic development",
       content: {
+        text: "Participated in various enrichment programs including quantum computing courses, research projects, and specialized STEM programs. Engaged in advanced academic opportunities that develop technical skills and scientific understanding.",
         images: [
-          { src: "/images/kicad-pcb-design.png", caption: "KiCad PCB Design @Hack Club - Custom Macropad Electronics Project 2025" },
-          { src: "/images/nyasja-project.png", caption: "New York Academy of Sciences Junior Academy - Biodegradable Materials Research Project 2024" },
+          {
+            src: "/images/nyasja-project.png",
+            caption: "New York Academy of Sciences Junior Academy - Biodegradable Materials Research Project 2024",
+          },
           {
             src: "/images/qiskit-global-summer-school.png",
             caption: "Qiskit Global Summer School - IBM Quantum Computing 2025",
           },
-          { src: "/images/qsys-quantum-lecture.png", caption: "Quantum School for Young Students - Advanced Quantum Systems Course 2024" },
         ],
-        text: "Participated in various enrichment programs including quantum computing courses, research projects, and specialized STEM programs. Engaged in advanced academic opportunities that develop technical skills and scientific understanding.",
+        specialImages: [
+          {
+            src: "/images/kicad-pcb-design.png",
+            caption: "KiCad PCB Design @Hack Club - Custom Macropad Electronics Project 2025",
+          },
+          {
+            src: "/images/qsys-quantum-lecture.png",
+            caption: "Quantum School for Young Students - Advanced Quantum Systems Course 2024",
+          },
+        ],
       },
     },
     {
@@ -70,7 +81,10 @@ export default function Component() {
       content: {
         text: "Assistant coach at Caution Tape Robotics Club. Experience with VEX robotics, autonomous systems, and mentoring students in competitive robotics.",
         images: [
-          { src: "/images/robotics-workshop.jpeg", caption: "Lead Mechanical Designer & Builder trying to figure out how stuff works 2024" },
+          {
+            src: "/images/robotics-workshop.jpeg",
+            caption: "Lead Mechanical Designer & Builder trying to figure out how stuff works 2024",
+          },
           { src: "/images/vex-robot-competition.jpeg", caption: "V3 robot in action! 2025" },
         ],
       },
@@ -80,14 +94,26 @@ export default function Component() {
       title: "School Clubs",
       description: "Community engagement",
       content: {
-        text: "Logistics coordinator for Waterloo Nanotechnology Conference. Active participant in science fairs, community outreach events, and student organizations. Engaged in environmental initiatives and technology education programs.",
+        text: "Active participant in science fairs, community outreach events, and student organizations. Engaged in environmental initiatives and technology education programs.",
         images: [
-          { src: "/images/science-fair-project.jpeg", caption: "Co-Presidents @ Toronto Science Fair with our project FlightFusion 2025" },
+          {
+            src: "/images/science-fair-project.jpeg",
+            caption: "Co-Presidents @ Toronto Science Fair with our project FlightFusion 2025",
+          },
           { src: "/images/student-group-photo.jpeg", caption: "Engineering & Robotics Team Exec Photo 2024" },
-          { src: "/images/ewaste-collection.png", caption: "2000 lbs of E-waste succesfully donated to Quantum Lifecycle Partners 2023" },
-          { src: "/images/robotics-team-photo.jpeg", caption: "Robotics Team Group Photo with Competition Robots 2024" },
+          {
+            src: "/images/ewaste-collection.png",
+            caption: "2000 lbs of E-waste succesfully donated to Quantum Lifecycle Partners 2023",
+          },
+          {
+            src: "/images/robotics-team-photo.jpeg",
+            caption: "Robotics Team Group Photo with Competition Robots 2024",
+          },
           { src: "/images/school-performance.jpeg", caption: "School Dance Team Performance 2025" },
-          { src: "/images/community-outreach-event.jpeg", caption: "Community Outreach Event - Face Painting Station 2023", },
+          {
+            src: "/images/community-outreach-event.jpeg",
+            caption: "Community Outreach Event - Face Painting Station 2023",
+          },
         ],
       },
     },
@@ -98,13 +124,19 @@ export default function Component() {
       content: {
         text: "Active volunteer in political campaigns, robotics competitions, and community events. Dedicated to giving back through various service opportunities including field resetting at robotics competitions and campaign support.",
         images: [
+          { src: "/images/political-campaign-volunteer.jpeg", caption: "Political Campaign Volunteer Work 2022" },
           {
-            src: "/images/political-campaign-volunteer.jpeg",
-            caption: "Political Campaign Volunteer Work 2022",
+            src: "/images/robotics-demonstration.jpeg",
+            caption: "PuMP+ @ Ontario Science Centre PuMP+ - VEX IQ & V5 Robotics Demonstration 2023",
           },
-          { src: "/images/robotics-demonstration.jpeg", caption: "PuMP+ @ Ontario Science Centre PuMP+ - VEX IQ & V5 Robotics Demonstration 2023" },
-          { src: "/images/robotics-field-resetter.jpeg", caption: "FIRST Robotics Competition Field Resetter Volunteer 2023" },
-          { src: "/images/sudoku-championships.jpeg", caption: "Volunteering at Puzzle and Sudoku World Championships @Toronto, ON 2023" },
+          {
+            src: "/images/first-robotics-badge.jpeg",
+            caption: "FIRST Robotics Competition Field Resetter Volunteer Badge 2023",
+          },
+          {
+            src: "/images/sudoku-championships.jpeg",
+            caption: "Volunteering at Puzzle and Sudoku World Championships @Toronto, ON 2023",
+          },
         ],
       },
     },
@@ -116,15 +148,18 @@ export default function Component() {
         text: "Acrobatics enthusiast with focus on flexibility, strength training, and performance arts. Regular training in gymnastics and aerial arts. Competitive Chinese dance performer with multiple awards and international recognition.",
         images: [
           { src: "/images/acrobatics-progression.png", caption: "Firebird Jump Skill Development 2021-2024" },
-          {src: "/images/flexibility-progression.png", caption: "Scorpion Flexibility Skill Progression 2018-2020", },
-          {src: "/images/dance-competition-progression.png", caption: "Chinese Dance Competition Awards 2018-2024", },
+          { src: "/images/flexibility-progression.png", caption: "Scorpion Flexibility Skill Progression 2018-2020" },
+          { src: "/images/dance-competition-progression.png", caption: "Chinese Dance Competition Awards 2018-2024" },
           { src: "/images/international-stage-performance.jpeg", caption: "CNE International stage Performance 2022" },
           { src: "/images/martial-arts-group.jpeg", caption: "3rd Place Ottawa Wushu Provincial Championships 2023" },
-          { src: "/placeholder.svg?height=220&width=180", caption: "Add another sports image caption here" },
+          { src: "/images/dance-stage-performance.png", caption: "Chinese Traditional Dance Stage Performance 2024" },
         ],
         videos: [
           { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/recorded-1151425030597%20%282%29-xhLZxaNQwIRzXrVatLK9yQZX0fYrbm.mp4", caption: "Front Aerial 2023" },
-          { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-07-21%20at%2012.56.48%20AM-QJ38gm1lgbg1LS7m4niXevQYZqFM1B.mp4", caption: "Acro Sequence - Taoli World Dance Competition @Irvine, CA 2024" },
+          {
+            src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-07-21%20at%2012.56.48%20AM-QJ38gm1lgbg1LS7m4niXevQYZqFM1B.mp4",
+            caption: "Acro Sequence - Taoli World Dance Competition @Irvine, CA 2024",
+          },
         ],
       },
     },
@@ -135,12 +170,20 @@ export default function Component() {
       content: {
         text: "Passionate about visual arts including traditional and digital artwork, religious themes, and personal creative expression. Experience in detailed illustration and mixed media art.",
         images: [
-          { src: "/images/religious-artwork.jpeg", caption: "Doctrine of Salvation 2023 - 1st Place Abstract Watercolour Toronto Kiwanis Festival 2024" },
-          {src: "/images/feather-artwork.jpeg", caption: "Feather Art 2021", },
-          {src: "/images/prisca-personal-artwork.jpeg", caption: "About Me Name Art 2021", },
-          {src: "/images/skittles-artwork.jpeg", caption: "Skittles Acrylic Painting 2021" },
-          {src: "/images/kaleidoscopic-sculpture.jpeg", caption: "Kaleidoscopic Epipelagic 2021 - 1st Place Mixed Media Toronto Kiwanis Festival 2024", },
-          {src: "/placeholder.svg?height=220&width=180", caption: "Add another arts image caption here" },
+          { src: "/images/prisca-personal-artwork.jpeg", caption: "About Me Name Art 2021" },
+          { src: "/images/skittles-artwork.jpeg", caption: "Skittles Acrylic Painting 2021" },
+          {
+            src: "/images/kaleidoscopic-sculpture.jpeg",
+            caption: "Kaleidoscopic Epipelagic 2021 - 1st Place Mixed Media Toronto Kiwanis Festival 2024",
+          },
+          { src: "/images/mystical-artwork.jpeg", caption: "Mystical Eyes Pencil Drawing 2024" },
+        ],
+        specialImages: [
+          {
+            src: "/images/religious-artwork.jpeg",
+            caption: "Doctrine of Salvation 2023 - 1st Place Abstract Watercolour Toronto Kiwanis Festival 2024",
+          },
+          { src: "/images/feather-artwork.jpeg", caption: "Feather Art 2021" },
         ],
       },
     },
@@ -157,9 +200,10 @@ export default function Component() {
 
   // Gallery images with your real photos and captions
   const galleryImages = [
-    { src: "/images/gallery-10.jpeg", 
-      alt: "Conference presentation", 
-      caption: "Finalist Top 10 Demos - Undercity Hackathon @San Francisco, CA 2025" 
+    {
+      src: "/images/gallery-10.jpeg",
+      alt: "Conference presentation",
+      caption: "Finalist Top 10 Demos - Undercity Hackathon @San Francisco, CA 2025",
     },
     {
       src: "/images/gallery-5.png",
@@ -171,17 +215,12 @@ export default function Component() {
       alt: "Traditional dance performance",
       caption: "Grand Finalist Interview - Taoli World Dance Competition @Irvine, CA 2025",
     },
-    { src: "/images/vex-robotics.jpeg", 
-      alt: "VEX robotics work", 
-      caption: "VEX V5 Competition Preparation 2023" 
-    },
-    { src: "/images/gallery-1.jpeg", 
-      alt: "University friends group photo", 
-      caption: "Church Besties 2025" 
-    },
-    { src: "/images/gallery-9.png", 
-      alt: "Robotics competition", 
-      caption: "VEX V5 Robotics Competition @Newark, NJ 2024" 
+    { src: "/images/vex-robotics.jpeg", alt: "VEX robotics work", caption: "VEX V5 Competition Preparation 2023" },
+    { src: "/images/gallery-1.jpeg", alt: "University friends group photo", caption: "Church Besties 2025" },
+    {
+      src: "/images/gallery-9.png",
+      alt: "Robotics competition",
+      caption: "VEX V5 Robotics Competition @Newark, NJ 2024",
     },
     {
       src: "/images/lab-research.jpeg",
@@ -194,16 +233,15 @@ export default function Component() {
       caption: "Fun Times Cutting Metal & Polycarb 2024",
     },
     {
-      src: "/images/gallery-7.jpeg",
-      alt: "Academic competition achievements",
-      caption: "YMCI Toronto Science Fair Winners 2025",
+      src: "/images/formal-event-friends.jpeg",
+      alt: "Formal event with friends",
+      caption: "Formal Dance Event with Friends 2025",
     },
     {
-      src: "/images/dance-competition.jpeg",
-      alt: "Chinese dance competition",
-      caption: "Platinum Award & Original Choreography Award - Taoli World Dance Competition @Irvine, CA 2024",
+      src: "/images/student-group-selfie.jpeg",
+      alt: "Student group selfie",
+      caption: "University Student Group Selfie 2025",
     },
-    
   ]
 
   return (
@@ -220,58 +258,61 @@ export default function Component() {
         <div className="grid lg:grid-cols-12 gap-6">
           {/* Left Column - Content */}
           <div className="lg:col-span-8 space-y-8">
-            {/* Title Section */}
+            {/* Title Section with Social Links */}
             <section className="mb-12">
               <div className="mb-8">
-                <h1
-                  className="text-6xl font-bold mb-4 text-slate-800"
-                  style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
-                >
-                  Prisca Chien
-                  <div className="w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full mt-2 opacity-60"></div>
-                </h1>
-                <h2
-                  className="text-xl font-light text-slate-600"
-                  style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
-                >
-                  <span
-                    className="relative inline-block"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(120deg, rgba(147, 197, 253, 0.4) 0%, rgba(147, 197, 253, 0.4) 100%)",
-                      backgroundSize: "100% 40%",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "0 60%",
-                    }}
-                  >
-                    Aspiring Nanoelectronics Engineer
-                  </span>
-                  <div className="w-32 h-0.5 bg-gradient-to-r from-pink-300 to-blue-300 rounded-full mt-1 opacity-60"></div>
-                </h2>
-              </div>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex-1">
+                    <h1
+                      className="text-6xl font-bold mb-4 text-slate-800"
+                      style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
+                    >
+                      Prisca Chien
+                      <div className="w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full mt-2 opacity-60"></div>
+                    </h1>
+                    <h2
+                      className="text-xl font-light text-slate-600 mb-4"
+                      style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
+                    >
+                      <span
+                        className="relative inline-block"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(120deg, rgba(147, 197, 253, 0.4) 0%, rgba(147, 197, 253, 0.4) 100%)",
+                          backgroundSize: "100% 40%",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "0 60%",
+                        }}
+                      >
+                        Aspiring Nanoelectronics Engineer
+                      </span>
+                      <div className="w-32 h-0.5 bg-gradient-to-r from-pink-300 to-blue-300 rounded-full mt-1 opacity-60"></div>
+                    </h2>
+                    {/* Location */}
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-5 h-5 text-blue-500" />
+                      <span className="text-lg text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                        Toronto, Ontario, Canada
+                      </span>
+                    </div>
+                  </div>
 
-              {/* Location */}
-              <div className="flex items-center gap-2 mb-6">
-                <MapPin className="w-5 h-5 text-blue-500" />
-                <span className="text-lg text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                  Toronto, Ontario, Canada
-                </span>
-              </div>
-
-              {/* Social Links under name */}
-              <div className="flex gap-4 mb-8">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target={social.href.startsWith("http") ? "_blank" : "_self"}
-                    rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="p-3 rounded-xl border-2 border-blue-200/60 bg-white/60 hover:bg-white/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
+                  {/* Social Links beside headline */}
+                  <div className="flex gap-3 ml-8">
+                    {socialLinks.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.href}
+                        target={social.href.startsWith("http") ? "_blank" : "_self"}
+                        rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                        className="p-3 rounded-xl border-2 border-blue-200/60 bg-white/60 hover:bg-white/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                        aria-label={social.label}
+                      >
+                        <social.icon className="w-5 h-5" />
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -292,22 +333,6 @@ export default function Component() {
                     UWaterloo Nanotechnology Engineering student
                   </span>{" "}
                   passionate in materials science, quantum, mechatronics, hackathons, acrobatics, and Chinese dance.
-                </p>
-                <p>
-                  Currently a{" "}
-                  <span
-                    className="relative inline-block"
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(120deg, rgba(251, 207, 232, 0.4) 0%, rgba(251, 207, 232, 0.4) 100%)",
-                      backgroundSize: "100% 40%",
-                      backgroundRepeat: "no-repeat",
-                      backgroundPosition: "0 60%",
-                    }}
-                  >
-                    Logistics Coordinator
-                  </span>{" "}
-                  @ Waterloo Nanotechnology Conference.
                 </p>
               </div>
             </section>
@@ -340,7 +365,6 @@ export default function Component() {
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Working on{" "}
                       <span
                         className="relative inline-block"
                         style={{
@@ -351,23 +375,19 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        quantum materials research
-                      </span>
-                      , developing sustainable nanotechnology solutions
+                        Organizing the Waterloo Nanotechnology Conference
+                      </span>{" "}
+                      for 250+ attendees as a Logistics Coordinator
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Leading robotics club initiatives and mentoring students</span>
+                    <span>5x Hackathon Awardee</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Active in hackathon participation and conference organization</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Exploring applications of{" "}
+                      Building a{" "}
                       <span
                         className="relative inline-block"
                         style={{
@@ -378,10 +398,14 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        nanoscale engineering
+                        customized electric wheelchair
                       </span>{" "}
-                      in renewable energy systems
+                      from scratch using PCBs and 3D prints
                     </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Qiskit Global Summer School - NASA Space Apps Challenger</span>
                   </li>
                 </ul>
               </div>
@@ -428,23 +452,23 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        VEX robotics competitions
+                        Toronto Science Fair School Club President
                       </span>{" "}
-                      and autonomous systems development
+                      2024-2025; successfully mentored 5 medalists
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Materials science research publications and laboratory work</span>
+                    <span>Engineering & Robotics School Club Co-President and Competition Team Mentor 2024-2025</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Successful hackathon wins and innovative project development</span>
+                    <span>Hosted CETA Robotics Competition 2025 @York Mills CI</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      Built foundation in technical and leadership skills through{" "}
+                      Co-Captain, Lead Mechanical Designer, Lead Scouter, Builder, and Backup Programmer of my{" "}
                       <span
                         className="relative inline-block"
                         style={{
@@ -455,15 +479,23 @@ export default function Component() {
                           backgroundPosition: "0 60%",
                         }}
                       >
-                        conference coordination
+                        VEX V5 Robotics Competition Team (839)
                       </span>{" "}
-                      and STEM education initiatives
+                      2023-2025
                     </span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Division Quarterfinalist @ VEX Robotics World Championship 2025</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>World Platinum Grand Finalist Recipient @ Taoli World Dance Competition 2024</span>
                   </li>
                 </ul>
               </div>
 
-              {/* Three Navigation Buttons - Updated Colors */}
+              {/* Three Navigation Buttons - Fixed Styling */}
               <div className="flex gap-4 flex-wrap">
                 <Link href="/experience">
                   <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-gradient-to-r from-white/60 to-blue-50/60 hover:from-white/80 hover:to-blue-50/80 text-slate-600 hover:text-slate-800 backdrop-blur-sm shadow-lg transition-all duration-300 hover:scale-105">
@@ -549,24 +581,57 @@ export default function Component() {
                             </div>
                           )}
 
-                          {/* Images - Portrait orientation with special handling for religious and feather artwork */}
-                          <div className="grid md:grid-cols-2 gap-4 mb-6">
-                            {section.content.images.map((image, imgIndex) => (
-                              <div key={imgIndex} className="space-y-2 my-0 mx-0 leading-[1.rem5]">
-                                <img
-                                  src={image.src || "/placeholder.svg"}
-                                  alt={`${section.title} ${imgIndex + 1}`}
-                                  className={`w-full object-cover rounded-lg ${
-                                    image.src === "/images/religious-artwork.jpeg" ||
-                                    image.src === "/images/feather-artwork.jpeg"
-                                      ? "h-72"
-                                      : "h-56"
-                                  }`}
-                                />
-                                <p className="text-sm italic">{image.caption}</p>
+                          {/* Special side-by-side layout for Enrichment Programs */}
+                          {section.content.specialImages && (
+                            <div className="mb-6">
+                              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                                {section.content.specialImages.map((image, imgIndex) => (
+                                  <div key={imgIndex} className="space-y-2">
+                                    <img
+                                      src={image.src || "/placeholder.svg"}
+                                      alt={`${section.title} special ${imgIndex + 1}`}
+                                      className="w-full h-72 object-cover rounded-lg"
+                                    />
+                                    <p className="text-sm italic">{image.caption}</p>
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
+                              <div className="grid md:grid-cols-2 gap-4">
+                                {section.content.images.map((image, imgIndex) => (
+                                  <div key={imgIndex} className="space-y-2">
+                                    <img
+                                      src={image.src || "/placeholder.svg"}
+                                      alt={`${section.title} ${imgIndex + 1}`}
+                                      className="w-full h-56 object-cover rounded-lg"
+                                    />
+                                    <p className="text-sm italic">{image.caption}</p>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {/* Special layout for Visual Arts with taller religious and feather artwork */}
+                          {section.title === "Visual Arts" && section.content.specialImages && (
+                            <div className="mb-6">
+                              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                                {section.content.specialImages.map((image, imgIndex) => (
+                                                           {!section.content.specialImages && (
+                            <div className="grid md:grid-cols-2 gap-4 mb-6">
+                              {section.content.images.map((image, imgIndex) => (
+                                <div key={imgIndex} className="space-y-2">
+                                  <img
+                                    src={image.src || "/placeholder.svg"}
+                                    alt={`${section.title} ${imgIndex + 1}`}
+                                    className={`w-full object-cover rounded-lg ${
+                                      section.title === "Sports" ? "h-72" : "h-56"
+                                    }`}
+                                  />
+                                  <p className="text-sm italic">{image.caption}</p>
+                                </div>
+                              ))}
+                            </div>
+                          )}
 
                           <p className="text-lg leading-relaxed">
                             Add more detailed text about your {section.title.toLowerCase()} experience here. You can
@@ -670,7 +735,9 @@ export default function Component() {
               <div className="space-y-3">
                 <div>
                   <p className="font-semibold mb-1">Technical</p>
-                  <p className="text-sm">Python, MATLAB, Arduino, C/C++, Fusion360, KiCad, Carbide Create, Shapr3D, Tinkercad, OnShape</p>
+                  <p className="text-sm">
+                    Python, MATLAB, Arduino, C/C++, Fusion360, KiCad, Carbide Create, Shapr3D, Tinkercad, OnShape
+                  </p>
                 </div>
                 <div>
                   <p className="font-semibold mb-1">Research</p>
@@ -708,7 +775,7 @@ export default function Component() {
               <p className="text-sm mb-4 text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                 Download my complete resume with detailed experience and projects.
               </p>
-              <a href="/resume.pdf" download>
+              <a href="/resume.pdf" download="Prisca_Chien_Resume.pdf">
                 <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-500 hover:to-cyan-500 text-white shadow-lg transition-all duration-300 hover:scale-105">
                   <Download className="w-4 h-4 mr-2" />
                   Download PDF
@@ -744,7 +811,9 @@ export default function Component() {
                 className="text-sm italic text-center text-slate-500"
                 style={{ fontFamily: "'M PLUS 1p', sans-serif" }}
               >
-                "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. And the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus." - Philippians 4:6-7
+                "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving,
+                present your requests to God. And the peace of God, which transcends all understanding, will guard your
+                hearts and your minds in Christ Jesus." - Philippians 4:6-7
               </p>
             </div>
           </div>
