@@ -331,19 +331,6 @@ const achievements = [
       },
     ],
   },
-  {
-    category: "Intellectual Competitions",
-    icon: Brain,
-    color: "from-indigo-400 to-purple-400",
-    items: [
-      {
-        title: "Participant - 30th Puzzle & 16th Sudoku World Championships",
-        date: "2024",
-        description: "Competed at the international level in puzzle and sudoku world championships",
-        level: "International",
-      },
-    ],
-  },
 ]
 
 const levelColors = {

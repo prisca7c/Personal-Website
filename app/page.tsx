@@ -211,7 +211,7 @@ export default function Component() {
         {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-07-21%20at%204.46.45%20PM-TSrYqiAFomozzzndm1lNBtXglwVNKs.mp4",
       alt: "Robot in action",
-      caption: "Peashooter Flywheel Demo - Undercity Hackathon 2025",
+      caption: "Flywheel Demo - Undercity Hackathon 2025",
       type: "video",
     },
     {
@@ -223,7 +223,7 @@ export default function Component() {
     {
       src: "/images/gallery-5.png",
       alt: "Engineering project collaboration",
-      caption: "Overused Hack Club Media Image",
+      caption: "1st Place Peashooter - Apocalypse Hackathon 2024",
       type: "image",
     },
     {
@@ -253,7 +253,7 @@ export default function Component() {
     {
       src: "/images/microscopic-material.jpeg",
       alt: "Microscopic Material",
-      caption: "Microscopic view of a material sample 2024",
+      caption: "15μ Urine Secretion Droplet on Fruit Fly Malpighian Tubule tied to Pin",
       type: "image",
     },
     {
