@@ -407,21 +407,24 @@ export default function AchievementsPage() {
                 </h2>
               </div>
 
-              {/* Achievement Items */}
-              <div className="space-y-4">
+              {/* Achievement Items - New Compact Layout */}
+              <div className="space-y-3">
                 {category.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="border-l-4 border-blue-300 pl-4 py-1">
-                    <div className="flex items-start justify-between mb-1">
+                  <div
+                    key={itemIndex}
+                    className="bg-white/50 rounded-lg p-4 border border-blue-100 shadow-sm flex flex-col gap-2"
+                  >
+                    <div className="flex items-center justify-between">
                       <h3 className="text-base font-semibold text-slate-800 leading-tight">{item.title}</h3>
-                      <div className="flex items-center gap-1 text-slate-500 text-xs ml-2">
+                      <div className="flex items-center gap-1 text-slate-500 text-xs flex-shrink-0">
                         <Calendar className="w-3 h-3" />
                         {item.date}
                       </div>
                     </div>
 
-                    <p className="text-slate-700 mb-2 leading-relaxed text-sm">{item.description}</p>
+                    <p className="text-slate-700 text-sm">{item.description}</p>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap gap-2 mt-1">
                       <span
                         className={`px-2 py-1 rounded-full text-xs font-medium border ${
                           levelColors[item.level as keyof typeof levelColors]
