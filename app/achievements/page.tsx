@@ -377,7 +377,7 @@ export default function AchievementsPage() {
           {achievements.map((category, categoryIndex) => (
             <div
               key={categoryIndex}
-              className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-200/60 shadow-lg"
+              className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 border-2 border-blue-200/60 shadow-lg self-start"
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-4">

@@ -170,7 +170,7 @@ export default function Component() {
       title: "Visual Arts",
       description: "Creative expression",
       content: {
-        text: "Majority of these traditional visual arts were made in Gr. 9. Expereinced in illustration, painting, and mixed media. ",
+        text: "5/6 ORIGINAL ARTWORKS. Expereinced in illustration, painting, and mixed media. ",
         images: [
           { src: "/images/prisca-personal-artwork.jpeg", caption: "What it Means to be Prisca 2021" },
           { src: "/images/skittles-artwork.jpeg", caption: "Skittles Acrylic Painting 2021" },
@@ -342,9 +342,9 @@ export default function Component() {
               <div className="text-lg leading-relaxed text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
                 <p className="mb-4 py-0 mt-0">
                   <span className="bg-purple-200/40 px-1 py-0.5 rounded-md">
-                    Uwaterloo Nanotechnology Engineering student
+                   UWaterloo Nanotechnology Engineering student
                   </span>{" "}
-                  passionate in materials science, quantum, mechatronics, hackathons, and Chinese dance.
+                  passionate in materials science, quantum, mechatronics, hackathons, visual arts, and Chinese dance.
                 </p>
               </div>
             </section>
