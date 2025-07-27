@@ -11,7 +11,7 @@ const achievements = [
     color: "from-purple-400 to-indigo-400",
     items: [
       {
-        title: "Paul B. Spafford Entrance Scholarship",
+        title: "Paul B. Spafford Entrance Scholarship ($5000)",
         date: "Jun 2025",
         description:
           "Two scholarships, valued at up to $5,000 each, awarded to outstanding undergraduate first-year students entering Nanotechnology Engineering. This fund has been established by Paul B. Spafford.",
@@ -32,7 +32,7 @@ const achievements = [
         level: "Regional",
       },
       {
-        title: "Best Use of GenAI - UTRAHacks 2025",
+        title: "Best Use of GenAI - UTRAHacks 2025 ($60)",
         date: "2025",
         description: "Awarded for innovative application of generative AI technology",
         level: "University",
@@ -62,19 +62,19 @@ const achievements = [
         level: "Regional",
       },
       {
-        title: "2nd Place - Hack the Ridge 2024",
+        title: "2nd Place - Hack the Ridge 2024 ($1536)",
         date: "2024",
         description: "Runner-up in competitive programming hackathon",
         level: "Regional",
       },
       {
-        title: "1st Place - Apocalypse Hackathon 2024",
+        title: "1st Place - Apocalypse Hackathon 2024 ($250)",
         date: "2024",
         description: "First place winner in disaster preparedness themed hackathon",
         level: "Regional",
       },
       {
-        title: "1st Place - SvRobotics Coding Competition 2021",
+        title: "1st Place - SvRobotics Coding Competition 2021 ($50)",
         date: "2021",
         description: "Winner of programming competition in robotics context",
         level: "Local",
@@ -117,7 +117,7 @@ const achievements = [
         level: "Academic",
       },
       {
-        title: "Fish Art Contest Winner - NTCS 2021",
+        title: "Fish Art Contest Winner - NTCS 2021 ($25)",
         date: "2021",
         description: "Winner of school art competition",
         level: "Academic",
