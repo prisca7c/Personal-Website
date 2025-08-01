@@ -208,7 +208,13 @@ export default function Component() {
       caption: "Finalist Top 10 Demos - Undercity Hackathon @San Francisco, CA 2025",
       type: "image",
     },
-        {
+    {
+      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/d84d50014f3c763e20f84c45d50b902c72ce6dd0_screenshot_2025-07-31_at_6.04.13___pm.png",
+      alt: "KiCad PCB Layout",
+      caption: "PCB Design for Custom Electric Wheelchair 2025",
+      type: "image",
+    },
+    {
       src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Video%202025-07-21%20at%204.46.45%20PM-TSrYqiAFomozzzndm1lNBtXglwVNKs.mp4",
       alt: "Robot in action",
       caption: "Flywheel Demo - Undercity Hackathon 2025",
@@ -233,21 +239,15 @@ export default function Component() {
       type: "video",
     },
     {
-      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/d84d50014f3c763e20f84c45d50b902c72ce6dd0_screenshot_2025-07-31_at_6.04.13___pm.png",
-      alt: "KiCad PCB Layout",
-      caption: "PCB Design for Custom Electric Wheelchair 2025",
+      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
+      alt: "KiCad Schematic Diagram",
+      caption: "KiCad Schematic for Custom Electric Wheelchair 2025",
       type: "image",
     },
     {
       src: "/images/dance-performance.jpeg",
       alt: "Traditional dance performance",
       caption: "World Grand Finalists Interview - Taoli World Dance Competition @Irvine, CA 2025",
-      type: "image",
-    },
-    {
-      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
-      alt: "KiCad Schematic Diagram",
-      caption: "KiCad Schematic for Custom Electric Wheelchair 2025",
       type: "image",
     },
     {
