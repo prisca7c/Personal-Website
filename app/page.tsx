@@ -11,7 +11,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Instagram,
   Twitter,
   Bot,
   Users,
@@ -43,7 +42,6 @@ export default function Component() {
     { icon: Github, href: "https://github.com/prisca7c", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/prisca-chien-292979220/", label: "LinkedIn" },
     { icon: Mail, href: "mailto:prisca.meredith.chien@gmail.com", label: "Email" },
-    { icon: Instagram, href: "https://www.instagram.com/priscaaaap/", label: "Instagram" },
     { icon: Twitter, href: "https://x.com/prisca59885764", label: "X (Twitter)" },
   ]
 
