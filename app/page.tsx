@@ -233,9 +233,9 @@ export default function Component() {
       type: "video",
     },
     {
-      src: "/images/kicad-pcb-layout.png",
+      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/d84d50014f3c763e20f84c45d50b902c72ce6dd0_screenshot_2025-07-31_at_6.04.13___pm.png",
       alt: "KiCad PCB Layout",
-      caption: "PCB Design for Custom Macropad 2025",
+      caption: "PCB Design for Custom Electric Wheelchair 2025",
       type: "image",
     },
     {
@@ -245,9 +245,9 @@ export default function Component() {
       type: "image",
     },
     {
-      src: "/images/kicad-schematic.png",
+      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
       alt: "KiCad Schematic Diagram",
-      caption: "KiCad Schematic for Custom Macropad 2025",
+      caption: "KiCad Schematic for Custom Electric Wheelchair 2025",
       type: "image",
     },
     {
