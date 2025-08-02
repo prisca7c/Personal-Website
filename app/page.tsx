@@ -58,7 +58,7 @@ export default function Component() {
             caption: "New York Academy of Sciences Junior Academy - Biodegradable Materials Research Project 2024",
           },
           {
-            src: "/images/qiskit-global-summer-school.png",
+            src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/72bff354e35e66b12c1d70bb91ef732a28043def_screenshot_2025-07-25_at_7.22.20___am.png",
             caption: "Qiskit Global Summer School - IBM Quantum Computing 2025",
           },
         ],
