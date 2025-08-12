@@ -780,7 +780,7 @@ export default function Component() {
         <div className="container mx-auto px-6">
           <div className="flex justify-start">
             <p className="text-sm text-slate-500" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-              Last updated: 21 Jul 2025
+              Last updated: 12 Aug 2025
             </p>
           </div>
           <div className="flex justify-end">
