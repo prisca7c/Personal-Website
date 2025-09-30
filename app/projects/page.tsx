@@ -32,6 +32,17 @@ const mockProjects: Project[] = [
   },
   {
     id: 28,
+    name: "HONK O' CLOCK",
+    description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
+    image: "/placeholder.svg?height=200&width=300",
+    codeLink: "https://github.com/swaggy-mandy/goosealarm",
+    demoLink: "https://devpost.com/software/project-name-luc8ph?ref_content=user-portfolio&ref_feature=in_progress",
+    date: "2025-09-26",
+    type: "hackathon",
+    tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+  },
+  {
+    id: 28,
     name: "Aura-67 (Hack the North 2025)",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
