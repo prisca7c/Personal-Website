@@ -207,7 +207,7 @@ export default function Component() {
       type: "image",
     },
     {
-      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/d84d50014f3c763e20f84c45d50b902c72ce6dd0_screenshot_2025-07-31_at_6.04.13___pm.png",
+      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/e3f72580cfd4aa6670c64818b1d9034469bf589b_screenshot_2025-09-30_at_5.30.12___pm.png",
       alt: "KiCad PCB Layout",
       caption: "PCB Design for Custom Electric Wheelchair 2025",
       type: "image",
@@ -780,7 +780,7 @@ export default function Component() {
         <div className="container mx-auto px-6">
           <div className="flex justify-start">
             <p className="text-sm text-slate-500" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-              Last updated: 12 Aug 2025
+              Last updated: 30 Sep 2025
             </p>
           </div>
           <div className="flex justify-end">
