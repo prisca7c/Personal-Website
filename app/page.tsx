@@ -403,7 +403,7 @@ export default function Component() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>5x Hackathon Awardee</span>
+                    <span>6x Hackathon Awardee</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
@@ -415,7 +415,7 @@ export default function Component() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Qiskit Global Summer School</span>
+                    <span>HardHaq Hackathon Organizer</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
