@@ -32,6 +32,17 @@ const mockProjects: Project[] = [
   },
   {
     id: 28,
+    name: "Chordially",
+    description: "Master guitar techniques with real-time hand tracking, personalized feedback, and an intelligent AI tutor that adapts to your learning pace.",
+    image: "/placeholder.svg?height=200&width=300",
+    codeLink: "https://github.com/nathanchiu05/Computer-Vision-Guitar-Tutor",
+    demoLink: "https://devpost.com/software/ai-music-tutor",
+    date: "2025-10-05",
+    type: "hackathon",
+    tags: ["Software", "Web Development", "AI"],
+  },
+  {
+    id: 28,
     name: "HONK O' CLOCK",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
