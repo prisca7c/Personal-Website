@@ -59,7 +59,7 @@ const achievements = [
         title: "Inspire Award - Mecha Mayhem VEX V5 Signature Event 2025",
         date: "Feb 2025",
         description: "Awarded for inspiring team collaboration and community impact",
-        level: "Regional",
+        level: "International",
       },
       {
         title: "Bronze Medal - Toronto Science Fair 2025",
@@ -77,7 +77,7 @@ const achievements = [
         title: "1st Place - Apocalypse Hackathon 2024 ($250)",
         date: "May 2024",
         description: "First place winner in disaster preparedness themed hackathon",
-        level: "Regional",
+        level: "International",
       },
       {
         title: "1st Place - SvRobotics Coding Competition 2021 ($50)",
