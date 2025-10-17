@@ -415,11 +415,11 @@ export default function Component() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>HardHaq Hackathon Organizer & Technical Beta Tester</span>
+                    <span>University of Waterloo Lead Student Representative for the North American Quantum Consortium</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>NASA Space Apps Waterloo Challenger</span>
+                    <span>Organizing HardHaQ (quantum hardware hackathon) and beta-testing problem tracks</span>
                   </li>
                 </ul>
               </div>
