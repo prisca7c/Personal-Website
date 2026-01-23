@@ -370,7 +370,7 @@ export default function Component() {
                 </Button>
               </Link>
               
-              <a href="/resume-prisca-chien.pdf" download="Prisca_Chien_Resume.pdf">
+              <a href="/resume-prisca-chien.pdf" download="">
                 <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-white hover:bg-white text-black hover:text-black backdrop-blur-sm shadow-lg shadow-yellow-300/50 hover:shadow-yellow-400/70 transition-all duration-300 hover:scale-105">
                   <Download className="w-5 h-5 mr-2" />
                   View Resume
