@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft, Github, ExternalLink, Calendar, Tag, ChevronDown } from "lucide-react"
+import { ArrowLeft, Github, ExternalLink, Calendar, Tag, ChevronDown, Award } from "lucide-react"
 
 interface Project {
   id: number
@@ -15,7 +15,8 @@ interface Project {
   date: string
   type: string
   tags: string[]
-  award: string
+  award?: string
+  link: string // External link to the project
 }
 
 const mockProjects: Project[] = [
@@ -29,9 +30,10 @@ const mockProjects: Project[] = [
     date: "2025-07-27",
     type: "hardware",
     tags: ["Software", "Web Development", "Hardware", "Firmware", "Electronics", "Robotics", "AI"],
+    link: "#", // Add your external link here
   },
   {
-    id: 28,
+    id: 29,
     name: "Chordially",
     description: "Master guitar techniques with real-time hand tracking, personalized feedback, and an intelligent AI tutor that adapts to your learning pace.",
     image: "/placeholder.svg?height=200&width=300",
@@ -40,9 +42,10 @@ const mockProjects: Project[] = [
     date: "2025-10-05",
     type: "hackathon",
     tags: ["Software", "Web Development", "AI"],
+    link: "#", // Add your external link here
   },
   {
-    id: 28,
+    id: 30,
     name: "HONK O' CLOCK",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
@@ -51,9 +54,10 @@ const mockProjects: Project[] = [
     date: "2025-09-26",
     type: "hackathon",
     tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+    link: "#", // Add your external link here
   },
   {
-    id: 28,
+    id: 31,
     name: "Aura-67 (Hack the North 2025)",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
@@ -62,6 +66,7 @@ const mockProjects: Project[] = [
     date: "2025-09-12",
     type: "hackathon",
     tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+    link: "#", // Add your external link here
   },
   {
     id: 13,
@@ -73,7 +78,8 @@ const mockProjects: Project[] = [
     date: "2024-05-17",
     type: "hackathon",
     tags: ["Software", "Web Development"],
-    award: "1st Place"
+    award: "1st Place",
+    link: "#", // Add your external link here
   },
   {
     id: 14,
@@ -86,7 +92,8 @@ const mockProjects: Project[] = [
     date: "2025-07-11",
     type: "hackathon",
     tags: ["Software", "Robotics"],
-    award: "Finalist, Top 7"
+    award: "Finalist, Top 7",
+    link: "#", // Add your external link here
   },
   {
     id: 15,
@@ -98,18 +105,20 @@ const mockProjects: Project[] = [
     date: "2024-11-01",
     type: "research",
     tags: ["Materials Science", "Environmental", "Research"],
+    link: "#", // Add your external link here
   },
   {
     id: 16,
     name: "Baylee (UTRAHacks 2025)",
-    description: "Let’s revolutionize health care, one emotion at a time.",
+    description: "Let's revolutionize health care, one emotion at a time.",
     image: "/placeholder.svg?height=200&width=300",
     codeLink: "https://github.com/Badbird5907/UTRA2025",
     demoLink: "https://devpost.com/software/baylee",
     date: "2025-02-01",
     type: "hackathon",
     tags: ["Software", "Hardware", "Firmware", "Electrical"],
-    award: "Best Use of Gen AI"
+    award: "Best Use of Gen AI",
+    link: "#", // Add your external link here
   },
   {
     id: 17,
@@ -121,7 +130,8 @@ const mockProjects: Project[] = [
     date: "2023-02-17",
     type: "hackathon",
     tags: ["Software", "Hardware", "Firmware"],
-    award: "Finalist, Top 10"
+    award: "Finalist, Top 10",
+    link: "#", // Add your external link here
   },
   {
     id: 18,
@@ -133,33 +143,9 @@ const mockProjects: Project[] = [
     date: "2024-12-01",
     type: "hackathon",
     tags: ["Software", "AI"],
-    award: "2nd Place"
+    award: "2nd Place",
+    link: "#", // Add your external link here
   },
-
-  /*
-  {
-    id: 19,
-    name: "BeanWalker",
-    description: "A project named BeanWalker.",
-    image: "/placeholder.svg?height=200&width=300",
-    codeLink: "#",
-    demoLink: "#",
-    date: "2025-06-01",
-    type: "software",
-    tags: ["Software"],
-  },
-  {
-    id: 20,
-    name: "Popp.n Bean",
-    description: "A project named Popp.n Bean.",
-    image: "/placeholder.svg?height=200&width=300",
-    codeLink: "#",
-    demoLink: "#",
-    date: "2025-07-01",
-    type: "software",
-    tags: ["Software"],
-  },
-  */
   {
     id: 21,
     name: "Custom Macropad",
@@ -169,7 +155,8 @@ const mockProjects: Project[] = [
     demoLink: "N/A",
     date: "2025-06-26",
     type: "hardware",
-    tags: ["Hardware", "Electronics", ""],
+    tags: ["Hardware", "Electronics"],
+    link: "#", // Add your external link here
   },
   {
     id: 22,
@@ -181,6 +168,7 @@ const mockProjects: Project[] = [
     date: "2025-05-01",
     type: "hardware",
     tags: ["Software", "Hardware", "Firmware", "Electronics", "Robotics", "3D Print"],
+    link: "#", // Add your external link here
   },
   {
     id: 23,
@@ -192,6 +180,7 @@ const mockProjects: Project[] = [
     date: "2024-08-01",
     type: "research",
     tags: ["Biology", "Data Analysis", "Bioinformatics"],
+    link: "#", // Add your external link here
   },
   {
     id: 24,
@@ -203,6 +192,7 @@ const mockProjects: Project[] = [
     date: "2024-09-01",
     type: "research",
     tags: ["Chemistry", "Pharmaceuticals"],
+    link: "#", // Add your external link here
   },
   {
     id: 25,
@@ -214,6 +204,7 @@ const mockProjects: Project[] = [
     date: "2021-07-19",
     type: "hardware",
     tags: ["Electronics", "Game Development"],
+    link: "#", // Add your external link here
   },
   {
     id: 26,
@@ -225,6 +216,7 @@ const mockProjects: Project[] = [
     date: "2020-06-23",
     type: "software",
     tags: ["API", "Web Development"],
+    link: "#", // Add your external link here
   },
   {
     id: 27,
@@ -236,6 +228,7 @@ const mockProjects: Project[] = [
     date: "2024-11-01",
     type: "research",
     tags: ["Chemistry", "Computational", "Drug Discovery"],
+    link: "#", // Add your external link here
   },
 ]
 
@@ -261,7 +254,7 @@ export default function ProjectsPage() {
 
   return (
     <div
-      className={`min-h-screen transition-all duration-700 ease-in-out bg-gradient-to-br from-rose-50 via-purple-50 to-blue-50`}
+      className="min-h-screen bg-gradient-to-br from-rose-50 via-purple-50 to-blue-50"
       style={{ fontFamily: "'Noto Sans', 'M PLUS 1p', sans-serif" }}
     >
       <div className="container mx-auto px-6 py-12 max-w-7xl">
@@ -272,14 +265,14 @@ export default function ProjectsPage() {
               <Button
                 variant="ghost"
                 size="lg"
-                className={`transition-all duration-300 text-slate-600 hover:text-slate-800 hover:bg-white/50`}
+                className="transition-all duration-300 text-slate-600 hover:text-slate-800 hover:bg-white/50"
               >
                 <ArrowLeft className="w-5 h-5 mr-2" />
                 Back to Home
               </Button>
             </Link>
             <h1
-              className={`text-5xl font-bold transition-colors duration-500 text-slate-800`}
+              className="text-5xl font-bold text-slate-800"
               style={{ fontFamily: "'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif" }}
             >
               Projects
@@ -293,16 +286,14 @@ export default function ProjectsPage() {
             <Button
               onClick={() => setIsFilterOpen(!isFilterOpen)}
               variant="outline"
-              className={`transition-all duration-300 border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90`}
+              className="transition-all duration-300 border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90"
             >
               <Tag className="w-4 h-4 mr-2" />
               Filter: {filterType === "all" ? "All Types" : filterType}
               <ChevronDown className="w-4 h-4 ml-2" />
             </Button>
             {isFilterOpen && (
-              <div
-                className={`absolute top-full left-0 mt-2 w-48 rounded-lg border shadow-lg z-10 border-purple-200 bg-white/95 backdrop-blur-sm`}
-              >
+              <div className="absolute top-full left-0 mt-2 w-48 rounded-lg border shadow-lg z-10 border-purple-200 bg-white/95 backdrop-blur-sm">
                 {projectTypes.map((type) => (
                   <button
                     key={type}
@@ -359,66 +350,100 @@ export default function ProjectsPage() {
           </Button>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Projects Grid - Rectangular Boxes */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sortedAndFilteredProjects.map((project) => (
-            <div
+            <a
               key={project.id}
-              className={`rounded-2xl border-2 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl border-purple-200 bg-gradient-to-br from-white/70 to-purple-50/70 backdrop-blur-sm shadow-lg`}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
             >
-              <img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-48 object-cover" />
-              <div className="p-6">
+              <div className="p-6 rounded-2xl border-2 border-purple-200 bg-gradient-to-br from-white/70 to-purple-50/70 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer h-full flex flex-col">
+                {/* Type Badge and Date */}
                 <div className="flex items-center justify-between mb-3">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700`}>
+                  <span className="px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700">
                     {project.type}
                   </span>
-                  <span className={`text-sm text-slate-500`}>{new Date(project.date).toLocaleDateString()}</span>
+                  <span className="text-sm text-slate-500">{new Date(project.date).toLocaleDateString()}</span>
                 </div>
 
+                {/* Award Badge */}
+                {project.award && (
+                  <div className="flex items-center gap-2 mb-3">
+                    <Award className="w-4 h-4 text-yellow-500" />
+                    <span className="text-sm font-semibold text-yellow-600">{project.award}</span>
+                  </div>
+                )}
+
+                {/* Title */}
                 <h3
-                  className={`text-xl font-bold mb-3 transition-colors duration-500 text-slate-800`}
+                  className="text-xl font-bold mb-3 text-slate-800"
                   style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
                 >
                   {project.name}
                 </h3>
 
+                {/* Description */}
                 <p
-                  className={`text-sm mb-4 leading-relaxed transition-colors duration-500 text-slate-600`}
+                  className="text-sm mb-4 leading-relaxed text-slate-600 flex-grow"
                   style={{ fontFamily: "'M PLUS 1p', sans-serif" }}
                 >
                   {project.description}
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, index) => (
-                    <span key={index} className={`px-2 py-1 rounded text-xs bg-slate-100 text-slate-600`}>
+                {/* Tags */}
+                <div className="flex flex-wrap gap-1 mb-4">
+                  {project.tags.slice(0, 4).map((tag, index) => (
+                    <span key={index} className="px-2 py-1 rounded text-xs bg-slate-100 text-slate-600">
                       {tag}
                     </span>
                   ))}
+                  {project.tags.length > 4 && (
+                    <span className="px-2 py-1 rounded text-xs bg-slate-100 text-slate-600">
+                      +{project.tags.length - 4} more
+                    </span>
+                  )}
                 </div>
 
-                <div className="flex gap-3">
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex-1 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105 text-center text-sm font-semibold border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90`}
-                  >
-                    <Github className="w-4 h-4 inline mr-2" />
-                    Code
-                  </a>
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex-1 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-center text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600`}
-                  >
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Demo
-                  </a>
+                {/* Quick Links */}
+                <div className="flex gap-2 mb-4">
+                  {project.codeLink !== "N/A" && project.codeLink !== "#" && (
+                    <span
+                      onClick={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        window.open(project.codeLink, "_blank")
+                      }}
+                      className="flex items-center gap-1 px-3 py-1 rounded-lg border border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90 text-xs cursor-pointer transition-colors"
+                    >
+                      <Github className="w-3 h-3" />
+                      Code
+                    </span>
+                  )}
+                  {project.demoLink !== "N/A" && project.demoLink !== "#" && project.demoLink !== "not built yet" && (
+                    <span
+                      onClick={(e) => {
+                        e.preventDefault()
+                        e.stopPropagation()
+                        window.open(project.demoLink, "_blank")
+                      }}
+                      className="flex items-center gap-1 px-3 py-1 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs cursor-pointer hover:from-purple-600 hover:to-pink-600 transition-colors"
+                    >
+                      <ExternalLink className="w-3 h-3" />
+                      Demo
+                    </span>
+                  )}
+                </div>
+
+                {/* View Details Link */}
+                <div className="flex items-center gap-2 text-purple-500 font-semibold text-sm mt-auto group-hover:text-purple-600 transition-colors">
+                  <span>View Details</span>
+                  <ExternalLink className="w-4 h-4" />
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

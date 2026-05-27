@@ -19,12 +19,9 @@ import {
   Briefcase,
   Download,
   FolderOpen,
-  Archive,
   Phone,
-  BookOpen,
   ExternalLink,
   MapPin,
-  Award,
   Heart,
   GraduationCap,
   ChevronDownIcon,
@@ -39,9 +36,9 @@ export default function Component() {
   }
 
   const socialLinks = [
+    { icon: Mail, href: "mailto:prisca.meredith.chien@gmail.com", label: "Email" },
     { icon: Github, href: "https://github.com/prisca7c", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/prisca-chien-292979220/", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:prisca.meredith.chien@gmail.com", label: "Email" },
     { icon: Twitter, href: "https://x.com/prisca59885764", label: "X (Twitter)" },
   ]
 
@@ -189,15 +186,6 @@ export default function Component() {
     },
   ]
 
-  const currentCourses = [
-    { code: "MATH117", name: "Calculus 1 for Engineering" },
-    { code: "NE100", name: "Introduction to Nanotechnology Engineering" },
-    { code: "NE109", name: "Societal and Environmental Impacts of Nanotechnology" },
-    { code: "NE111", name: "Introduction to Programming for Engineers" },
-    { code: "NE112", name: "Linear Algebra for Nanotechnology Engineers" },
-    { code: "NE121", name: "Chemical Principles" },
-  ]
-
   // Gallery images with your real photos and captions
   const galleryImages = [
     {
@@ -310,7 +298,7 @@ export default function Component() {
                         <div className="flex items-center gap-2 mb-4">
                           <MapPin className="w-5 h-5 text-blue-500" />
                           <span className="text-lg text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                            Toronto, Ontario, Canada
+                            Waterloo, Ontario, Canada
                           </span>
                         </div>
                       </div>
@@ -370,12 +358,6 @@ export default function Component() {
                 </Button>
               </Link>
               
-              <a href="/resume-prisca-chien.pdf" download="">
-                <Button className="px-6 py-3 text-lg font-semibold rounded-xl border-2 border-blue-200/60 bg-white hover:bg-white text-black hover:text-black backdrop-blur-sm shadow-lg shadow-yellow-300/50 hover:shadow-yellow-400/70 transition-all duration-300 hover:scale-105">
-                  <Download className="w-5 h-5 mr-2" />
-                  View Resume
-                </Button>
-              </a>
             </div>
 
             {/* Current Events Section */}
@@ -396,86 +378,53 @@ export default function Component() {
                     <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       <span className="bg-purple-200/40 px-1 py-0.5 rounded-md">
-                        Organizing the Waterloo Nanotechnology Conference
+                        Organizing the{" "}
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">
+                          Waterloo Nanotechnology Conference
+                        </a>
                       </span>{" "}
                       for 250+ attendees as a Logistics Coordinator
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>6x Hackathon Awardee</span>
+                    <span>
+                      6x{" "}
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">
+                        Hackathon Awardee
+                      </a>
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
                       Building a{" "}
-                      <span className="bg-green-200/40 px-1 py-0.5 rounded-md">customized electric wheelchair</span>{" "}
+                      <span className="bg-green-200/40 px-1 py-0.5 rounded-md">
+                        <a href="#" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">
+                          customized electric wheelchair
+                        </a>
+                      </span>{" "}
                       from scratch using PCBs and 3D prints
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>University of Waterloo Lead Student Representative for the North American Quantum Consortium</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Organizing HardHaQ (quantum hardware hackathon) and beta-testing problem tracks</span>
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Past Events Section */}
-            <section className="mb-8">
-              <div className="flex items-center gap-4 mb-6">
-                <Archive className="w-8 h-8 text-blue-500" />
-                <h2
-                  className="text-3xl font-bold text-slate-800"
-                  style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-                >
-                  <span className="bg-pink-200/40 px-1 py-0.5 rounded-md">Past Events</span>
-                </h2>
-              </div>
-              <div className="w-24 h-1 bg-gradient-to-r from-blue-400 via-pink-400 to-cyan-400 rounded-full mb-6 opacity-60"></div>
-              <div
-                className="text-lg leading-relaxed mb-6 text-slate-700"
-                style={{ fontFamily: "'M PLUS 1p', sans-serif" }}
-              >
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></span>
                     <span>
-                      <span className="bg-blue-200/40 px-1 py-0.5 rounded-md">
-                        Toronto Science Fair School Club President
-                      </span>{" "}
-                      2024-2025; successfully mentored 5 medalists
-                    </span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Engineering & Robotics School Club Co-President and Competition Team Mentor 2024-2025</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-cyan-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Hosted CETA Robotics Competition 2025 @York Mills CI</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>
-                      Co-Captain, Lead Mechanical Designer, Lead Scouter, Builder, and Backup Programmer of{" "}
-                      <span className="bg-green-200/40 px-1 py-0.5 rounded-md">
-                        839 VEX V5 Robotics Competition Team
-                      </span>{" "}
-                      2023-2025
+                      University of Waterloo Lead Student Representative for the{" "}
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">
+                        North American Quantum Consortium
+                      </a>
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>Division Quarterfinalist @ VEX Robotics World Championship 2025</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 bg-red-400 rounded-full mt-2 flex-shrink-0"></span>
-                    <span>World Platinum Grand Finalist Recipient @ Taoli World Dance Competition 2024</span>
+                    <span>
+                      Organizing{" "}
+                      <a href="#" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600 transition-colors">
+                        HardHaQ
+                      </a>{" "}
+                      (quantum hardware hackathon) and beta-testing problem tracks
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -648,115 +597,78 @@ export default function Component() {
         {/* Horizontal Line Above Three Columns */}
         <div className="mt-12 mb-6 w-full h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60"></div>
 
-        {/* Three Column Section - Current Courses, Skills, Resume & Contact */}
+        {/* Three Column Section - Full Experience, Full Projects, Contact */}
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Current Courses Column */}
+          {/* Full Experience Column */}
+          <Link href="/experience" className="block">
+            <div className="p-8 rounded-2xl border-2 border-blue-200/60 bg-gradient-to-br from-white/60 to-blue-50/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer h-full">
+              <div className="flex items-center gap-4 mb-6">
+                <Briefcase className="w-8 h-8 text-blue-500" />
+                <h3
+                  className="text-2xl font-bold text-slate-800"
+                  style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
+                >
+                  Full Experience
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-4" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                View my complete work history, including roles in logistics coordination, robotics coaching, research, and more.
+              </p>
+              <div className="flex items-center gap-2 text-blue-500 font-semibold">
+                <span>View All Experience</span>
+                <ExternalLink className="w-4 h-4" />
+              </div>
+            </div>
+          </Link>
+
+          {/* Full Projects Column */}
+          <Link href="/projects" className="block">
+            <div className="p-8 rounded-2xl border-2 border-blue-200/60 bg-gradient-to-br from-white/60 to-blue-50/60 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer h-full">
+              <div className="flex items-center gap-4 mb-6">
+                <FolderOpen className="w-8 h-8 text-blue-500" />
+                <h3
+                  className="text-2xl font-bold text-slate-800"
+                  style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
+                >
+                  Full Projects
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-4" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+                Explore my hackathon projects, research work, hardware builds, and software creations.
+              </p>
+              <div className="flex items-center gap-2 text-blue-500 font-semibold">
+                <span>View All Projects</span>
+                <ExternalLink className="w-4 h-4" />
+              </div>
+            </div>
+          </Link>
+
+          {/* Contact Column */}
           <div className="p-8 rounded-2xl border-2 border-blue-200/60 bg-gradient-to-br from-white/60 to-blue-50/60 backdrop-blur-sm shadow-lg">
             <div className="flex items-center gap-4 mb-6">
-              <BookOpen className="w-8 h-8 text-blue-500" />
+              <Phone className="w-8 h-8 text-blue-500" />
               <h3
                 className="text-2xl font-bold text-slate-800"
                 style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
               >
-                Current Courses
+                Contact
               </h3>
             </div>
-            <div className="text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-              <div className="space-y-4">
-                {currentCourses.map((course, index) => (
-                  <div key={index} className="border-l-2 border-blue-400 pl-4">
-                    <p className="font-semibold text-sm">{course.code}</p>
-                    <p className="text-sm opacity-90">{course.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Skills Column */}
-          <div className="p-8 rounded-2xl border-2 border-blue-200/60 bg-gradient-to-br from-white/60 to-blue-50/60 backdrop-blur-sm shadow-lg">
-            <div className="flex items-center gap-4 mb-6">
-              <Award className="w-8 h-8 text-blue-500" />
-              <h3
-                className="text-2xl font-bold text-slate-800"
-                style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-              >
-                Skills
-              </h3>
-            </div>
-            <div className="text-lg leading-relaxed text-slate-700" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-              <div className="space-y-3">
-                <div>
-                  <p className="font-semibold mb-1">Technical</p>
-                  <p className="text-sm">
-                    Python, Arduino (C++), MATLAB, C/C++, Fusion 360, Onshape, Shapr3D, Tinkercad, KiCad, Carbide Create, VEX Robotics Design
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-1">Research</p>
-                  <p className="text-sm">Materials Science, Organic & Analytical Chemistry, Experimental Biology, Quantum Mechanics, Data Analysis</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-1">Software</p>
-                  <p className="text-sm">SolidWorks, Nanome</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-1">Leadership</p>
-                  <p className="text-sm">Team Management, Lesson Planning, Event Coordination, Public Speaking, Parent Communication, Customer Service</p>
-                </div>
-                <div>
-                  <p className="font-semibold mb-1">Languages</p>
-                  <p className="text-sm">English (Native), Cantonese (Conversational)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Resume & Contact Column */}
-          <div className="p-8 rounded-2xl border-2 border-blue-200/60 bg-gradient-to-br from-white/60 to-blue-50/60 backdrop-blur-sm shadow-lg">
-            {/* Resume Section */}
-            <div className="mb-8">
-              <div className="flex items-center gap-4 mb-4">
-                <Download className="w-6 h-6 text-blue-500" />
-                <h3
-                  className="text-xl font-bold text-slate-800"
-                  style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-                >
-                  Resume
-                </h3>
-              </div>
-              <p className="text-sm mb-4 text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                Download my complete resume with detailed experience and projects.
-              </p>
-              <a href="/resume-prisca-chien.pdf" download="Prisca_Chien_Resume.pdf">
-                <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-500 hover:to-cyan-500 text-white shadow-lg transition-all duration-300 hover:scale-105">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download PDF
-                </Button>
-              </a>
-            </div>
-
-            {/* Contact Section */}
-            <div>
-              <div className="flex items-center gap-4 mb-4">
-                <Phone className="w-6 h-6 text-blue-500" />
-                <h3
-                  className="text-xl font-bold text-slate-800"
-                  style={{ fontFamily: "'Zen Kaku Gothic New', sans-serif" }}
-                >
-                  Contact
-                </h3>
-              </div>
-              <p className="text-sm mb-4 text-slate-600" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
-                Let's connect! Reach out for collaborations or opportunities.
-              </p>
-              <a href="mailto:prisca.meredith.chien@gmail.com">
-                <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-pink-400 to-blue-400 hover:from-pink-500 hover:to-blue-500 text-white shadow-lg transition-all duration-300 hover:scale-105">
-                  <Mail className="w-4 h-4 mr-2" />
-                  Get In Touch
-                </Button>
-              </a>
-            </div>
+            <p className="text-slate-600 mb-4" style={{ fontFamily: "'M PLUS 1p', sans-serif" }}>
+              Let&apos;s connect! Reach out for collaborations or opportunities.
+            </p>
+            <a href="mailto:prisca.meredith.chien@gmail.com">
+              <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-pink-400 to-blue-400 hover:from-pink-500 hover:to-blue-500 text-white shadow-lg transition-all duration-300 hover:scale-105 mb-4">
+                <Mail className="w-4 h-4 mr-2" />
+                Get In Touch
+              </Button>
+            </a>
+            <a href="/resume-prisca-chien.pdf" download="Prisca_Chien_Resume.pdf">
+              <Button className="w-full px-4 py-2 text-sm font-semibold rounded-xl bg-gradient-to-r from-blue-400 to-cyan-400 hover:from-blue-500 hover:to-cyan-500 text-white shadow-lg transition-all duration-300 hover:scale-105">
+                <Download className="w-4 h-4 mr-2" />
+                Download Resume
+              </Button>
+            </a>
 
             {/* Bible Verse Section */}
             <div className="mt-6">
@@ -764,9 +676,9 @@ export default function Component() {
                 className="text-sm italic text-center text-slate-500"
                 style={{ fontFamily: "'M PLUS 1p', sans-serif" }}
               >
-                "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving,
+                &quot;Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving,
                 present your requests to God. And the peace of God, which transcends all understanding, will guard your
-                hearts and your minds in Christ Jesus." - Philippians 4:6-7
+                hearts and your minds in Christ Jesus.&quot; - Philippians 4:6-7
               </p>
             </div>
           </div>
