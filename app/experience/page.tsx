@@ -7,6 +7,66 @@ import { ArrowLeft, Calendar, Building, Bot, GraduationCap, Users, Briefcase, Fl
 const workExperience = [
   {
     icon: Building,
+    title: "Software Engineering Intern",
+    company: "Music & Life Ltd",
+    period: "May 2026 - Present",
+    description:
+      "incoming s26",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://www.musicandlife.co.uk/", // Add your link here
+  },
+  {
+    icon: Building,
+    title: "Quantum Hardware Designer",
+    company: "WatQ",
+    period: "Jan 2026 - Present",
+    description:
+      "Designed superconducting quantum circuits and devices",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://www.linkedin.com/company/watq/posts/?feedView=all", // Add your link here
+  },
+  {
+    icon: Building,
+    title: "Semiconductor Process Designer",
+    company: "Waterloo Hacker Fab",
+    period: "Jan 2026 - Present",
+    description:
+      "NMOS FET construction, <100> P-type wafer process planning, MOSCAP process planning",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://www.waterloofab.com/", // Add your link here
+  },
+  {
+    icon: Building,
+    title: "Quantum Outreach Educator",
+    company: "Institutue for Quantum Computing",
+    period: "Nov 2025 - Present",
+    description:
+      "Assisting and coordinating IQC’s quantum outreach initiatives, engaging students and the public through hands-on experiments, demonstrations, and interactive workshops to foster understanding of quantum mechanics and the wave phenomena.",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://uwaterloo.ca/institute-for-quantum-computing/", // Add your link here
+  },
+  {
+    icon: Building,
+    title: "UW Student Lead & Event Coordinator, Quantum Simulation Developer",
+    company: "HardHaq [North American Quantum Consortium (NAQC)]",
+    period: "Sep 2025 - Present",
+    description:
+      "Responsible for coordination of event location (ensuring rooms are available and booked), conference schedule, food/refreshments, photography/videography, presentation set up, custodial services, and any other additional needs such as tables/chairs, speaker gift baskets, conference applications and reviews, etc.",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://hardhaq.com/about-us/", // Add your link here
+  },
+  {
+    icon: Building,
+    title: "Battery Systems Member",
+    company: "Midnight Sun Solar Rayce Car Team",
+    period: "Sep 2025 - Dec 2025",
+    description:
+      "Responsible for coordination of event location (ensuring rooms are available and booked), conference schedule, food/refreshments, photography/videography, presentation set up, custodial services, and any other additional needs such as tables/chairs, speaker gift baskets, conference applications and reviews, etc.",
+    skills: ["Event Management", "Coordination", "Project Planning", "Vendor Relations"],
+    link: "https://www.uwmidsun.com/", // Add your link here
+  },
+  {
+    icon: Building,
     title: "Logistics Coordinator",
     company: "Waterloo Nanotechnology Conference",
     period: "Jun 2025 - Present",
@@ -17,23 +77,43 @@ const workExperience = [
   },
   {
     icon: Bot,
-    title: "Assistant Robotics Coach",
+    title: "Robotics Coach",
     company: "Caution Tape Robotics Club",
     period: "Oct 2023 - Jun 2025",
     description:
       "Led small groups (ages 6-12) through the mechanical engineering design process. Collaborated with robotics coaches weekly to develop and refine lesson plans for pre-competitive classes. Evaluated student progress in partnership with senior coaches and parents.",
     skills: ["Leadership", "Teaching", "Robotics", "Mentoring", "Curriculum Development"],
-    link: "#", // Add your link here
+    link: "https://www.ct839.com/en/", // Add your link here
+  },
+  {
+    icon: Users,
+    title: "Lead Mechanical Designer (839)",
+    company: "Caution Tape Robotics Club",
+    period: "Aug 2023 - May 2025",
+    description:
+      "Provided customer service in restaurant environment while also creating artistic dessert presentations. Balanced hospitality duties with creative food artistry.",
+    skills: ["Customer Service", "Food Artistry", "Time Management", "Teamwork"],
+    link: "https://www.ct839.com/en/", // Add your link here
   },
   {
     icon: FlaskConical,
-    title: "Student Researcher",
+    title: "Biodegradable Materials Student Researcher",
     company: "The New York Academy of Sciences",
     period: "Sep 2024 - Nov 2024",
     description:
       "Conducted independent research project under the mentorship of academy scientists. Focused on materials science and nanotechnology applications in sustainable energy systems.",
     skills: ["Research", "Data Analysis", "Scientific Writing", "Materials Science"],
-    link: "#", // Add your link here
+    link: "https://www.nyas.org/learning/high-school-research-programs/the-junior-academy/", // Add your link here
+  },
+  {
+    icon: Users,
+    title: "Neuroendocrine Systems and Drug R&D Student Researcher",
+    company: "York University",
+    period: "Jul 2023 - Jul 2024",
+    description:
+      "Provided customer service in restaurant environment while also creating artistic dessert presentations. Balanced hospitality duties with creative food artistry.",
+    skills: ["Customer Service", "Food Artistry", "Time Management", "Teamwork"],
+    link: "https://www.linkedin.com/in/priscachien/details/projects/", // Add your link here
   },
   {
     icon: Users,
@@ -43,27 +123,27 @@ const workExperience = [
     description:
       "Provided customer service in restaurant environment while also creating artistic dessert presentations. Balanced hospitality duties with creative food artistry.",
     skills: ["Customer Service", "Food Artistry", "Time Management", "Teamwork"],
-    link: "#", // Add your link here
+    link: "https://demetres.com/", // Add your link here
   },
   {
     icon: GraduationCap,
-    title: "Academic Tutor",
+    title: "Tutor",
     company: "North Toronto Christian School",
     period: "Dec 2021 - May 2023",
     description:
       "Tutored elementary and middle school students. Subjects include: English, Science, Math, and Bible Studies. Provided one-on-one tutoring helping students improve their academic performance around 7% higher.",
     skills: ["Tutoring", "Mathematics", "Science", "English", "Curriculum Planning"],
-    link: "#", // Add your link here
+    link: "https://www.ntcs.on.ca/", // Add your link here
   },
   {
     icon: Users,
-    title: "Teaching Assistant",
+    title: "Chinese Dance & Acrobatics Teaching Assistant",
     company: "Chinese Collective Arts Association",
     period: "Nov 2020 - Feb 2023",
     description:
       "Assisted in leading dancers and acrobats from ages three to ten through dance routines and intensive training. Supported lead instructors in managing classes and individual student development.",
     skills: ["Dance Instruction", "Child Development", "Performance Arts", "Team Leadership"],
-    link: "#", // Add your link here
+    link: "https://chineseculturalarts.org/", // Add your link here
   },
   {
     icon: Briefcase,
