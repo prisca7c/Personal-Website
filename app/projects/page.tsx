@@ -54,6 +54,7 @@ const mockProjects: Project[] = [
     date: "2025-09-26",
     type: "hackathon",
     tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+    award: "Best Beginner Hack",
     link: "#", // Add your external link here
   },
   {
