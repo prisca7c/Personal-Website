@@ -389,11 +389,20 @@ export const caseStudies: CaseStudy[] = [
     hook:
       "Regular alarms die to one lazy tap. HonkO'Clock forces you to actually wake up by making you play a goose themed obstacle dodging minigame before the buzzer will stop.",
     repos: [{ name: "goosealarm", url: "https://github.com/swaggy-mandy/goosealarm" }],
+    videoUrl: "https://www.youtube.com/watch?v=YTsdKRVFXo0",
     process: [
-      { dot: "blue", text: "Designed the visual identity in Figma, including hand drawn geese made in Procreate." },
+      {
+        dot: "blue",
+        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/783/461/datas/original.png",
+        text: "Designed the visual identity in Figma, including hand drawn geese made in Procreate.",
+      },
       { dot: "pink", text: "Originally planned to use a SenseCAP Indicator, but hit compatibility issues and pivoted mid hackathon to a web app with no prior web dev experience on the team." },
       { dot: "orange", text: "Built the alarm and minigame hardware trigger using Arduino for the buzzer." },
-      { dot: "cyan", text: "Built the web app in JavaScript, React, and Node.js, with a goose character whose mood escalates if you fail the minigame." },
+      {
+        dot: "cyan",
+        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/797/206/datas/original.jpeg",
+        text: "Built the web app in JavaScript, React, and Node.js, with a goose character whose mood escalates if you fail the minigame.",
+      },
     ],
     result: {
       items: [
