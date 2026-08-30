@@ -532,6 +532,95 @@ export const caseStudies: CaseStudy[] = [
     },
     builtWith: ["Arduino", "Python", "Matplotlib", "Tinkercad"],
   },
+  {
+    slug: "iquhack-2026",
+    title: "iQuHACK 2026",
+    subtitle: "MIT. Built with Emily Hatten, Rahul Ranjan Sah, Perawit Boonsomchua, and Pham Minh Toan Le",
+    badges: ["Quantum Computing", "Qiskit", "CUDA-Q", "Hackathon"],
+    hook:
+      "At MIT's iQuHACK 2026 we took on IQM Quantum Computers' multipartite entanglement challenge, proving entanglement two different ways: classical shadows for statistical detection and Mermin inequalities for a direct mathematical proof, across three real IQM quantum computers.",
+    repos: [],
+    process: [
+      {
+        dot: "blue",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQFNWKvksrp5Uw/feedshare-shrink_1280/B56Zw2JsPVKQAc-/0/1770435038634?e=1789603200&v=beta&t=946cfnPzO9fwWHT71GgohUy2JLGIt-4Z4_BNrtuBoJE",
+        caption: "MIT, home of iQuHACK 2026",
+        text: "Spent the weekend at MIT for iQuHACK 2026, tackling IQM Quantum Computers' multipartite entanglement challenge.",
+      },
+      {
+        dot: "pink",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQH1eaJKLAPk0A/feedshare-shrink_1280/B56Zw2JsE6KYAc-/0/1770435035655?e=1789603200&v=beta&t=hRFuGmS6moFt8ZaX8FEwfj61igcOwMViQ6vjWJWZoWk",
+        caption: "The team",
+        text: "Worked with Emily Hatten, Rahul Ranjan Sah, Perawit Boonsomchua, and Pham Minh Toan Le.",
+      },
+      {
+        dot: "orange",
+        text: "Built a classical shadows pipeline for efficient quantum state tomography, using randomized Pauli measurements to reconstruct density matrices and compute entanglement witnesses instead of running exponentially many measurements.",
+      },
+      {
+        dot: "cyan",
+        text: "Added a Mermin inequality test for direct Bell test violations, proving entanglement whenever correlations exceeded the classical bound.",
+      },
+      {
+        dot: "purple",
+        text: "Tested 5 entangled state families, GHZ, W, Cluster, Ring Cluster, and Dicke, across IQM's Sirius, Garnet, and Emerald quantum computers.",
+      },
+      {
+        dot: "green",
+        text: "Built the pipeline in both Qiskit and NVIDIA CUDA-Q. The CUDA-Q integration dynamically discovers IQM's QPU architecture at runtime and handles JIT transpilation, so the same code runs on different machines without modification.",
+      },
+      {
+        dot: "blue",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQHlfMW-6Jls_w/feedshare-shrink_480/B56Zw2JsIaJQAs-/0/1770435036065?e=1789603200&v=beta&t=dxdrgvzRW7PUYZR4psd2cR8KPWrMZQYAet6QdNsQEzs",
+        caption: "Entanglement detection across all state types",
+        text: "Green cells show entanglement successfully detected for each state and qubit count combination, using witness expectation values from the classical shadows approach. W and Dicke states were the hardest to detect reliably given their more complex structure.",
+      },
+      {
+        dot: "pink",
+        image: "https://media.licdn.com/dms/image/v2/D5622AQH9andmUftZew/feedshare-shrink_800/B56Zw2JsHlJQAg-/0/1770435035915?e=1789603200&v=beta&t=GZwQvm-cRUwClKanEGpiveyLSpXpmwyyVzP1PRZMjvM",
+        caption: "Scaling, Mermin violation, and error budget analysis",
+        text: "Topology aware routing improved fidelity by up to 100 percent on 5 qubit circuits, and T2 decoherence dominated the error budget at higher qubit counts.",
+      },
+    ],
+    result: {
+      items: [
+        { label: "19 qubit entanglement detected on IQM Garnet", dot: "green" },
+        { label: "GHZ and Cluster states most robust across qubit counts", dot: "blue" },
+        { label: "Topology aware routing improved fidelity by up to 100 percent on 5 qubit circuits", dot: "purple" },
+        { label: "Parallel pipelines in Qiskit and NVIDIA CUDA-Q with runtime QPU discovery and JIT transpilation", dot: "pink" },
+      ],
+      narrative: "A weekend spent proving entanglement two different ways across three real IQM quantum computers, with a pipeline portable enough to run unmodified on any of them.",
+    },
+    builtWith: ["Qiskit", "NVIDIA CUDA-Q", "IQM Quantum Computers", "Classical Shadows", "Mermin Inequality"],
+  },
+  {
+    slug: "music-and-life",
+    title: "Music & Life London",
+    subtitle: "Software Engineering Intern",
+    badges: ["Software", "Web Development"],
+    hook:
+      "Built the sign-in and studio portal for Music & Life London, a music studio and instrument shop in Harrow, London, as a software engineering intern.",
+    repos: [],
+    process: [
+      {
+        dot: "blue",
+        image: "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/469448909_122124976682550415_1404006354554094678_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h13Ipu49k1IQ7kNvwF_hH93&_nc_oc=AdooIAUqMcyfL-3BdBnltCVcMh41AnNpnRS6-PARr6wvOfKfevaZZaAIyj6ib6Ri5Tg&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=uGYEDwXtXKfWFTNPxkuqaQ&_nc_ss=7b289&oh=00_AQJSQZBfibs2tsiHu429wHagyp5NfeAGqEvI392KC_aBWw&oe=6A9A6A09",
+        caption: "Music & Life London, Harrow",
+        text: "Music & Life London is a music studio and instrument shop offering lessons, recitals, and instrument sales out of its Harrow storefront.",
+      },
+      {
+        dot: "pink",
+        image: "https://harrowonline.org/wp-content/uploads/2024/09/Screenshot-2024-09-20-211440.png",
+        caption: "A student recital at the studio",
+        text: "Built the studio's sign-in portal to support the community of students and families who come through for lessons and recitals.",
+      },
+    ],
+    result: {
+      items: [],
+      narrative: "More details on this internship are on the way.",
+    },
+    builtWith: ["Web Development"],
+  },
 ]
 
 export function getCaseStudy(slug: string): CaseStudy | undefined {
