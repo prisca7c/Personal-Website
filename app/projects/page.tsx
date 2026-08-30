@@ -3,10 +3,12 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { ArrowLeft, Github, ExternalLink, Calendar, Tag, ChevronDown } from "lucide-react"
 
 interface Project {
   id: number
+  slug?: string
   name: string
   description: string
   image: string
@@ -21,6 +23,7 @@ interface Project {
 const mockProjects: Project[] = [
   {
     id: 28,
+    slug: "electric-ai-wheelchair",
     name: "Electric AI Wheelchair",
     description: "Manual wheelchair turned electric! This wheelchair uses electronic components such as modules and a PCB to make this wheelchair much for user interactive (and helps make life easier when you can't walk). I built this custom wheelchair because electric wheelchairs cost too much.",
     image: "/placeholder.svg?height=200&width=300",
@@ -32,6 +35,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 28,
+    slug: "chordially",
     name: "Chordially",
     description: "Master guitar techniques with real-time hand tracking, personalized feedback, and an intelligent AI tutor that adapts to your learning pace.",
     image: "/placeholder.svg?height=200&width=300",
@@ -43,6 +47,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 28,
+    slug: "honko-clock",
     name: "HONK O' CLOCK",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
@@ -54,6 +59,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 28,
+    slug: "aura-67",
     name: "Aura-67 (Hack the North 2025)",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
     image: "/placeholder.svg?height=200&width=300",
@@ -77,6 +83,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 14,
+    slug: "peas-are-best-frozen",
     name: "Peas Are Best Frozen (Undercity Hackathon 2025)",
     description:
       "A snow peashooter inspired by the video game Plants vs. Zombies. Turn on the shooter and watch the peas fly out!",
@@ -90,6 +97,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 15,
+    slug: "biodegradable-materials",
     name: "An Analysis of Biodegradable Materials to Reduce Waste Generation (NYASJA 2024)",
     description: "A research project analyzing biodegradable materials and their impact on waste generation.",
     image: "/placeholder.svg?height=200&width=300",
@@ -101,6 +109,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 16,
+    slug: "baylee",
     name: "Baylee (UTRAHacks 2025)",
     description: "Let’s revolutionize health care, one emotion at a time.",
     image: "/placeholder.svg?height=200&width=300",
@@ -113,6 +122,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 17,
+    slug: "oss-oil-spill-sensor",
     name: "O.S.S (ElleHacks 2023)",
     description: "Generate data for sensors and plot points on Matplotlib. Choose the farthest points around an oil spill to throw a skimmer. A Tinkercad-coded/built density sensor model is available for use as well.",
     image: "/placeholder.svg?height=200&width=300",
@@ -125,6 +135,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 18,
+    slug: "neo-alert",
     name: "Neo=Alert (Hack the Ridge 2024)",
     description: "Revolutionizing healthcare in under-resourced hospitals with our custom built AI-powered (not an API call) early warning system, designed to prevent bradycardia deaths. NEE WOO, WEEE WOO!",
     image: "/placeholder.svg?height=200&width=300",
@@ -162,6 +173,7 @@ const mockProjects: Project[] = [
   */
   {
     id: 21,
+    slug: "accentbean-macropad",
     name: "Custom Macropad",
     description: "A custom macropad hardware project.",
     image: "/placeholder.svg?height=200&width=300",
@@ -173,6 +185,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 22,
+    slug: "bean-cake",
     name: "BeanCake",
     description: "A project named BeanCake.",
     image: "/placeholder.svg?height=200&width=300",
@@ -184,6 +197,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 23,
+    slug: "genetic-analysis-research",
     name: "Genetic Analysis",
     description: "A project focused on genetic data analysis.",
     image: "/placeholder.svg?height=200&width=300",
@@ -240,6 +254,7 @@ const mockProjects: Project[] = [
 ]
 
 export default function ProjectsPage() {
+  const router = useRouter()
   const [sortBy, setSortBy] = useState("date")
   const [filterType, setFilterType] = useState("all")
   const [isFilterOpen, setIsFilterOpen] = useState(false)
@@ -364,7 +379,10 @@ export default function ProjectsPage() {
           {sortedAndFilteredProjects.map((project) => (
             <div
               key={project.id}
-              className={`rounded-2xl border-2 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl border-purple-200 bg-gradient-to-br from-white/70 to-purple-50/70 backdrop-blur-sm shadow-lg`}
+              onClick={() => project.slug && router.push(`/projects/${project.slug}`)}
+              className={`rounded-2xl border-2 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl border-purple-200 bg-gradient-to-br from-white/70 to-purple-50/70 backdrop-blur-sm shadow-lg ${
+                project.slug ? "cursor-pointer" : ""
+              }`}
             >
               <img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-48 object-cover" />
               <div className="p-6">
@@ -402,6 +420,7 @@ export default function ProjectsPage() {
                     href={project.codeLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className={`flex-1 px-4 py-2 rounded-lg border-2 transition-all duration-300 hover:scale-105 text-center text-sm font-semibold border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90`}
                   >
                     <Github className="w-4 h-4 inline mr-2" />
@@ -411,6 +430,7 @@ export default function ProjectsPage() {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className={`flex-1 px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-center text-sm font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600`}
                   >
                     <ExternalLink className="w-4 h-4 inline mr-2" />

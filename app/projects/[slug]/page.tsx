@@ -1,5 +1,4 @@
 // app/projects/[slug]/page.tsx
-// Add this file to your repo at: app/projects/[slug]/page.tsx
 
 import { notFound } from "next/navigation"
 import Link from "next/link"
@@ -26,8 +25,9 @@ export function generateStaticParams() {
   return caseStudies.map((c) => ({ slug: c.slug }))
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const study = getCaseStudy(params.slug)
+export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const study = getCaseStudy(slug)
   if (!study) return notFound()
 
   const builtWithIsCategorized = !Array.isArray(study.builtWith[0]) && typeof study.builtWith[0] === "object"
@@ -108,13 +108,13 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
         {study.process.length > 0 && (
           <section className="mb-10">
             <h2 className="text-xl font-bold text-slate-900 mb-4">The Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {study.process.map((step, i) => (
-                <div key={i} className="flex gap-4 items-start">
+                <div key={i} className="flex flex-col gap-3">
                   {step.image && (
-                    <div className="w-32 flex-shrink-0">
-                      <img src={step.image} alt="" className="w-full h-24 object-cover rounded-xl border-2 border-blue-200/60" />
-                      {step.caption && <p className="text-[11px] text-slate-500 italic mt-1 leading-snug">{step.caption}</p>}
+                    <div>
+                      <img src={step.image} alt="" className="w-full h-64 object-cover rounded-xl border-2 border-blue-200/60" />
+                      {step.caption && <p className="text-xs text-slate-500 italic mt-1.5 leading-snug">{step.caption}</p>}
                     </div>
                   )}
                   <div className="flex gap-2 items-start flex-1">
