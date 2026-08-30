@@ -108,12 +108,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         {study.process.length > 0 && (
           <section className="mb-10">
             <h2 className="text-xl font-bold text-slate-900 mb-4">The Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {study.process.map((step, i) => (
                 <div key={i} className="flex flex-col gap-3">
                   {step.image && (
                     <div>
-                      <img src={step.image} alt="" className="w-full h-64 object-cover rounded-xl border-2 border-blue-200/60" />
+                      <img src={step.image} alt="" className="w-full h-96 object-cover rounded-xl border-2 border-blue-200/60" />
                       {step.caption && <p className="text-xs text-slate-500 italic mt-1.5 leading-snug">{step.caption}</p>}
                     </div>
                   )}
