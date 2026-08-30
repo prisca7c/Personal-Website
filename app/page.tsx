@@ -207,7 +207,7 @@ export default function Component() {
       type: "image",
     },
     {
-      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/e3f72580cfd4aa6670c64818b1d9034469bf589b_screenshot_2025-09-30_at_5.30.12___pm.png",
+      src: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/e3f72580cfd4aa6670c64818b1d9034469bf589b_screenshot_2025-09-30_at_5.30.12___pm.png",
       alt: "KiCad PCB Layout",
       caption: "PCB Design for Custom Electric Wheelchair 2025",
       type: "image",
@@ -237,7 +237,7 @@ export default function Component() {
       type: "video",
     },
     {
-      src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
+      src: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
       alt: "KiCad Schematic Diagram",
       caption: "KiCad Schematic for Custom Electric Wheelchair 2025",
       type: "image",
