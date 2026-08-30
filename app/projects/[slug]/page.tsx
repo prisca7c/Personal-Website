@@ -2,7 +2,7 @@
 
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ArrowLeft, Github, ExternalLink, Play } from "lucide-react"
+import { ArrowLeft, Github, ExternalLink, Play, Youtube, FileText, Globe } from "lucide-react"
 import { caseStudies, getCaseStudy } from "@/lib/case-studies"
 
 const dotColor: Record<string, string> = {
@@ -32,6 +32,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
   const builtWithIsCategorized = !Array.isArray(study.builtWith[0]) && typeof study.builtWith[0] === "object"
 
+  const isYouTube = study.videoUrl && /youtube\.com|youtu\.be/.test(study.videoUrl)
+  const isPdf = study.liveUrl && study.liveUrl.toLowerCase().endsWith(".pdf")
+  const VideoIcon = isYouTube ? Youtube : Play
+  const LiveIcon = isPdf ? FileText : Globe
+  const liveLabel = isPdf ? "Open PDF" : "Open live demo"
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50/30 via-pink-50/20 to-cyan-50/30">
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-12">
@@ -53,6 +59,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <p className="text-slate-500 mb-6">{study.subtitle}</p>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60 mb-8" />
 
+        <p className="text-xs font-bold uppercase tracking-wide text-blue-600 mb-2">Why?</p>
         <p className="text-lg leading-relaxed text-slate-700 mb-10">{study.hook}</p>
 
         {/* Explore */}
@@ -65,7 +72,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                   className="rounded-2xl overflow-hidden border-2 border-blue-200/60 bg-white block hover:shadow-lg transition-all">
                   <div className="h-36 bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100 flex items-center justify-center relative">
                     <span className="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow">
-                      <Play className="w-3 h-3" /> Watch demo video
+                      <VideoIcon className="w-3 h-3" /> {isYouTube ? "Watch on YouTube" : "Watch demo video"}
                     </span>
                   </div>
                 </a>
@@ -82,8 +89,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                     </span>
                   </div>
                   <div className="h-28 bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100 flex items-center justify-center relative">
-                    <span className="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full text-xs font-bold shadow">
-                      Open live demo
+                    <span className="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow">
+                      <LiveIcon className="w-3 h-3" /> {liveLabel}
                     </span>
                   </div>
                 </a>

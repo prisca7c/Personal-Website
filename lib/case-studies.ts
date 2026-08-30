@@ -209,14 +209,14 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "/images/peashooter-final-assembly.png",
-        caption: "Final assembly",
+        image: "/images/peashooter-build.png",
+        caption: "Build in progress",
         text: "Built the flywheel launch mechanism using two N20 gear motors driven by a TB6612FNG motor driver, controlled from an Arduino R3 with an ESP32 for wireless triggering.",
       },
       {
         dot: "pink",
-        image: "/images/peashooter-build.png",
-        caption: "Build in progress",
+        image: "/images/peashooter-final-assembly.png",
+        caption: "Final assembly",
         text: "Housed the mechanism inside a mesh dome food cover shaped and painted to look like a Plants vs. Zombies peashooter, using deflated toy light up balls as the peas.",
       },
     ],
