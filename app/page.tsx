@@ -58,7 +58,7 @@ export default function Component() {
             caption: "New York Academy of Sciences Junior Academy - Biodegradable Materials Research Project 2024",
           },
           {
-            src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/72bff354e35e66b12c1d70bb91ef732a28043def_screenshot_2025-07-25_at_7.22.20___am.png",
+            src: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/72bff354e35e66b12c1d70bb91ef732a28043def_screenshot_2025-07-25_at_7.22.20___am.png",
             caption: "Qiskit Global Summer School - IBM Quantum Computing 2025",
           },
         ],
@@ -207,7 +207,7 @@ export default function Component() {
       type: "image",
     },
     {
-      src: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/e3f72580cfd4aa6670c64818b1d9034469bf589b_screenshot_2025-09-30_at_5.30.12___pm.png",
+      src: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2088c6bd565283fb86d54fb9dd4002a4eb6d0ba1_screenshot_2025-08-10_at_12.36.56___am.png",
       alt: "KiCad PCB Layout",
       caption: "PCB Design for Custom Electric Wheelchair 2025",
       type: "image",
