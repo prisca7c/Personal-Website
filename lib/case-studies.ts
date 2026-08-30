@@ -50,49 +50,49 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/166f4aef03582ae01d89af806c910cd2c8c8cbac_screenshot_2025-08-06_at_12.11.10___pm.png",
+        image: "/images/wheelchair-3d-model.png",
         caption: "Full 3D model of the wheelchair with electronics integrated",
         text: "Modeled the entire wheelchair in CAD using real frame measurements. The battery box, PCB housing, and cable routing all had to clear the cross braces and leave room for the user's legs.",
       },
       {
         dot: "pink",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/db5fbfbd7e0bc10afd8826d6d762fca40e77c986_screenshot_2025-07-31_at_6.03.55___pm.png",
+        image: "/images/wheelchair-pcb-schematic.png",
         caption: "PCB schematic in KiCad",
         text: "Designed the full schematic in KiCad with hierarchical sheets for power, motor control, comms, and sensors. Broke out every pin on the ATmega2560 for PWM, analog sensing, and serial comms.",
       },
       {
         dot: "orange",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/2088c6bd565283fb86d54fb9dd4002a4eb6d0ba1_screenshot_2025-08-10_at_12.36.56___am.png",
+        image: "/images/wheelchair-pcb-wiring.png",
         caption: "PCB wiring diagram. 24V copper pour on the back, 12V on the front",
         text: "At 10A continuous current, traces alone could not fit the compact 4 layer board. Switched to dedicated copper pours per voltage rail, which solved current capacity and doubled as heat spreading.",
       },
       {
         dot: "cyan",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/c32bfd65033bf6cd5111087478672b11de6f7187_screenshot_2025-08-10_at_12.43.31___am.png",
+        image: "/images/wheelchair-pcb-render.png",
         caption: "3D render of the finished PCB",
         text: "Passed KiCad's design rule checks after several routing iterations. Final board carries motor drivers, sensor headers, and comms for the Pi, ESP32, and ATmega all on one 150 by 100mm board.",
       },
       {
         dot: "purple",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/ed4c907d60fad636032d58342cff35c47ba04015_screenshot_2025-07-31_at_6.32.34___pm.png",
+        image: "/images/wheelchair-battery-box.png",
         caption: "Battery box, 3D printed",
         text: "Designed a fully enclosed battery box with ventilation and a mounting area for the BMS and main power switch. Mounts under the seat without interfering with leg room.",
       },
       {
         dot: "green",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/22308247853b5489cdd5da76ab8be6df6bacaa96_screenshot_2025-07-31_at_10.06.07___pm.png",
+        image: "/images/wheelchair-control-panel.png",
         caption: "User control panel where external modules connect",
         text: "Built a waterproof control panel with a hall effect joystick and six membrane buttons, magnetically mounted so it can be removed for cleaning.",
       },
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/5a6ffb811a8e9d410a96445789bcb36389fe2946_screenshot_2025-07-31_at_10.58.33___pm.png",
+        image: "/images/wheelchair-handle-lock.png",
         caption: "Handle with lock mechanism",
         text: "Designed a folding walker handle with a spring loaded locking pin, a rubber grip, and an emergency stop button built into the handle itself.",
       },
       {
         dot: "pink",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/807179f9a7847059bade0cff423d6ac2a8ea9139_screenshot_2025-08-01_at_12.14.26___am.png",
+        image: "/images/wheelchair-pcb-housing.png",
         caption: "PCB housing, elevated for cooling and strapped to the frame legs",
         text: "The housing is raised off the frame to allow airflow and room for heatsinks or thermal pads, and straps directly to the four legs of the wheelchair for a secure mount.",
       },
@@ -126,14 +126,14 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/743/653/datas/gallery.jpg",
+        image: "/images/aura67-gallery-1.jpg",
         text: "Built the self balancing controller using an IMU and gyroscope feedback loop running on an ESP32-S3.",
       },
       { dot: "pink", text: "Added a Raspberry Pi Zero 2 W in the head for camera capture and vision processing, streaming frames for object tracking." },
       { dot: "orange", text: "Integrated a language model so natural language commands map to concrete actions like follow object, stop, or return to base." },
       {
         dot: "cyan",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/742/680/datas/gallery.jpg",
+        image: "/images/aura67-gallery-2.jpg",
         text: "Added a time of flight distance sensor in the head so the robot slows and stops automatically near obstacles.",
       },
     ],
@@ -158,25 +158,25 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/d027a40ad0b68be71379af5d2603084f67f54375_screenshot_2025-07-08_at_7.30.15___pm.png",
+        image: "/images/macropad-finished.png",
         caption: "The finished macropad, fully assembled",
         text: "Designed around a Seeed XIAO RP2040 running KMK firmware, with 8 mechanical switches and a rotary encoder for volume or scroll control.",
       },
       {
         dot: "pink",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/c16fb42ad5822b43e1b5c67144fcf3d18da33a6f_screenshot_2025-07-03_at_12.34.16___pm.png",
+        image: "/images/macropad-schematic.png",
         caption: "Schematic",
         text: "Laid out the schematic to keep the matrix wiring simple, since 8 keys plus an encoder does not need a large matrix.",
       },
       {
         dot: "orange",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/8e10bcd23eab8864fc64e5b52788887678444a88_screenshot_2025-07-03_at_12.34.50___pm.png",
+        image: "/images/macropad-pcb.png",
         caption: "The PCB",
         text: "Routed the PCB to fit inside a compact case, with the OLED display connector positioned so the case magnets would not interfere with the screen.",
       },
       {
         dot: "cyan",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/8f6b16612fc019ec54dbd6c83626b20a98677aa6_screenshot_2025-07-07_at_4.44.58___pm.png",
+        image: "/images/macropad-case.png",
         caption: "Case and assembly",
         text: "Built a detachable magnetic OLED case using small magnets, so the display module can be popped off and reattached without tools.",
       },
@@ -202,13 +202,13 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/ec0848b1ee13ad6145224811795387bd96a72782_screenshot_2025-08-01_at_10.04.33___pm.png",
+        image: "/images/peashooter-build.png",
         caption: "Build in progress",
         text: "Built the flywheel launch mechanism using two N20 gear motors driven by a TB6612FNG motor driver, controlled from an Arduino R3 with an ESP32 for wireless triggering.",
       },
       {
         dot: "pink",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/3b5c93c9a5382334d7de017a60c849d9f15c4010_screenshot_2025-08-01_at_10.05.21___pm.png",
+        image: "/images/peashooter-final-assembly.png",
         caption: "Final assembly",
         text: "Housed the mechanism inside a mesh dome food cover shaped and painted to look like a Plants vs. Zombies peashooter, using deflated toy light up balls as the peas.",
       },
@@ -234,13 +234,13 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/dd96ab56cc75483d5874863f88bd0fe8a44abc28_whatsapp_image_2025-08-07_at_10.11.06_pm__2_.jpeg",
+        image: "/images/beancake-bot.jpeg",
         caption: "The bot",
         text: "Built the bot around an ESP32-S3-CAM streaming MJPEG video over WiFi, driven by two high speed coreless motors for quiet tank style movement.",
       },
       {
         dot: "pink",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/c5beb9c20556b898a1f16a963e7fa23293595cd2_whatsapp_image_2025-08-07_at_10.11.07_pm.jpeg",
+        image: "/images/beancake-remote.jpeg",
         caption: "The remote",
         text: "Built a handheld remote with dual analog joysticks and a 4 inch TFT display showing the live video feed, so the operator can drive while watching the stream.",
       },
@@ -369,25 +369,25 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/592/datas/original.png",
+        image: "/images/chordially-tracking-1.png",
         caption: "PLACEHOLDER, tell me what this shows",
         text: "Tracked fingers on the fretboard using OpenCV and ArUco markers. Each marker's position was translated into string and fret coordinates in real time.",
       },
       {
         dot: "pink",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/608/datas/original.png",
+        image: "/images/chordially-tracking-3.png",
         caption: "PLACEHOLDER, tell me what this shows",
         text: "Mapped exact fret coordinates with a 1/17.817 spacing model. This gave consistent accuracy across all 12 frets regardless of guitar size.",
       },
       {
         dot: "orange",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/596/datas/original.png",
+        image: "/images/chordially-tracking-2.png",
         caption: "PLACEHOLDER, tell me what this shows",
         text: "Fingers kept blocking the markers mid chord, killing tracking. A 5 frame smoothing algorithm tolerated brief occlusion and cut lost marker incidents by about 40 percent.",
       },
       {
         dot: "cyan",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/819/805/datas/original.png",
+        image: "/images/chordially-tracking-4.png",
         caption: "PLACEHOLDER, tell me what this shows",
         text: "Hit under 50 milliseconds of latency at 30 plus FPS for real time feedback. This kept the on screen guide in sync with actual finger movement during play.",
       },
@@ -441,14 +441,14 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/783/461/datas/original.png",
+        image: "/images/honkoclock-figma-geese.png",
         text: "Designed the visual identity in Figma, including hand drawn geese made in Procreate.",
       },
       { dot: "pink", text: "Originally planned to use a SenseCAP Indicator, but hit compatibility issues and pivoted mid hackathon to a web app with no prior web dev experience on the team." },
       { dot: "orange", text: "Built the alarm and minigame hardware trigger using Arduino for the buzzer." },
       {
         dot: "cyan",
-        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/797/206/datas/original.jpeg",
+        image: "/images/honkoclock-webapp.jpeg",
         text: "Built the web app in JavaScript, React, and Node.js, with a goose character whose mood escalates if you fail the minigame.",
       },
     ],
@@ -516,7 +516,7 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://csg.us-east-1.prd.tinkercad.com/things/jYIspEysYSF/t725.png?rev=1692004721632000000&s=&v=1&type=circuits&sharecode=1ljc3PHq6QdpT4oOubdF68DmC-8tZFG0BMOgNkd53QM",
+        image: "/images/oss-tinkercad-circuit.png",
         caption: "Density sensor circuit built in Tinkercad",
         text: "Modeled and coded a density sensor in Tinkercad to distinguish oil from water samples.",
       },
@@ -605,13 +605,13 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/469448909_122124976682550415_1404006354554094678_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=h13Ipu49k1IQ7kNvwF_hH93&_nc_oc=AdooIAUqMcyfL-3BdBnltCVcMh41AnNpnRS6-PARr6wvOfKfevaZZaAIyj6ib6Ri5Tg&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=uGYEDwXtXKfWFTNPxkuqaQ&_nc_ss=7b289&oh=00_AQJSQZBfibs2tsiHu429wHagyp5NfeAGqEvI392KC_aBWw&oe=6A9A6A09",
+        image: "/images/musiclife-storefront.jpg",
         caption: "Music & Life London, Harrow",
         text: "Music & Life London is a music studio and instrument shop offering lessons, recitals, and instrument sales out of its Harrow storefront.",
       },
       {
         dot: "pink",
-        image: "https://harrowonline.org/wp-content/uploads/2024/09/Screenshot-2024-09-20-211440.png",
+        image: "/images/musiclife-recital.png",
         caption: "A student recital at the studio",
         text: "Built the studio's sign-in portal to support the community of students and families who come through for lessons and recitals.",
       },
