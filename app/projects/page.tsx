@@ -48,7 +48,7 @@ const mockProjects: Project[] = [
     id: 30,
     slug: "honko-clock",
     name: "HONK O' CLOCK",
-    description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
+    description: "Regular alarms die to one lazy tap. HonkO'Clock forces you to play a goose themed obstacle dodging minigame before the buzzer will stop.",
     image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/783/461/datas/original.png",
     codeLink: "https://github.com/swaggy-mandy/goosealarm",
     demoLink: "https://devpost.com/software/project-name-luc8ph?ref_content=user-portfolio&ref_feature=in_progress",
@@ -173,8 +173,8 @@ const mockProjects: Project[] = [
   {
     id: 21,
     slug: "accentbean-macropad",
-    name: "Custom Macropad",
-    description: "A custom macropad hardware project.",
+    name: "Diacritics Macropad",
+    description: "An 8 key macropad with a rotary encoder and magnetic OLED case, built to make typing accented letters faster by holding a letter and an accent key at the same time.",
     image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/d027a40ad0b68be71379af5d2603084f67f54375_screenshot_2025-07-08_at_7.30.15___pm.png",
     codeLink: "https://github.com/prisca7c/Hackpad",
     demoLink: "N/A",
@@ -186,7 +186,7 @@ const mockProjects: Project[] = [
     id: 22,
     slug: "bean-cake",
     name: "BeanCake",
-    description: "A project named BeanCake.",
+    description: "A small, fast, quiet spy robot with a live streaming camera, controlled by a remote with two joysticks and a live video feed on a built in display.",
     image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/dd96ab56cc75483d5874863f88bd0fe8a44abc28_whatsapp_image_2025-08-07_at_10.11.06_pm__2_.jpeg",
     codeLink: "https://github.com/bernininini/bean-cake",
     demoLink: "https://www.reddit.com/user/spicycoughdrops/comments/1mkl523/beancake/",
@@ -199,7 +199,7 @@ const mockProjects: Project[] = [
     slug: "genetic-analysis-research",
     name: "Genetic Analysis",
     description: "A project focused on genetic data analysis.",
-    image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/dde2975a7834dd27be6fe814b98f4b9c917eae85_img_4104.jpg",
+    image: "/images/genetic-malpighian.jpg",
     codeLink: "#",
     demoLink: "#",
     date: "2024-08-01",
@@ -211,7 +211,7 @@ const mockProjects: Project[] = [
     slug: "pharmaceutical-chemistry",
     name: "Pharmaceutical Chemistry",
     description: "A project exploring concepts in pharmaceutical chemistry.",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQEn6kbPCcyrwg/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136349117?e=1788724800&v=beta&t=W3gHxGClAuE9HqtjZw_7ygwKfG8FKoPs5pw1kF51RG0",
+    image: "/images/pharmchem-antimicrobial.jpg",
     codeLink: "#",
     demoLink: "#",
     date: "2024-09-01",
@@ -219,33 +219,11 @@ const mockProjects: Project[] = [
     tags: ["Chemistry", "Pharmaceuticals"],
   },
   {
-    id: 25,
-    name: "LCD Jumping Game",
-    description: "A jumping game similar to the no-internet-dinosaur-game implemented on an LCD screen.",
-    image: "/placeholder.svg?height=200&width=300",
-    codeLink: "https://www.tinkercad.com/things/dCNz50NTfGE-lcd-jumping-game",
-    demoLink: "https://www.tinkercad.com/things/dCNz50NTfGE-lcd-jumping-game",
-    date: "2021-07-19",
-    type: "hardware",
-    tags: ["Electronics", "Game Development"],
-  },
-  {
-    id: 26,
-    name: "Sushi API",
-    description: "An API for managing sushi restaurant data.",
-    image: "/placeholder.svg?height=200&width=300",
-    codeLink: "https://replit.com/@prisca7c/Sushi-API-project-after-around-3-4-months-of-coding",
-    demoLink: "https://replit.com/@prisca7c/Sushi-API-project-after-around-3-4-months-of-coding",
-    date: "2020-06-23",
-    type: "software",
-    tags: ["API", "Web Development"],
-  },
-  {
     id: 27,
     slug: "pharmaceutical-chemistry",
     name: "Drug Design",
     description: "A project involving computational drug design.",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQGcCS--DlqPXA/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136132884?e=1788724800&v=beta&t=Q1cYUMSVlbC6VoIZZMxWor84iV9JtHR3nh10xV57iIU",
+    image: "/images/pharmchem-drug-molecule.jpg",
     codeLink: "#",
     demoLink: "#",
     date: "2024-11-01",
@@ -255,11 +233,11 @@ const mockProjects: Project[] = [
   {
     id: 32,
     slug: "iquhack-2026",
-    name: "iQuHACK 2026 (MIT)",
+    name: "Multipartite Entanglement Detection using Classical Shadows (MIT iQuHACK)",
     description: "Detected multipartite entanglement across IQM's Sirius, Garnet, and Emerald quantum computers using classical shadows and Mermin inequality tests, built in both Qiskit and NVIDIA CUDA-Q.",
-    image: "https://media.licdn.com/dms/image/v2/D5622AQH1eaJKLAPk0A/feedshare-shrink_1280/B56Zw2JsE6KYAc-/0/1770435035655?e=1789603200&v=beta&t=hRFuGmS6moFt8ZaX8FEwfj61igcOwMViQ6vjWJWZoWk",
-    codeLink: "#",
-    demoLink: "#",
+    image: "/images/iquhack-team.jpg",
+    codeLink: "https://github.com/rahulranjansah/IQM-Iquhack",
+    demoLink: "/iqm-mit-quantum-hackathon.pdf",
     date: "2026-01-24",
     type: "hackathon",
     tags: ["Quantum Computing", "Qiskit", "CUDA-Q"],
@@ -355,6 +333,13 @@ const mockProjects: Project[] = [
   },
 ]
 
+const MONTH_ABBR = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+function formatDate(dateString: string) {
+  const d = new Date(dateString)
+  return `${MONTH_ABBR[d.getUTCMonth()]} ${d.getUTCDate()} ${d.getUTCFullYear()}`
+}
+
 export default function ProjectsPage() {
   const router = useRouter()
 
@@ -402,10 +387,11 @@ export default function ProjectsPage() {
             >
               <img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <div className="flex items-center mb-3">
+                <div className="flex items-center justify-between mb-3">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700`}>
                     {project.type}
                   </span>
+                  <span className={`text-sm text-slate-500`}>{formatDate(project.date)}</span>
                 </div>
 
                 <h3

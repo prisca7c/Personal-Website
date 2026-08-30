@@ -190,12 +190,15 @@ export default function Component() {
   ]
 
   const currentCourses = [
-    { code: "MATH117", name: "Calculus 1 for Engineering" },
-    { code: "NE100", name: "Introduction to Nanotechnology Engineering" },
-    { code: "NE109", name: "Societal and Environmental Impacts of Nanotechnology" },
-    { code: "NE111", name: "Introduction to Programming for Engineers" },
-    { code: "NE112", name: "Linear Algebra for Nanotechnology Engineers" },
-    { code: "NE121", name: "Chemical Principles" },
+    { code: "NE215", name: "Probability and Statistics", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/69a09f3a67f4be7000831489" },
+    { code: "NE216", name: "Advanced Calculus and Numerical Methods 1", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/689a2d1193a7f2d517f22d39" },
+    { code: "NE217", name: "Advanced Calculus and Numerical Methods 2", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/689a2d586e46caaa6b3f911f" },
+    { code: "NE222", name: "Organic Chemistry for Nanotechnology Engineers", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/65cd3389d3ef7532c0b078ec" },
+    { code: "NE225", name: "Structure and Properties of Nanomaterials", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/65cd33bbf34cd427277a1989" },
+    { code: "NE226", name: "Characterization of Materials", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/65cd33e0187f5e6a1b9135e9" },
+    { code: "NE241", name: "Electromagnetism", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/65cd34096632c63c8335a057" },
+    { code: "NE242", name: "Semiconductor Physics and Devices", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/65cd3430f40b27898726c7f8" },
+    { code: "NE281", name: "Biology for Nanotechnology Engineers", url: "https://uwaterloo.ca/academic-calendar/undergraduate-studies/catalog#/courses/view/698e04cedc568b37c368b7fe" },
   ]
 
   // Gallery images with your real photos and captions
@@ -658,7 +661,14 @@ export default function Component() {
               <div className="space-y-4">
                 {currentCourses.map((course, index) => (
                   <div key={index} className="border-l-2 border-blue-400 pl-4">
-                    <p className="font-semibold text-sm">{course.code}</p>
+                    <a
+                      href={course.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-sm text-blue-600 hover:underline"
+                    >
+                      {course.code}
+                    </a>
                     <p className="text-sm opacity-90">{course.name}</p>
                   </div>
                 ))}

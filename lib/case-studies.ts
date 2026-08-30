@@ -149,8 +149,8 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "accentbean-macropad",
-    title: "AccentBean Macropad",
-    subtitle: "8 key macropad with a magnetic OLED case",
+    title: "Diacritics Macropad",
+    subtitle: "8 key macropad built for typing accented letters",
     badges: ["Hardware", "Firmware", "Electronics"],
     hook:
       "An 8 key macropad with a rotary encoder and OLED display, built to make typing accented letters faster by holding a letter and an accent key at the same time.",
@@ -266,19 +266,19 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQFoLg5geaYo-A/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223547395?e=1788724800&v=beta&t=sHZa2g_CfE2o5HXzl_tFKV0YTdkEUkye51oEtTTwW4o",
+        image: "/images/genetic-malpighian.jpg",
         caption: "Pulled Malpighian tubules and guts",
         text: "Practiced dissecting the Malpighian tubules and guts of fruit flies, working from the torso down to the lower abdomen to extract them intact.",
       },
       {
         dot: "pink",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQF3mEl4V7F8-A/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223421435?e=1788724800&v=beta&t=hqjxt3eP4W-JJaat-sJHc7I5Tv3mI8CIfmlKqnw_RWk",
+        image: "/images/genetic-gfp.jpg",
         caption: "Clear fluorescent protein using the Gal4/UAS system",
         text: "Used the Gal4/UAS system to genetically modify flies, add a GFP marker, and localize gene expression, then imaged the tissue under a fluorescent microscope.",
       },
       {
         dot: "orange",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQH5r0rmeNHwKw/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223340201?e=1788724800&v=beta&t=z1KKvvqMRoltTfER2t27QfNovsy5pS6onmhgUFsY0w4",
+        image: "/images/genetic-urine-droplet.jpg",
         caption: "15 microliter urine droplet tied to a pin",
         text: "Ran a Ramsay Assay to test diuretic effects of tachykinin hormones, comparing urine secretion between control and treatment wells over a one hour incubation.",
       },
@@ -327,19 +327,19 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQEn6kbPCcyrwg/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136349117?e=1788724800&v=beta&t=W3gHxGClAuE9HqtjZw_7ygwKfG8FKoPs5pw1kF51RG0",
+        image: "/images/pharmchem-antimicrobial.jpg",
         caption: "Clear antimicrobial activity",
         text: "Set up bioassays and extracted natural products from a variety of spices, several of which showed clear antimicrobial activity.",
       },
       {
         dot: "pink",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQGcCS--DlqPXA/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136132884?e=1788724800&v=beta&t=Q1cYUMSVlbC6VoIZZMxWor84iV9JtHR3nh10xV57iIU",
+        image: "/images/pharmchem-drug-molecule.jpg",
         caption: "ASA:214(a) drug molecule",
         text: "Used Nanome to build and explore a unique drug molecule, studying drug-enzyme interactions in 3D.",
       },
       {
         dot: "orange",
-        image: "https://media.licdn.com/dms/image/v2/D562DAQEOOLjCpcCmIw/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136070373?e=1788724800&v=beta&t=_4dYj_im9Wi8rcy3RNg3kQNj2y8zBShi2rTSAILj2A8",
+        image: "/images/pharmchem-extraction.jpg",
         caption: "Natural product extraction solutions",
         text: "Synthesized Aspirin and Oil of Wintergreen, using Thin-Layer Chromatography (TLC) to verify each compound.",
       },
@@ -534,24 +534,25 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "iquhack-2026",
-    title: "iQuHACK 2026",
-    subtitle: "MIT. Built with Emily Hatten, Rahul Ranjan Sah, Perawit Boonsomchua, and Pham Minh Toan Le",
+    title: "Multipartite Entanglement Detection using Classical Shadows",
+    subtitle: "MIT iQuHACK 2026",
     badges: ["Quantum Computing", "Qiskit", "CUDA-Q", "Hackathon"],
     hook:
       "At MIT's iQuHACK 2026 we took on IQM Quantum Computers' multipartite entanglement challenge, proving entanglement two different ways: classical shadows for statistical detection and Mermin inequalities for a direct mathematical proof, across three real IQM quantum computers.",
-    repos: [],
+    liveUrl: "/iqm-mit-quantum-hackathon.pdf",
+    repos: [{ name: "IQM-Iquhack", url: "https://github.com/rahulranjansah/IQM-Iquhack" }],
     process: [
       {
         dot: "blue",
-        image: "https://media.licdn.com/dms/image/v2/D5622AQFNWKvksrp5Uw/feedshare-shrink_1280/B56Zw2JsPVKQAc-/0/1770435038634?e=1789603200&v=beta&t=946cfnPzO9fwWHT71GgohUy2JLGIt-4Z4_BNrtuBoJE",
+        image: "/images/iquhack-mit-campus.jpg",
         caption: "MIT, home of iQuHACK 2026",
         text: "Spent the weekend at MIT for iQuHACK 2026, tackling IQM Quantum Computers' multipartite entanglement challenge.",
       },
       {
         dot: "pink",
-        image: "https://media.licdn.com/dms/image/v2/D5622AQH1eaJKLAPk0A/feedshare-shrink_1280/B56Zw2JsE6KYAc-/0/1770435035655?e=1789603200&v=beta&t=hRFuGmS6moFt8ZaX8FEwfj61igcOwMViQ6vjWJWZoWk",
+        image: "/images/iquhack-team.jpg",
         caption: "The team",
-        text: "Worked with Emily Hatten, Rahul Ranjan Sah, Perawit Boonsomchua, and Pham Minh Toan Le.",
+        text: "A great weekend with a fantastic team, and thanks to IQM and the iQuHACK organizers for the opportunity.",
       },
       {
         dot: "orange",
@@ -571,13 +572,13 @@ export const caseStudies: CaseStudy[] = [
       },
       {
         dot: "blue",
-        image: "https://media.licdn.com/dms/image/v2/D5622AQHlfMW-6Jls_w/feedshare-shrink_480/B56Zw2JsIaJQAs-/0/1770435036065?e=1789603200&v=beta&t=dxdrgvzRW7PUYZR4psd2cR8KPWrMZQYAet6QdNsQEzs",
+        image: "/images/iquhack-dashboard-1.jpg",
         caption: "Entanglement detection across all state types",
         text: "Green cells show entanglement successfully detected for each state and qubit count combination, using witness expectation values from the classical shadows approach. W and Dicke states were the hardest to detect reliably given their more complex structure.",
       },
       {
         dot: "pink",
-        image: "https://media.licdn.com/dms/image/v2/D5622AQH9andmUftZew/feedshare-shrink_800/B56Zw2JsHlJQAg-/0/1770435035915?e=1789603200&v=beta&t=GZwQvm-cRUwClKanEGpiveyLSpXpmwyyVzP1PRZMjvM",
+        image: "/images/iquhack-dashboard-2.jpg",
         caption: "Scaling, Mermin violation, and error budget analysis",
         text: "Topology aware routing improved fidelity by up to 100 percent on 5 qubit circuits, and T2 decoherence dominated the error budget at higher qubit counts.",
       },
