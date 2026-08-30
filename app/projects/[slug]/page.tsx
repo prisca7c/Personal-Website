@@ -129,7 +129,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
         {/* Result */}
         <section className="mb-10">
-          <h2 className="text-xl font-bold text-slate-900 mb-4">Result</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4">Result!</h2>
           <div className="mb-4">
             {study.result.items.map((item, i) => (
               <div key={i} className="flex gap-2 items-start mb-2">
@@ -138,6 +138,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               </div>
             ))}
           </div>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60 mb-4" />
           <p className="text-lg leading-relaxed text-slate-700">{study.result.narrative}</p>
         </section>
 
