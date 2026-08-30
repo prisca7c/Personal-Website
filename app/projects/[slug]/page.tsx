@@ -34,7 +34,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50/30 via-pink-50/20 to-cyan-50/30">
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="max-w-6xl mx-auto px-6 md:px-10 py-12">
 
         <Link href="/projects" className="inline-flex items-center gap-2 text-slate-500 hover:text-slate-700 mb-8 text-sm">
           <ArrowLeft className="w-4 h-4" />
@@ -108,7 +108,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         {study.process.length > 0 && (
           <section className="mb-10">
             <h2 className="text-xl font-bold text-slate-900 mb-4">The Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {study.process.map((step, i) => (
                 <div key={i} className="flex flex-col gap-3">
                   {step.image && (
