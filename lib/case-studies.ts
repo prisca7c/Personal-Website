@@ -355,6 +355,64 @@ export const caseStudies: CaseStudy[] = [
     builtWith: ["Thin-Layer Chromatography (TLC)", "Bioassays", "Nanome", "Organic Synthesis"],
   },
   {
+    slug: "semiconductor-fabrication",
+    title: "Semiconductor Fabrication",
+    subtitle: "Hardware validating a MOSCAP fabrication process",
+    badges: ["Semiconductors", "Fabrication", "Research"],
+    hook:
+      "Hardware validating our fabrication line by building a MOSCAP (metal oxide semiconductor capacitor), the simplest device that can prove our tube furnace, spin coater, lithography, etching, and sputtering steps actually work together.",
+    repos: [],
+    process: [
+      {
+        dot: "blue",
+        text: "Validating our fabrication hardware machine by machine: a tube furnace to grow dielectric oxide, a spin coater to deposit masking film, a lithography system to pattern contacts, chemical stripping to relieve the pattern for aluminum and oxide etching, a sputter deposition system to deposit aluminum, and chemical etching to pattern the oxide and aluminum layers.",
+      },
+      {
+        dot: "pink",
+        image: "/images/semiconductor-spin-speed-curve.webp",
+        caption: "Photoresist thickness vs spin speed",
+        text: "Underexposed photoresist pushed us to spin faster, but manufacturer curves for S1818 through S1805 show the thickness curve going flat well before 10,000 RPM, our practical ceiling.",
+      },
+      {
+        dot: "orange",
+        image: "/images/semiconductor-lithography-test-pattern.webp",
+        caption: "Lithography test pattern after development",
+        text: "Dialing in development time between 100 seconds and 2 minutes on S1818 resist finally resolved crisp, well defined test pattern features.",
+      },
+      {
+        dot: "cyan",
+        text: "Designed a preliminary MOSCAP: a p-type silicon wafer of known resistivity, a thermally grown SiOx dielectric, a sputtered aluminum top gate, and a backside metal contact. It is not a fancy device, just a way to validate the accuracy and repeatability of the whole process.",
+      },
+      {
+        dot: "purple",
+        text: "Next up: a calibration curve for oxide growth rate in the tube furnace using an ellipsometer across 20, 40, 60, 80, and 100 minute runs at 1100C, plus getting set up in the wet lab to etch oxide with HF and aluminum with PAN or another wet etchant.",
+      },
+    ],
+    result: {
+      items: [
+        { label: "Target: fabricate an array of metal pads that don't short through the oxide", dot: "green" },
+        { label: "Target: observe clean C-V and I-V curves", dot: "blue" },
+      ],
+      narrative: "Still early. Process design and hardware validation are underway, with fabrication and characterization next.",
+    },
+    builtWith: ["Tube Furnace", "Spin Coater", "Lithography System", "Sputter Deposition System", "Chemical Etching", "Ellipsometer"],
+  },
+  {
+    slug: "photonic-integrated-circuit",
+    title: "Photonic Integrated Circuit",
+    subtitle: "Upcoming",
+    badges: ["Photonics", "Semiconductors", "Upcoming"],
+    hook:
+      "Working toward a photonic integrated circuit: a silicon chip with regular doping and planar geometry at the half micron scale, ideally 200 by 500nm. That resolution is still past our current fabrication capability, so this one is upcoming.",
+    repos: [],
+    process: [],
+    result: {
+      items: [],
+      narrative: "Upcoming. Waiting on the resolution capability to hit the target half micron feature sizes.",
+    },
+    builtWith: ["Silicon Photonics"],
+  },
+  {
     slug: "chordially",
     title: "Chordially",
     subtitle: "AI Guitar Tutor",
