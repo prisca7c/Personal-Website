@@ -1,9 +1,12 @@
 "use client"
 
+import { Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
+
+type Category = "hardware" | "process" | "software"
 
 interface Project {
   id: number
@@ -16,6 +19,7 @@ interface Project {
   date: string
   type: string
   tags: string[]
+  categories?: Category[]
   award: string
 }
 
@@ -30,7 +34,8 @@ const mockProjects: Project[] = [
     demoLink: "not built yet",
     date: "2025-07-27",
     type: "hardware",
-    tags: ["Software", "Web Development", "Hardware", "Firmware", "Electronics", "Robotics", "AI"],
+    tags: ["Web Development", "Firmware", "Electronics", "Robotics", "AI"],
+    categories: ["hardware", "software"],
   },
   {
     id: 29,
@@ -42,7 +47,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/ai-music-tutor",
     date: "2025-10-05",
     type: "hackathon",
-    tags: ["Software", "Web Development", "AI"],
+    tags: ["Web Development", "AI"],
+    categories: ["software"],
   },
   {
     id: 30,
@@ -54,7 +60,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/project-name-luc8ph?ref_content=user-portfolio&ref_feature=in_progress",
     date: "2025-09-26",
     type: "hackathon",
-    tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+    tags: ["Web Development", "Firmware", "Electrical", "Robotics"],
+    categories: ["hardware", "software"],
   },
   {
     id: 31,
@@ -66,7 +73,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/aura-67?ref_content=user-portfolio&ref_feature=in_progress",
     date: "2025-09-12",
     type: "hackathon",
-    tags: ["Software", "Web Development", "Hardware", "Firmware", "Electrical", "Robotics"],
+    tags: ["Web Development", "Firmware", "Electrical", "Robotics"],
+    categories: ["hardware", "software"],
   },
   {
     id: 13,
@@ -77,7 +85,8 @@ const mockProjects: Project[] = [
     demoLink: "https://docs.google.com/presentation/d/1pm3ocpUQKqpZ2OpVfdYTIdS68fsuPbH9ZrrdBp5Dfzk/edit?usp=sharing",
     date: "2024-05-17",
     type: "hackathon",
-    tags: ["Software", "Web Development"],
+    tags: ["Web Development"],
+    categories: ["software"],
     award: "1st Place"
   },
   {
@@ -91,7 +100,8 @@ const mockProjects: Project[] = [
     demoLink: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/dfe9f9703f4788b4bee81e907d5816168c87b1a2_img_2172.mov",
     date: "2025-07-11",
     type: "hackathon",
-    tags: ["Software", "Robotics"],
+    tags: ["Robotics"],
+    categories: ["hardware", "software"],
     award: "Finalist, Top 7"
   },
   {
@@ -105,6 +115,7 @@ const mockProjects: Project[] = [
     date: "2024-11-01",
     type: "research",
     tags: ["Materials Science", "Environmental", "Research"],
+    categories: ["process"],
   },
   {
     id: 16,
@@ -116,7 +127,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/baylee",
     date: "2025-02-01",
     type: "hackathon",
-    tags: ["Software", "Hardware", "Firmware", "Electrical"],
+    tags: ["Firmware", "Electrical"],
+    categories: ["hardware", "software"],
     award: "Best Use of Gen AI"
   },
   {
@@ -129,7 +141,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/o-s-s",
     date: "2023-02-17",
     type: "hackathon",
-    tags: ["Software", "Hardware", "Firmware"],
+    tags: ["Firmware"],
+    categories: ["hardware", "software"],
     award: "Finalist, Top 10"
   },
   {
@@ -142,7 +155,8 @@ const mockProjects: Project[] = [
     demoLink: "https://devpost.com/software/neo-alert",
     date: "2024-12-14",
     type: "hackathon",
-    tags: ["Software", "AI"],
+    tags: ["AI"],
+    categories: ["software"],
     award: "2nd Place"
   },
 
@@ -180,7 +194,8 @@ const mockProjects: Project[] = [
     demoLink: "N/A",
     date: "2025-06-26",
     type: "hardware",
-    tags: ["Hardware", "Electronics", ""],
+    tags: ["Electronics"],
+    categories: ["hardware"],
   },
   {
     id: 22,
@@ -192,7 +207,8 @@ const mockProjects: Project[] = [
     demoLink: "https://www.reddit.com/user/spicycoughdrops/comments/1mkl523/beancake/",
     date: "2025-05-01",
     type: "hardware",
-    tags: ["Software", "Hardware", "Firmware", "Electronics", "Robotics", "3D Print"],
+    tags: ["Firmware", "Electronics", "Robotics", "3D Print"],
+    categories: ["hardware", "software"],
   },
   {
     id: 23,
@@ -205,6 +221,7 @@ const mockProjects: Project[] = [
     date: "2024-08-01",
     type: "research",
     tags: ["Biology", "Data Analysis", "Bioinformatics"],
+    categories: ["process"],
   },
   {
     id: 24,
@@ -217,6 +234,7 @@ const mockProjects: Project[] = [
     date: "2024-09-01",
     type: "research",
     tags: ["Chemistry", "Pharmaceuticals"],
+    categories: ["process"],
   },
   {
     id: 27,
@@ -229,6 +247,7 @@ const mockProjects: Project[] = [
     date: "2024-11-01",
     type: "research",
     tags: ["Chemistry", "Computational", "Drug Discovery"],
+    categories: ["process"],
   },
   {
     id: 32,
@@ -241,6 +260,7 @@ const mockProjects: Project[] = [
     date: "2026-01-24",
     type: "hackathon",
     tags: ["Quantum Computing", "Qiskit", "CUDA-Q"],
+    categories: ["software"],
   },
   {
     id: 33,
@@ -252,7 +272,8 @@ const mockProjects: Project[] = [
     demoLink: "#",
     date: "2026-05-11",
     type: "software",
-    tags: ["Software", "Web Development"],
+    tags: ["Web Development"],
+    categories: ["software"],
   },
   {
     id: 34,
@@ -276,6 +297,7 @@ const mockProjects: Project[] = [
     date: "2026-02-26",
     type: "research",
     tags: ["Photonics", "Semiconductors", "Upcoming"],
+    categories: ["process"],
   },
   {
     id: 36,
@@ -288,6 +310,7 @@ const mockProjects: Project[] = [
     date: "2026-03-10",
     type: "research",
     tags: ["Semiconductors", "Fabrication"],
+    categories: ["process"],
   },
   {
     id: 37,
@@ -321,6 +344,7 @@ const mockProjects: Project[] = [
     date: "2025-09-12",
     type: "hardware",
     tags: ["Batteries", "Solar Racing"],
+    categories: ["hardware"],
   },
   {
     id: 40,
@@ -332,6 +356,7 @@ const mockProjects: Project[] = [
     date: "2024-08-30",
     type: "hardware",
     tags: ["Robotics", "VEX"],
+    categories: ["hardware"],
   },
 ]
 
@@ -342,12 +367,29 @@ function formatDate(dateString: string) {
   return `${MONTH_ABBR[d.getUTCMonth()]} ${d.getUTCDate()} ${d.getUTCFullYear()}`
 }
 
-export default function ProjectsPage() {
-  const router = useRouter()
+const FILTERS: { value: Category | "all"; label: string }[] = [
+  { value: "all", label: "All" },
+  { value: "hardware", label: "Hardware" },
+  { value: "process", label: "Process" },
+  { value: "software", label: "Software" },
+]
 
-  const sortedProjects = [...mockProjects].sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  )
+function ProjectsContent() {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+
+  const filterParam = searchParams.get("filter")
+  const activeFilter: Category | "all" =
+    filterParam === "hardware" || filterParam === "process" || filterParam === "software" ? filterParam : "all"
+
+  const setFilter = (value: Category | "all") => {
+    const query = value === "all" ? "" : `?filter=${value}`
+    router.replace(`/projects${query}`, { scroll: false })
+  }
+
+  const sortedProjects = [...mockProjects]
+    .filter((project) => activeFilter === "all" || project.categories?.includes(activeFilter))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   return (
     <div
@@ -375,6 +417,24 @@ export default function ProjectsPage() {
               Projects
             </h1>
           </div>
+        </div>
+
+        {/* Filter */}
+        <div className="flex flex-wrap gap-3 mb-8">
+          {FILTERS.map((f) => (
+            <Button
+              key={f.value}
+              onClick={() => setFilter(f.value)}
+              variant={activeFilter === f.value ? "default" : "outline"}
+              className={`transition-all duration-300 ${
+                activeFilter === f.value
+                  ? "bg-purple-500 text-white"
+                  : "border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90"
+              }`}
+            >
+              {f.label}
+            </Button>
+          ))}
         </div>
 
         {/* Projects Grid */}
@@ -420,5 +480,13 @@ export default function ProjectsPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={null}>
+      <ProjectsContent />
+    </Suspense>
   )
 }
