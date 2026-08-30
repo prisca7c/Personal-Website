@@ -124,10 +124,18 @@ export const caseStudies: CaseStudy[] = [
     repos: [{ name: "Aura 67 (org)", url: "https://github.com/HTN-Aura-67" }],
     videoUrl: "https://www.youtube.com/shorts/rSfp2yne1f4",
     process: [
-      { dot: "blue", text: "Built the self balancing controller using an IMU and gyroscope feedback loop running on an ESP32-S3." },
+      {
+        dot: "blue",
+        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/743/653/datas/gallery.jpg",
+        text: "Built the self balancing controller using an IMU and gyroscope feedback loop running on an ESP32-S3.",
+      },
       { dot: "pink", text: "Added a Raspberry Pi Zero 2 W in the head for camera capture and vision processing, streaming frames for object tracking." },
       { dot: "orange", text: "Integrated a language model so natural language commands map to concrete actions like follow object, stop, or return to base." },
-      { dot: "cyan", text: "Added a time of flight distance sensor in the head so the robot slows and stops automatically near obstacles." },
+      {
+        dot: "cyan",
+        image: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/742/680/datas/gallery.jpg",
+        text: "Added a time of flight distance sensor in the head so the robot slows and stops automatically near obstacles.",
+      },
     ],
     result: {
       items: [
