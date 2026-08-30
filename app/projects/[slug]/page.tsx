@@ -113,8 +113,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 <div key={i} className="flex flex-col gap-3">
                   {step.image && (
                     <div>
+                      {step.caption && <p className="text-xs text-slate-500 italic mb-1.5 leading-snug">{step.caption}</p>}
                       <img src={step.image} alt="" className="w-full h-auto object-contain rounded-xl border-2 border-blue-200/60" />
-                      {step.caption && <p className="text-xs text-slate-500 italic mt-1.5 leading-snug">{step.caption}</p>}
                     </div>
                   )}
                   <div className="flex gap-2 items-start flex-1">

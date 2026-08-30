@@ -1,10 +1,9 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { ArrowLeft, Github, ExternalLink, Calendar, Tag, ChevronDown } from "lucide-react"
+import { ArrowLeft, Github, ExternalLink } from "lucide-react"
 
 interface Project {
   id: number
@@ -209,9 +208,10 @@ const mockProjects: Project[] = [
   },
   {
     id: 24,
+    slug: "pharmaceutical-chemistry",
     name: "Pharmaceutical Chemistry",
     description: "A project exploring concepts in pharmaceutical chemistry.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://media.licdn.com/dms/image/v2/D562DAQEn6kbPCcyrwg/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136349117?e=1788724800&v=beta&t=W3gHxGClAuE9HqtjZw_7ygwKfG8FKoPs5pw1kF51RG0",
     codeLink: "#",
     demoLink: "#",
     date: "2024-09-01",
@@ -242,9 +242,10 @@ const mockProjects: Project[] = [
   },
   {
     id: 27,
+    slug: "pharmaceutical-chemistry",
     name: "Drug Design",
     description: "A project involving computational drug design.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://media.licdn.com/dms/image/v2/D562DAQGcCS--DlqPXA/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136132884?e=1788724800&v=beta&t=Q1cYUMSVlbC6VoIZZMxWor84iV9JtHR3nh10xV57iIU",
     codeLink: "#",
     demoLink: "#",
     date: "2024-11-01",
@@ -255,24 +256,10 @@ const mockProjects: Project[] = [
 
 export default function ProjectsPage() {
   const router = useRouter()
-  const [sortBy, setSortBy] = useState("date")
-  const [filterType, setFilterType] = useState("all")
-  const [isFilterOpen, setIsFilterOpen] = useState(false)
 
-  const sortedAndFilteredProjects = mockProjects
-    .filter((project) => filterType === "all" || project.type === filterType)
-    .sort((a, b) => {
-      if (sortBy === "date") {
-        return new Date(b.date).getTime() - new Date(a.date).getTime()
-      } else if (sortBy === "name") {
-        return a.name.localeCompare(b.name)
-      } else if (sortBy === "type") {
-        return a.type.localeCompare(b.type)
-      }
-      return 0
-    })
-
-  const projectTypes = ["all", ...Array.from(new Set(mockProjects.map((p) => p.type)))]
+  const sortedProjects = [...mockProjects].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  )
 
   return (
     <div
@@ -302,81 +289,9 @@ export default function ProjectsPage() {
           </div>
         </div>
 
-        {/* Filters and Sorting */}
-        <div className="flex flex-wrap gap-4 mb-8">
-          <div className="relative">
-            <Button
-              onClick={() => setIsFilterOpen(!isFilterOpen)}
-              variant="outline"
-              className={`transition-all duration-300 border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90`}
-            >
-              <Tag className="w-4 h-4 mr-2" />
-              Filter: {filterType === "all" ? "All Types" : filterType}
-              <ChevronDown className="w-4 h-4 ml-2" />
-            </Button>
-            {isFilterOpen && (
-              <div
-                className={`absolute top-full left-0 mt-2 w-48 rounded-lg border shadow-lg z-10 border-purple-200 bg-white/95 backdrop-blur-sm`}
-              >
-                {projectTypes.map((type) => (
-                  <button
-                    key={type}
-                    onClick={() => {
-                      setFilterType(type)
-                      setIsFilterOpen(false)
-                    }}
-                    className={`w-full text-left px-4 py-2 hover:bg-purple-500/20 transition-colors ${
-                      filterType === type ? "bg-purple-500/30" : ""
-                    } text-slate-700`}
-                  >
-                    {type === "all" ? "All Types" : type}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-
-          <Button
-            onClick={() => setSortBy("date")}
-            variant={sortBy === "date" ? "default" : "outline"}
-            className={`transition-all duration-300 ${
-              sortBy === "date"
-                ? "bg-purple-500 text-white"
-                : "border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90"
-            }`}
-          >
-            <Calendar className="w-4 h-4 mr-2" />
-            Sort by Date
-          </Button>
-
-          <Button
-            onClick={() => setSortBy("name")}
-            variant={sortBy === "name" ? "default" : "outline"}
-            className={`transition-all duration-300 ${
-              sortBy === "name"
-                ? "bg-purple-500 text-white"
-                : "border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90"
-            }`}
-          >
-            Sort by Name
-          </Button>
-
-          <Button
-            onClick={() => setSortBy("type")}
-            variant={sortBy === "type" ? "default" : "outline"}
-            className={`transition-all duration-300 ${
-              sortBy === "type"
-                ? "bg-purple-500 text-white"
-                : "border-purple-200 bg-white/70 text-slate-600 hover:bg-white/90"
-            }`}
-          >
-            Sort by Type
-          </Button>
-        </div>
-
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {sortedAndFilteredProjects.map((project) => (
+          {sortedProjects.map((project) => (
             <div
               key={project.id}
               onClick={() => project.slug && router.push(`/projects/${project.slug}`)}
@@ -386,11 +301,10 @@ export default function ProjectsPage() {
             >
               <img src={project.image || "/placeholder.svg"} alt={project.name} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center mb-3">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold bg-purple-100 text-purple-700`}>
                     {project.type}
                   </span>
-                  <span className={`text-sm text-slate-500`}>{new Date(project.date).toLocaleDateString()}</span>
                 </div>
 
                 <h3

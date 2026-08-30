@@ -266,17 +266,19 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "https://cdn.hackclub.com/rescue?url=https://hc-cdn.hel1.your-objectstorage.com/s/v3/dde2975a7834dd27be6fe814b98f4b9c917eae85_img_4104.jpg",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQFoLg5geaYo-A/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223547395?e=1788724800&v=beta&t=sHZa2g_CfE2o5HXzl_tFKV0YTdkEUkye51oEtTTwW4o",
         caption: "Pulled Malpighian tubules and guts",
         text: "Practiced dissecting the Malpighian tubules and guts of fruit flies, working from the torso down to the lower abdomen to extract them intact.",
       },
       {
         dot: "pink",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQF3mEl4V7F8-A/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223421435?e=1788724800&v=beta&t=hqjxt3eP4W-JJaat-sJHc7I5Tv3mI8CIfmlKqnw_RWk",
         caption: "Clear fluorescent protein using the Gal4/UAS system",
         text: "Used the Gal4/UAS system to genetically modify flies, add a GFP marker, and localize gene expression, then imaged the tissue under a fluorescent microscope.",
       },
       {
         dot: "orange",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQH5r0rmeNHwKw/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1725223340201?e=1788724800&v=beta&t=z1KKvvqMRoltTfER2t27QfNovsy5pS6onmhgUFsY0w4",
         caption: "15 microliter urine droplet tied to a pin",
         text: "Ran a Ramsay Assay to test diuretic effects of tachykinin hormones, comparing urine secretion between control and treatment wells over a one hour incubation.",
       },
@@ -313,6 +315,44 @@ export const caseStudies: CaseStudy[] = [
       narrative: "A research backed case for hemp as a scalable, lower resource alternative to plastic and conventional textiles.",
     },
     builtWith: ["Chemical Databases", "Industry Analysis", "Research Methodology"],
+  },
+  {
+    slug: "pharmaceutical-chemistry",
+    title: "Pharmaceutical Chemistry & Drug Design",
+    subtitle: "York University, with Dr. Kyle Belozerov and Dr. Derek Jackson",
+    badges: ["Chemistry", "Pharmaceuticals", "Drug Design"],
+    hook:
+      "Synthesized Aspirin and Oil of Wintergreen, extracted natural antimicrobial compounds from spices, and used Nanome to model a drug molecule and study drug-enzyme interactions.",
+    repos: [],
+    process: [
+      {
+        dot: "blue",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQEn6kbPCcyrwg/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136349117?e=1788724800&v=beta&t=W3gHxGClAuE9HqtjZw_7ygwKfG8FKoPs5pw1kF51RG0",
+        caption: "Clear antimicrobial activity",
+        text: "Set up bioassays and extracted natural products from a variety of spices, several of which showed clear antimicrobial activity.",
+      },
+      {
+        dot: "pink",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQGcCS--DlqPXA/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136132884?e=1788724800&v=beta&t=Q1cYUMSVlbC6VoIZZMxWor84iV9JtHR3nh10xV57iIU",
+        caption: "ASA:214(a) drug molecule",
+        text: "Used Nanome to build and explore a unique drug molecule, studying drug-enzyme interactions in 3D.",
+      },
+      {
+        dot: "orange",
+        image: "https://media.licdn.com/dms/image/v2/D562DAQEOOLjCpcCmIw/profile-treasury-image-shrink_480_480/profile-treasury-image-shrink_480_480/0/1690136070373?e=1788724800&v=beta&t=_4dYj_im9Wi8rcy3RNg3kQNj2y8zBShi2rTSAILj2A8",
+        caption: "Natural product extraction solutions",
+        text: "Synthesized Aspirin and Oil of Wintergreen, using Thin-Layer Chromatography (TLC) to verify each compound.",
+      },
+    ],
+    result: {
+      items: [
+        { label: "Synthesized Aspirin and Oil of Wintergreen, verified with TLC", dot: "green" },
+        { label: "Set up bioassays showing clear antimicrobial activity from spice extracts", dot: "blue" },
+        { label: "Modeled a custom drug molecule in Nanome to study drug-enzyme interactions", dot: "purple" },
+      ],
+      narrative: "Hands on pharmaceutical chemistry work spanning classic organic synthesis, natural product bioassays, and computational drug design.",
+    },
+    builtWith: ["Thin-Layer Chromatography (TLC)", "Bioassays", "Nanome", "Organic Synthesis"],
   },
   {
     slug: "chordially",
@@ -474,7 +514,12 @@ export const caseStudies: CaseStudy[] = [
       "A sensor based approach to detecting and containing oil spills, plotting the contamination boundary live so responders know exactly where to deploy a skimmer.",
     repos: [],
     process: [
-      { dot: "blue", text: "Modeled and coded a density sensor in Tinkercad to distinguish oil from water samples." },
+      {
+        dot: "blue",
+        image: "https://csg.us-east-1.prd.tinkercad.com/things/jYIspEysYSF/t725.png?rev=1692004721632000000&s=&v=1&type=circuits&sharecode=1ljc3PHq6QdpT4oOubdF68DmC-8tZFG0BMOgNkd53QM",
+        caption: "Density sensor circuit built in Tinkercad",
+        text: "Modeled and coded a density sensor in Tinkercad to distinguish oil from water samples.",
+      },
       { dot: "pink", text: "Positioned sensors on all four sides of a sample area to continuously collect boundary data." },
       { dot: "orange", text: "Used Matplotlib to plot detected coordinates as a live scatter plot, visually mapping the spill's edges." },
     ],
