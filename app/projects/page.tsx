@@ -35,7 +35,7 @@ const mockProjects: Project[] = [
   {
     id: 29,
     slug: "chordially",
-    name: "Chordially (Hack the Valley X 2025)",
+    name: "Chordially (Hack the Valley X)",
     description: "Master guitar techniques with real-time hand tracking, personalized feedback, and an intelligent AI tutor that adapts to your learning pace.",
     image: "/images/chordially-card.jpg",
     codeLink: "https://github.com/nathanchiu05/Computer-Vision-Guitar-Tutor",
@@ -47,7 +47,7 @@ const mockProjects: Project[] = [
   {
     id: 30,
     slug: "honko-clock",
-    name: "HONK O' CLOCK (Technova 2025)",
+    name: "HONK O' CLOCK (Technova)",
     description: "Regular alarms die to one lazy tap. HonkO'Clock forces you to play a goose themed obstacle dodging minigame before the buzzer will stop.",
     image: "/images/honkoclock-figma-geese.png",
     codeLink: "https://github.com/swaggy-mandy/goosealarm",
@@ -59,9 +59,9 @@ const mockProjects: Project[] = [
   {
     id: 31,
     slug: "aura-67",
-    name: "Aura-67 (Hack the North 2025)",
+    name: "Aura-67 (Hack the North)",
     description: "Self-balancing robot that follows natural-language commands and tracks objects with real-time computer vision.",
-    image: "/images/aura67-card.jpg",
+    image: "/images/aura67-team.jpg",
     codeLink: "https://github.com/HTN-Aura-67",
     demoLink: "https://devpost.com/software/aura-67?ref_content=user-portfolio&ref_feature=in_progress",
     date: "2025-09-12",
@@ -70,7 +70,7 @@ const mockProjects: Project[] = [
   },
   {
     id: 13,
-    name: "graggleblogfiggle (Apocalypse Hackathon 2024)",
+    name: "graggleblogfiggle (Apocalypse Hackathon)",
     description: "A little pea trying to make it big in the world.",
     image: "/placeholder.svg?height=200&width=300",
     codeLink: "https://github.com/Stwikeyy/graggleblogfiggle",
@@ -83,7 +83,7 @@ const mockProjects: Project[] = [
   {
     id: 14,
     slug: "peas-are-best-frozen",
-    name: "Peas Are Best Frozen (Undercity Hackathon 2025)",
+    name: "Peas Are Best Frozen (Undercity Hackathon)",
     description:
       "A snow peashooter inspired by the video game Plants vs. Zombies. Turn on the shooter and watch the peas fly out!",
     image: "/images/peashooter-final-assembly.png",
@@ -109,7 +109,7 @@ const mockProjects: Project[] = [
   {
     id: 16,
     slug: "baylee",
-    name: "Baylee (UTRAHacks 2025)",
+    name: "Baylee (UTRAHacks)",
     description: "Let’s revolutionize health care, one emotion at a time.",
     image: "/images/baylee-card.png",
     codeLink: "https://github.com/Badbird5907/UTRA2025",
@@ -122,7 +122,7 @@ const mockProjects: Project[] = [
   {
     id: 17,
     slug: "oss-oil-spill-sensor",
-    name: "O.S.S (ElleHacks 2023)",
+    name: "O.S.S (ElleHacks)",
     description: "Generate data for sensors and plot points on Matplotlib. Choose the farthest points around an oil spill to throw a skimmer. A Tinkercad-coded/built density sensor model is available for use as well.",
     image: "/images/oss-card.jpeg",
     codeLink: "https://www.tinkercad.com/things/jYIspEysYSF?sharecode=1ljc3PHq6QdpT4oOubdF68DmC-8tZFG0BMOgNkd53QM",
@@ -135,7 +135,7 @@ const mockProjects: Project[] = [
   {
     id: 18,
     slug: "neo-alert",
-    name: "Neo=Alert (Hack the Ridge 2024)",
+    name: "Neo=Alert (Hack the Ridge)",
     description: "Revolutionizing healthcare in under-resourced hospitals with our custom built AI-powered (not an API call) early warning system, designed to prevent bradycardia deaths. NEE WOO, WEEE WOO!",
     image: "/images/neoalert-card.jpg",
     codeLink: "https://github.com/Badbird5907/htr-2024",
@@ -273,7 +273,7 @@ const mockProjects: Project[] = [
     image: "/placeholder.svg?height=200&width=300",
     codeLink: "#",
     demoLink: "#",
-    date: "2026-01-10",
+    date: "2026-02-26",
     type: "research",
     tags: ["Photonics", "Semiconductors", "Upcoming"],
   },
@@ -285,7 +285,7 @@ const mockProjects: Project[] = [
     image: "/images/semiconductor-lithography-test-pattern.webp",
     codeLink: "#",
     demoLink: "#",
-    date: "2026-01-07",
+    date: "2026-03-10",
     type: "research",
     tags: ["Semiconductors", "Fabrication"],
   },

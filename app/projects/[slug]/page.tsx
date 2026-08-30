@@ -134,11 +134,11 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
             {study.result.items.map((item, i) => (
               <div key={i} className="flex gap-2 items-start mb-2">
                 <span className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${dotColor[item.dot]}`} />
-                <p className="text-sm text-slate-700">{item.label}</p>
+                <p className="text-lg leading-relaxed text-slate-700">{item.label}</p>
               </div>
             ))}
           </div>
-          <p className="text-sm leading-relaxed text-slate-700">{study.result.narrative}</p>
+          <p className="text-lg leading-relaxed text-slate-700">{study.result.narrative}</p>
         </section>
 
         {/* Built With */}

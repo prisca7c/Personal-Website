@@ -126,14 +126,21 @@ export const caseStudies: CaseStudy[] = [
     process: [
       {
         dot: "blue",
-        image: "/images/aura67-gallery-1.jpg",
+        image: "/images/aura67-team.jpg",
+        caption: "Aura-67, head module with LED matrix eyes",
         text: "Built the self balancing controller using an IMU and gyroscope feedback loop running on an ESP32-S3.",
       },
-      { dot: "pink", text: "Added a Raspberry Pi Zero 2 W in the head for camera capture and vision processing, streaming frames for object tracking." },
+      {
+        dot: "green",
+        image: "/images/aura67-gallery-2.jpg",
+        caption: "Assembling the base",
+        text: "Added a Raspberry Pi Zero 2 W in the head for camera capture and vision processing, streaming frames for object tracking.",
+      },
       { dot: "orange", text: "Integrated a language model so natural language commands map to concrete actions like follow object, stop, or return to base." },
       {
         dot: "cyan",
-        image: "/images/aura67-gallery-2.jpg",
+        image: "/images/aura67-gallery-1.jpg",
+        caption: "Live vision tracking dashboard",
         text: "Added a time of flight distance sensor in the head so the robot slows and stops automatically near obstacles.",
       },
     ],
