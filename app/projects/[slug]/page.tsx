@@ -108,9 +108,9 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         {study.process.length > 0 && (
           <section className="mb-10">
             <h2 className="text-xl font-bold text-slate-900 mb-4">The Process</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="columns-1 md:columns-2 gap-8">
               {study.process.map((step, i) => (
-                <div key={i} className="flex flex-col gap-3">
+                <div key={i} className="flex flex-col gap-3 mb-8 break-inside-avoid">
                   {step.image && (
                     <div>
                       {step.caption && <p className="text-xs text-slate-500 italic mb-1.5 leading-snug">{step.caption}</p>}
@@ -119,7 +119,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                   )}
                   <div className="flex gap-2 items-start flex-1">
                     <span className={`w-2 h-2 rounded-full mt-2 flex-shrink-0 ${dotColor[step.dot]}`} />
-                    <p className="text-sm leading-relaxed text-slate-700">{step.text}</p>
+                    <p className="text-lg leading-relaxed text-slate-700">{step.text}</p>
                   </div>
                 </div>
               ))}
@@ -151,7 +151,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                   <p className="text-xs font-extrabold uppercase tracking-wide text-blue-800 mb-2">{cat.category}</p>
                   <ul className="space-y-1">
                     {cat.items.map((item) => (
-                      <li key={item} className="text-sm text-slate-700">{item}</li>
+                      <li key={item} className="text-lg text-slate-700">{item}</li>
                     ))}
                   </ul>
                 </div>
@@ -160,7 +160,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           ) : (
             <ul className="columns-2 sm:columns-3" style={{ columnGap: "2rem" }}>
               {(study.builtWith as string[]).map((item) => (
-                <li key={item} className="text-sm text-slate-700 border-b border-blue-100 py-1">{item}</li>
+                <li key={item} className="text-lg text-slate-700 border-b border-blue-100 py-1">{item}</li>
               ))}
             </ul>
           )}
