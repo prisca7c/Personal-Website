@@ -117,7 +117,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "aura-67",
     title: "Aura-67",
-    subtitle: "Hack the North 2025. Built with Jiucheng Zang, Alex Xu, Hadi Ahmed",
+    subtitle: "Hack the North 2025",
     badges: ["Robotics", "Computer Vision", "AI"],
     hook:
       "A self balancing robot you can control by talking to it. Say 'move toward the red cup' and a language model interprets the request, the vision system finds the target, and the robot drives there.",
@@ -201,7 +201,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "peas-are-best-frozen",
     title: "Peas Are Best Frozen",
-    subtitle: "Undercity Hackathon 2025. Finalist, Top 7. Built with Bernice Qiu",
+    subtitle: "Undercity Hackathon 2025. Finalist, Top 7",
     badges: ["Hardware", "Mechanical", "Firmware"],
     hook:
       "A snow peashooter inspired by Plants vs. Zombies. Turn it on and watch the peas fly out.",

@@ -59,7 +59,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <p className="text-slate-500 mb-6">{study.subtitle}</p>
         <div className="w-24 h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60 mb-8" />
 
-        <p className="text-xs font-bold uppercase tracking-wide text-blue-600 mb-2">Why?</p>
+        <h2 className="text-xl font-bold text-slate-900 mb-4">Why?</h2>
         <p className="text-lg leading-relaxed text-slate-700 mb-10">{study.hook}</p>
 
         {/* Explore */}
@@ -134,6 +134,8 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
           </section>
         )}
 
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60 mb-10" />
+
         {/* Result */}
         <section className="mb-10">
           <h2 className="text-xl font-bold text-slate-900 mb-4">Result!</h2>
@@ -145,7 +147,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               </div>
             ))}
           </div>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-300 via-pink-300 to-cyan-300 rounded-full opacity-60 mb-4" />
           <p className="text-lg leading-relaxed text-slate-700">{study.result.narrative}</p>
         </section>
 
