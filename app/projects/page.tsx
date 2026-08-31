@@ -338,9 +338,10 @@ const mockProjects: Project[] = [
   },
   {
     id: 39,
+    slug: "battery-midnight-sun",
     name: "Battery (Midnight Sun)",
-    description: "A project involving battery systems with Midnight Sun.",
-    image: "/placeholder.svg?height=200&width=300",
+    description: "Designed a 32S1P prismatic Li-ion cell layout with tool-free modular trays for the team battery pack, and performed CFD analysis in Ansys on the pack's cooling system.",
+    image: "/images/battery-cell-layout-2.webp",
     codeLink: "#",
     demoLink: "#",
     date: "2025-09-12",

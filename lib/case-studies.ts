@@ -25,8 +25,11 @@ export interface CaseStudy {
   subtitle: string
   badges: string[]
   hook: string
+  bannerImage?: string
   liveUrl?: string
+  liveUrlImage?: string
   videoUrl?: string
+  videoUrlImage?: string
   repos: Repo[]
   statusLine?: string
   process: ProcessStep[]
@@ -426,7 +429,8 @@ export const caseStudies: CaseStudy[] = [
     badges: ["Computer Vision", "AI", "Music Education"],
     hook:
       "Guitar lessons cost 50 to 100 dollars an hour. Chordially watches your fingers on the fretboard through computer vision and scores your chord accuracy in real time.",
-    liveUrl: "https://v0-ai-music-tutor.vercel.app",
+    videoUrl: "https://www.youtube.com/watch?v=1qn4usBFnC4&t=1s",
+    videoUrlImage: "/images/chordially-card.jpg",
     repos: [
       { name: "Computer Vision Guitar Tutor", url: "https://github.com/prisca7c/Computer-Vision-Guitar-Tutor" },
       { name: "Computer Vision Guitar Tutor", url: "https://github.com/nathanchiu05/Computer-Vision-Guitar-Tutor" },
@@ -604,7 +608,9 @@ export const caseStudies: CaseStudy[] = [
     badges: ["Quantum Computing", "Qiskit", "CUDA-Q", "Hackathon"],
     hook:
       "At MIT's iQuHACK 2026 we took on IQM Quantum Computers' multipartite entanglement challenge, proving entanglement two different ways: classical shadows for statistical detection and Mermin inequalities for a direct mathematical proof, across three real IQM quantum computers.",
+    bannerImage: "/images/iquhack-pdf-preview.webp",
     liveUrl: "/iqm-mit-quantum-hackathon.pdf",
+    liveUrlImage: "/images/iquhack-pdf-preview.webp",
     repos: [{ name: "IQM-Iquhack", url: "https://github.com/rahulranjansah/IQM-Iquhack" }],
     process: [
       {
@@ -675,6 +681,12 @@ export const caseStudies: CaseStudy[] = [
         text: "Music & Life London is a music studio and instrument shop offering lessons, recitals, and instrument sales out of its Harrow storefront.",
       },
       {
+        dot: "orange",
+        image: "/images/musiclife-signin.webp",
+        caption: "Studio sign-in portal",
+        text: "Built a branded sign-in and registration flow for students and staff to access the studio portal.",
+      },
+      {
         dot: "pink",
         image: "/images/musiclife-recital.png",
         caption: "A student recital at the studio",
@@ -686,6 +698,49 @@ export const caseStudies: CaseStudy[] = [
       narrative: "More details on this internship are on the way.",
     },
     builtWith: ["Web Development"],
+  },
+  {
+    slug: "battery-midnight-sun",
+    title: "Battery Pack",
+    subtitle: "Midnight Sun Solar Race Car",
+    badges: ["Hardware", "Batteries", "CFD"],
+    hook:
+      "Designed the 32S1P prismatic Li-ion cell layout for the team's solar race car battery pack, with tool-free modular trays, and ran CFD analysis in Ansys on the pack's cooling system.",
+    repos: [],
+    process: [
+      {
+        dot: "blue",
+        image: "/images/battery-cell-layout-1.webp",
+        caption: "Cell testing on a Rigol DL3031 electronic load",
+        text: "Characterized individual prismatic Li-ion cells before pack assembly to validate capacity and internal resistance.",
+      },
+      {
+        dot: "pink",
+        image: "/images/battery-cell-layout-2.webp",
+        caption: "32S1P cell layout in tool-free modular trays",
+        text: "Designed a 32S1P prismatic Li-ion cell layout with tool-free modular trays, so individual cells or trays can be swapped without disassembling the whole pack.",
+      },
+      {
+        dot: "orange",
+        image: "/images/battery-cell-layout-3.jpg",
+        caption: "Pack installed in the car chassis",
+        text: "Fit the completed tray assembly into the car's chassis alongside the BMS and wiring harness.",
+      },
+      {
+        dot: "cyan",
+        image: "/images/battery-cfd-analysis.webp",
+        caption: "Assembled battery pack enclosure",
+        text: "Performed CFD analysis in Ansys on the battery pack's cooling system to check airflow and cell temperatures inside the sealed enclosure.",
+      },
+    ],
+    result: {
+      items: [
+        { label: "32S1P prismatic Li-ion pack with tool-free modular trays", dot: "green" },
+        { label: "CFD-analyzed cooling system in Ansys", dot: "blue" },
+      ],
+      narrative: "A modular, serviceable battery pack for the team's solar race car, with its cooling performance validated in simulation before track testing.",
+    },
+    builtWith: ["Ansys CFD", "Prismatic Li-ion Cells", "BMS"],
   },
 ]
 

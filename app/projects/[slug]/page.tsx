@@ -62,6 +62,14 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <h2 className="text-xl font-bold text-slate-900 mb-4">Why?</h2>
         <p className="text-lg leading-relaxed text-slate-700 mb-10">{study.hook}</p>
 
+        {study.bannerImage && (
+          <img
+            src={study.bannerImage}
+            alt=""
+            className="w-full h-auto object-contain rounded-2xl border-2 border-blue-200/60 mb-10"
+          />
+        )}
+
         {/* Explore */}
         {(study.liveUrl || study.videoUrl || study.repos.length > 0) && (
           <section className="mb-10">
@@ -70,7 +78,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               {study.videoUrl && (
                 <a href={study.videoUrl} target="_blank" rel="noreferrer"
                   className="rounded-2xl overflow-hidden border-2 border-blue-200/60 bg-white block hover:shadow-lg transition-all">
-                  <div className="h-36 bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100 flex items-center justify-center relative">
+                  <div
+                    className={`h-36 flex items-center justify-center relative bg-cover bg-center ${study.videoUrlImage ? "" : "bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100"}`}
+                    style={study.videoUrlImage ? { backgroundImage: `url(${study.videoUrlImage})` } : undefined}
+                  >
                     <span className="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow">
                       <VideoIcon className="w-3 h-3" /> {isYouTube ? "Watch on YouTube" : "Watch demo video"}
                     </span>
@@ -88,7 +99,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                       {study.liveUrl.replace("https://", "")}
                     </span>
                   </div>
-                  <div className="h-28 bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100 flex items-center justify-center relative">
+                  <div
+                    className={`h-28 flex items-center justify-center relative bg-cover bg-center ${study.liveUrlImage ? "" : "bg-gradient-to-br from-blue-100 via-pink-100 to-cyan-100"}`}
+                    style={study.liveUrlImage ? { backgroundImage: `url(${study.liveUrlImage})` } : undefined}
+                  >
                     <span className="absolute bottom-3 right-3 bg-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow">
                       <LiveIcon className="w-3 h-3" /> {liveLabel}
                     </span>
