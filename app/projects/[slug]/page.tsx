@@ -62,14 +62,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
         <h2 className="text-xl font-bold text-slate-900 mb-4">Why?</h2>
         <p className="text-lg leading-relaxed text-slate-700 mb-10">{study.hook}</p>
 
-        {study.bannerImage && (
-          <img
-            src={study.bannerImage}
-            alt=""
-            className="w-full h-auto object-contain rounded-2xl border-2 border-blue-200/60 mb-10"
-          />
-        )}
-
         {/* Explore */}
         {(study.liveUrl || study.videoUrl || study.repos.length > 0) && (
           <section className="mb-10">

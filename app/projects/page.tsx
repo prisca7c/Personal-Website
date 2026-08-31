@@ -328,7 +328,7 @@ const mockProjects: Project[] = [
     id: 38,
     name: "HardHAQ / NAQC",
     description: "Using ANSYS HFSS and COMSOL Multiphysics to simulate trapped ion and photonic (Lumerical) hardware for HardHAQ, in partnership with the National Association of Quantum Clubs.",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/hardhaq-card.webp",
     codeLink: "#",
     demoLink: "#",
     date: "2025-11-15",

@@ -25,7 +25,6 @@ export interface CaseStudy {
   subtitle: string
   badges: string[]
   hook: string
-  bannerImage?: string
   liveUrl?: string
   liveUrlImage?: string
   videoUrl?: string
@@ -126,6 +125,7 @@ export const caseStudies: CaseStudy[] = [
       "A self balancing robot you can control by talking to it. Say 'move toward the red cup' and a language model interprets the request, the vision system finds the target, and the robot drives there.",
     repos: [{ name: "Aura 67 (org)", url: "https://github.com/HTN-Aura-67" }],
     videoUrl: "https://www.youtube.com/shorts/rSfp2yne1f4",
+    videoUrlImage: "/images/aura67-card.jpg",
     process: [
       {
         dot: "blue",
@@ -481,6 +481,7 @@ export const caseStudies: CaseStudy[] = [
       "A custom trained neural network, built from scratch rather than an API call, that watches NICU ECG and respiratory data and flags bradycardia risk before a crisis hits.",
     repos: [{ name: "htr-2024", url: "https://github.com/Badbird5907/htr-2024" }],
     liveUrl: "https://htr.ymci.ca/",
+    liveUrlImage: "/images/neoalert-card.jpg",
     process: [
       { dot: "blue", text: "Sourced the PICS ECG and respiratory dataset and converted it into a Hugging Face dataset for training." },
       { dot: "pink", text: "Found a severe class imbalance of 99.4 to 0.6 percent and fixed it with statistical data augmentation." },
@@ -507,6 +508,7 @@ export const caseStudies: CaseStudy[] = [
       "Regular alarms die to one lazy tap. HonkO'Clock forces you to actually wake up by making you play a goose themed obstacle dodging minigame before the buzzer will stop.",
     repos: [{ name: "goosealarm", url: "https://github.com/swaggy-mandy/goosealarm" }],
     videoUrl: "https://www.youtube.com/watch?v=YTsdKRVFXo0",
+    videoUrlImage: "/images/honkoclock-webapp.jpeg",
     process: [
       {
         dot: "blue",
@@ -608,9 +610,8 @@ export const caseStudies: CaseStudy[] = [
     badges: ["Quantum Computing", "Qiskit", "CUDA-Q", "Hackathon"],
     hook:
       "At MIT's iQuHACK 2026 we took on IQM Quantum Computers' multipartite entanglement challenge, proving entanglement two different ways: classical shadows for statistical detection and Mermin inequalities for a direct mathematical proof, across three real IQM quantum computers.",
-    bannerImage: "/images/iquhack-pdf-preview.webp",
     liveUrl: "/iqm-mit-quantum-hackathon.pdf",
-    liveUrlImage: "/images/iquhack-pdf-preview.webp",
+    liveUrlImage: "/images/iquhack-dashboard-1.jpg",
     repos: [{ name: "IQM-Iquhack", url: "https://github.com/rahulranjansah/IQM-Iquhack" }],
     process: [
       {
