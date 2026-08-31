@@ -77,19 +77,6 @@ const mockProjects: Project[] = [
     categories: ["hardware", "software"],
   },
   {
-    id: 13,
-    name: "graggleblogfiggle (Apocalypse Hackathon)",
-    description: "A little pea trying to make it big in the world.",
-    image: "/placeholder.svg?height=200&width=300",
-    codeLink: "https://github.com/Stwikeyy/graggleblogfiggle",
-    demoLink: "https://docs.google.com/presentation/d/1pm3ocpUQKqpZ2OpVfdYTIdS68fsuPbH9ZrrdBp5Dfzk/edit?usp=sharing",
-    date: "2024-05-17",
-    type: "hackathon",
-    tags: ["Web Development"],
-    categories: ["software"],
-    award: "1st Place"
-  },
-  {
     id: 14,
     slug: "peas-are-best-frozen",
     name: "Peas Are Best Frozen (Undercity Hackathon)",
@@ -274,17 +261,6 @@ const mockProjects: Project[] = [
     type: "software",
     tags: ["Web Development"],
     categories: ["software"],
-  },
-  {
-    id: 34,
-    name: "Waterloo Nanotechnology Conference",
-    description: "Logistics Coordinator responsible for event location, conference schedule, food and refreshments, photography and videography, presentation set up, custodial services, and other conference needs like speaker gifts and applications.",
-    image: "/images/waterloo-nanotech-conference.png",
-    codeLink: "#",
-    demoLink: "#",
-    date: "2025-11-01",
-    type: "work",
-    tags: ["Event Coordination", "Nanotechnology"],
   },
   {
     id: 36,
